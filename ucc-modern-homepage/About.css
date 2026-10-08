@@ -1,6 +1,6 @@
 :root {
-  --green-950: #003b25;
-  --green-900: #004b2d;
+  --green-950: #02471e;
+  --green-900: #004b25;
   --green-800: #006039;
   --green-700: #087342;
   --green-600: #12804a;
@@ -59,7 +59,7 @@ button, input { font: inherit; }
 /*UTILITY BAR*/
 .utility-bar {
     height: 28px;
-    background: var(--green-950);
+    background: var(--green-800);
     color: #fff;
 }
 
@@ -81,7 +81,7 @@ button, input { font: inherit; }
     position: relative;
     padding: 0 12px;
     color: rgba(255, 255, 255, .88);
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: .1px;
     white-space: nowrap;
@@ -112,7 +112,6 @@ button, input { font: inherit; }
 .utility-links a.active {
     color: #ffffff;
 }
-
 
 
 /*BRAND HEADER*/
@@ -185,20 +184,12 @@ button, input { font: inherit; }
   border: none;
   outline: none;
   background: transparent;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: .15px;
   color: #173326;
   cursor: pointer;
   text-decoration: none;
-}
-
-.nav-links > a.active,
-.nav-dropdown > button.active {
-  background: var(--green-900);
-  color: #fff;
-  border-radius: 999px;
-  box-shadow: 0 5px 15px rgba(0, 75, 45, .18);
 }
 
 .nav-links > a:hover,
@@ -208,7 +199,7 @@ button, input { font: inherit; }
 }
 
 .nav-links > a.active {
-  background: var(--green-900);
+  background: var(--green-700);
   color: #fff;
   border-radius: 999px;
   box-shadow:
@@ -216,7 +207,7 @@ button, input { font: inherit; }
 }
 
 .nav-dropdown > button.active {
-    background: var(--green-900);
+    background: var(--green-700);
     color: #fff;
     border-radius: 999px;
     box-shadow:
@@ -236,21 +227,6 @@ button, input { font: inherit; }
   gap: 5px;
   position: relative;
   z-index: 2;
-}
-
-.dropdown-menu .current-page {
-    display: block;
-    width: 100%;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 9px;
-    background: var(--green-100);
-    color: var(--green-900);
-    font: inherit;
-    font-size: 11px;
-    font-weight: 700;
-    text-align: left;
-    cursor: default;
 }
 
 .nav-dropdown button span {
@@ -293,6 +269,12 @@ button, input { font: inherit; }
     font-weight: 800;
 }
 
+
+.academics-menu a {
+    white-space: normal !important;
+    line-height: 1.35;
+}
+
 .nav-dropdown .dropdown-menu::before {
   content: "";
   position: absolute;
@@ -318,7 +300,7 @@ button, input { font: inherit; }
   border-radius: 9px;
   font-size: 11px;
   font-weight: 500;
-  color: #173326;
+  color: #015623;
   background: transparent;
   text-decoration: none;
   white-space: nowrap;
@@ -328,6 +310,12 @@ button, input { font: inherit; }
 .nav-dropdown .dropdown-menu a:hover {
   background: var(--green-100);
   color: var(--green-900);
+}
+
+.nav-dropdown .dropdown-menu a.current-page {
+    background: var(--green-100);
+    color: var(--green-900);
+    font-weight: 800;
 }
 
 .brand-header,
@@ -1621,7 +1609,7 @@ border-radius:50%;
 background:#075532;
 color:#fff;
 font-family:"Oswald",sans-serif;
-font-size:9px;
+font-size:15px;
 font-weight:600;
 box-shadow:0 2px 5px rgba(0,0,0,.15);
 }
@@ -2051,7 +2039,7 @@ right:15%;
     background: #075532;
     color: #fff;
     font-family: "Oswald", sans-serif;
-    font-size: 7px;
+    font-size: 15px;
     font-weight: 600;
     box-shadow: 0 2px 5px rgba(0,0,0,.15);
 }
@@ -2312,4 +2300,70 @@ right:15%;
 }
 body.student-modal-open{
 	overflow:hidden;
+}
+
+
+
+
+
+
+.history-section{
+	position:relative;
+	z-index:2;
+	overflow:visible;
+}
+
+.history-timeline{
+	position:relative;
+	overflow:visible;
+}
+
+.history-item.has-image{
+	position:relative;
+	cursor:pointer;
+}
+
+.history-image{
+	position:absolute;
+	left:50%;
+	bottom:100%;
+	margin-bottom:30px;
+	width:300px;
+	height:200px;
+	border-radius:16px;
+	overflow:hidden;
+	background:#fff;
+	box-shadow:0 20px 50px rgba(0,0,0,.2);
+	opacity:0;
+	visibility:hidden;
+	transform:translate(-50%,30px) scale(.9);
+	transition:
+		opacity .4s ease,
+		transform .4s cubic-bezier(.22,1,.36,1),
+		visibility .4s ease;
+	z-index:100;
+	pointer-events:none;
+}
+
+.history-image img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+}
+
+.history-item.has-image:hover .history-image{
+	opacity:1;
+	visibility:visible;
+	transform:translate(-50%,0) scale(1);
+}
+
+.history-item.has-image:last-child .history-image{
+	left:auto;
+	right:-20px;
+	transform:translateY(30px) scale(.9);
+}
+
+.history-item.has-image:last-child:hover .history-image{
+	transform:translateY(0) scale(1);
 }

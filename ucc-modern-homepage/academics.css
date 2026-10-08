@@ -1,6 +1,6 @@
 :root {
-  --green-950: #003b25;
-  --green-900: #004b2d;
+  --green-950: #02471e;
+  --green-900: #004b25;
   --green-800: #006039;
   --green-700: #087342;
   --green-600: #12804a;
@@ -60,7 +60,7 @@ button, input { font: inherit; }
 /*UTILITY BAR*/
 .utility-bar {
     height: 28px;
-    background: var(--green-950);
+    background: var(--green-800);
     color: #fff;
 }
 
@@ -82,7 +82,7 @@ button, input { font: inherit; }
     position: relative;
     padding: 0 12px;
     color: rgba(255, 255, 255, .88);
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: .1px;
     white-space: nowrap;
@@ -113,7 +113,6 @@ button, input { font: inherit; }
 .utility-links a.active {
     color: #ffffff;
 }
-
 
 
 /*BRAND HEADER*/
@@ -186,20 +185,12 @@ button, input { font: inherit; }
   border: none;
   outline: none;
   background: transparent;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: .15px;
   color: #173326;
   cursor: pointer;
   text-decoration: none;
-}
-
-.nav-links > a.active,
-.nav-dropdown > button.active {
-  background: var(--green-900);
-  color: #fff;
-  border-radius: 999px;
-  box-shadow: 0 5px 15px rgba(0, 75, 45, .18);
 }
 
 .nav-links > a:hover,
@@ -209,7 +200,7 @@ button, input { font: inherit; }
 }
 
 .nav-links > a.active {
-  background: var(--green-900);
+  background: var(--green-700);
   color: #fff;
   border-radius: 999px;
   box-shadow:
@@ -217,7 +208,7 @@ button, input { font: inherit; }
 }
 
 .nav-dropdown > button.active {
-    background: var(--green-900);
+    background: var(--green-700);
     color: #fff;
     border-radius: 999px;
     box-shadow:
@@ -237,21 +228,6 @@ button, input { font: inherit; }
   gap: 5px;
   position: relative;
   z-index: 2;
-}
-
-.dropdown-menu .current-page {
-    display: block;
-    width: 100%;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 9px;
-    background: var(--green-100);
-    color: var(--green-900);
-    font: inherit;
-    font-size: 11px;
-    font-weight: 700;
-    text-align: left;
-    cursor: default;
 }
 
 .nav-dropdown button span {
@@ -294,6 +270,12 @@ button, input { font: inherit; }
     font-weight: 800;
 }
 
+
+.academics-menu a {
+    white-space: normal !important;
+    line-height: 1.35;
+}
+
 .nav-dropdown .dropdown-menu::before {
   content: "";
   position: absolute;
@@ -319,7 +301,7 @@ button, input { font: inherit; }
   border-radius: 9px;
   font-size: 11px;
   font-weight: 500;
-  color: #173326;
+  color: #015623;
   background: transparent;
   text-decoration: none;
   white-space: nowrap;
@@ -329,6 +311,12 @@ button, input { font: inherit; }
 .nav-dropdown .dropdown-menu a:hover {
   background: var(--green-100);
   color: var(--green-900);
+}
+
+.nav-dropdown .dropdown-menu a.current-page {
+    background: var(--green-100);
+    color: var(--green-900);
+    font-weight: 800;
 }
 
 .brand-header,
@@ -632,9 +620,9 @@ footer {
     background:
         linear-gradient(
             90deg,
-            #003d28 0%,
-            #004b2d 45%,
-            #003b25 100%
+            #005b20 0%,
+            #00652c 45%,
+            #017d39 100%
         );
     color: #fff;
     overflow: hidden;
@@ -1106,147 +1094,154 @@ footer {
     background: #006039;
     box-shadow: 0 5px 12px rgba(0,75,45,.12);
 }
+
+
 /* PROGRAM GRID */
 .cba-program-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 18px;
 }
 .cba-program-card {
-    position: relative;
-    min-height: 310px;
-    padding: 24px 23px 20px;
-    border: 1px solid #e1e6e2;
-    border-radius: 14px;
-    background: #fff;
-    box-shadow:
-        0 5px 18px rgba(0,59,36,.035),
-        0 1px 2px rgba(0,0,0,.02);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease,
-        border-color .3s ease;
+	position: relative;
+	min-height: 200px;
+	padding: 24px 23px 20px;
+	border: 1px solid #e1e6e2;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow:
+		0 5px 18px rgba(0,59,36,.035),
+		0 1px 2px rgba(0,0,0,.02);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition:
+		transform .3s ease,
+		box-shadow .3s ease,
+		border-color .3s ease;
 }
-/* gold top line */
+/* GOLD TOP LINE */
 .cba-program-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #eab72e;
-    transition: width .35s ease;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #eab72e;
+	transition: width .35s ease;
 }
-/* faint number watermark */
+/* FAINT NUMBER WATERMARK */
 .cba-program-card::after {
-    content: attr(data-number);
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-family: "Oswald", sans-serif;
-    font-size: 75px;
-    line-height: 1;
-    color: rgba(0,59,37,.025);
-    pointer-events: none;
+	content: attr(data-number);
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-family: "Oswald", sans-serif;
+	font-size: 90px;
+	line-height: 1;
+	color: rgba(0,59,37,.025);
+	pointer-events: none;
 }
 .cba-program-card:hover {
-    transform: translateY(-7px);
-    border-color: #cbd9d0;
-    box-shadow:
-        0 18px 40px rgba(0,59,36,.11),
-        0 3px 8px rgba(0,59,36,.04);
+	transform: translateY(-7px);
+	border-color: #cbd9d0;
+	box-shadow:
+		0 18px 40px rgba(0,59,36,.11),
+		0 3px 8px rgba(0,59,36,.04);
 }
 .cba-program-card:hover::before {
-    width: 100%;
+	width: 100%;
 }
 .cba-program-number {
-    position: relative;
-    z-index: 2;
-    width: 31px;
-    height: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    border: 1px solid #eab72e;
-    border-radius: 50%;
-    color: #a97900;
-    background: #fffdf5;
-    font-family: "Oswald", sans-serif;
-    font-size: 11px;
-    font-weight: 700;
+	position: relative;
+	z-index: 2;
+	width: 31px;
+	height: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	border: 1px solid #eab72e;
+	border-radius: 50%;
+	color: #a97900;
+	background: #fffdf5;
+	font-family: "Oswald", sans-serif;
+	font-size: 11px;
+	font-weight: 700;
 }
 /* CARD TITLE */
 .cba-program-card h3 {
-    position: relative;
-    z-index: 2;
-    margin: 0 0 14px;
-    padding-right: 20px;
-    color: #123c29;
-    font-family: "Manrope", sans-serif;
-    font-size: 14px;
-    line-height: 1.45;
-    font-weight: 800;
+	position: relative;
+	z-index: 2;
+	margin: 0 0 14px;
+	padding-right: 20px;
+	color: #123c29;
+	font-family: "Manrope", sans-serif;
+	font-size: 15px;
+	line-height: 1.45;
+	font-weight: 800;
 }
 .cba-program-card h3::after {
-    content: "";
-    display: block;
-    width: 360px;
-    height: 2px;
-    margin-top: 12px;
-    background: #eab72e;
+	content: "";
+	display: block;
+	width: 360px;
+	height: 2px;
+	margin-top: 12px;
+	background: #eab72e;
 }
-/* CARD TEXT */
+/* HIDE CARD DESCRIPTION */
 .cba-program-card p {
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    color: #59625d;
-    font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.65;
+	display: none;
 }
-/* READ MORE */
+
+/* READ MORE BUTTON */
 .cba-program-card a {
-    position: relative;
-    z-index: 2;
-    margin-top: auto;
-    padding-top: 20px;
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    color: #003b25;
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: .6px;
-    text-transform: uppercase;
-    text-decoration: none;
+	position: relative;
+	z-index: 2;
+	margin-top: 10px;
+	padding: 7px 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	align-self: flex-end;
+	gap: 10px;
+	border: 1px solid #027b16;
+	border-radius: 8px;
+	background: #fff;
+	color: #026220;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: .6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .25s ease;
 }
 .cba-program-card a span {
-    width: 27px;
-    height: 27px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #dce4de;
-    border-radius: 50%;
-    color: #003b25;
-    font-size: 15px;
-    line-height: 1;
-    transition: all .25s ease;
+	width: auto;
+	height: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	color: #025829;
+	font-size: 15px;
+	line-height: 1;
+	transition: transform .25s ease;
+}
+.cba-program-card a:hover {
+	border-color: #04a833d0;
+	background: #01672f;
+	color: #fff;
 }
 .cba-program-card a:hover span {
-    color: #fff;
-    border-color: #003b25;
-    background: #003b25;
-    transform: translateX(3px);
+	color: #fff;
+	background: transparent;
+	transform: translateX(3px);
 }
 
 /*QUICK LINKS*/

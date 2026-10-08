@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>University of Caloocan City | E-Services</title>
+	<title>UCC | Calendar</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="utility.css">
+	<link rel="stylesheet" href="calendar.css">
 </head>
 <body>
 	<!-- PAGE DOTS -->
@@ -23,7 +23,7 @@
 	<div class="utility-bar">
 		<div class="utility-inner">
 			<div class="utility-links">
-				<a href="e-services.html" class="active">E-SERVICES</a>
+				<a href="e-services.html">E-SERVICES</a>
 				<a href="student-life.html">STUDENT LIFE</a>
 				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
 				<a href="admission.html">ADMISSION</a>
@@ -37,7 +37,7 @@
 	<!-- BRAND HEADER -->
 	<header class="brand-header">
 		<div class="container brand-inner">
-			<!-- LEFT LOGOS -->
+			<!-- LOGOS -->
 			<div class="brand-logos">
 				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
 				<img src="images/Caloocan.png" alt="Caloocan City">
@@ -50,23 +50,19 @@
 					<div class="nav-links">
 						<a href="homepage.html">HOME</a>
 
-						<!-- ABOUT DROPDOWN -->
+						<!-- ABOUT -->
 						<div class="nav-dropdown">
-							<button type="button">
-								ABOUT <span>⌄</span>
-							</button>
+							<button type="button">ABOUT <span>⌄</span></button>
 							<div class="dropdown-menu">
-								<a href="About.html" class="current-page">About UCC</a>
+								<a href="About.html">About UCC</a>
 								<a href="board-of-regents.html">Board of Regents</a>
 								<a href="executive-officials.html">Executive Officials</a>
 							</div>
 						</div>
 
-						<!-- ACADEMICS DROPDOWN -->
+						<!-- ACADEMICS -->
 						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
+							<button type="button">ACADEMICS <span>⌄</span></button>
 							<div class="dropdown-menu academics-menu">
 								<a href="business-accountancy.html">College of Business and Accountancy</a>
 								<a href="criminal-justice.html">College of Criminal Justice Education</a>
@@ -90,150 +86,55 @@
 				</div>
 			</nav>
 
-			<!-- RIGHT AM LOGO -->
 			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
 		</div>
 	</header>
 
-	<!-- E-SERVICES MAIN CONTENT -->
-	<main class="eservices-page">
-		<div class="eservices-bg-shape eservices-shape-1"></div>
-		<div class="eservices-bg-shape eservices-shape-2"></div>
-		<div class="eservices-bg-shape eservices-shape-3"></div>
 
-		<div class="eservices-container">
-			<!-- CITY OF CALOOCAN -->
-			<a href="https://caloocancity.gov.ph/" class="eservices-government-card" target="_blank" rel="noopener noreferrer">
-				<div class="government-glow"></div>
-				<div class="government-pattern"></div>
-
-				<div class="government-content">
-					<div class="government-logo-wrap">
-						<img src="images/Caloocan.png" alt="City of Caloocan">
-					</div>
-
-					<div class="government-title">
-						<h1>City of Caloocan</h1>
-						<span>PUBLIC SERVICE</span>
-					</div>
-
-					<div class="government-line">
-						<span></span>
-					</div>
-
-					<p>Official website of the City Government of Caloocan.</p>
-
-				</div>
-
-				<div class="city-skyline">
-					<div class="building building-1"></div>
-					<div class="building building-2"></div>
-					<div class="building building-3"></div>
-					<div class="building building-4"></div>
-					<div class="building building-5"></div>
-					<div class="building building-6"></div>
-					<div class="city-bridge"></div>
-				</div>
-			</a>
-
-			<!-- E-SERVICES CARDS -->
-			<section class="eservices-grid">
-				<!-- CHED -->
-				<a href="https://sites.google.com/ucc-caloocan.edu.ph/ucclibrary/home" class="eservice-card" target="_blank" rel="noopener noreferrer">
-					<div class="service-logo service-logo-ched">
-						<img src="images/LIBRARY-LOGO.png" alt="University of Caloocan City Library">
-					</div>
-					<h2>University of Caloocan City<br>Library</h2>
-					<span class="service-category">LIBRARY SERVICES</span>
-					<div class="service-divider">
-						<span></span>
-					</div>
-					<div class="service-button">
-						<span>Visit Website</span>
-						<span class="external-icon">↗</span>
-					</div>
-				</a>
-
-				<!-- AIMS FACULTY -->
-				<a href="https://aims.ucc-caloocan.edu.ph/ucc/faculty/" class="eservice-card" target="_blank" rel="noopener noreferrer">
-					<div class="service-logo service-logo-aims">
-						<img src="images/AIMS.png" alt="AIMS Faculty Portal">
-					</div>
-					<h2 class="aims-title">AIMS<br>Faculty Portal</h2>
-					<span class="service-category">FACULTY PORTAL</span>
-					<div class="service-divider">
-						<span></span>
-					</div>
-					<div class="service-button">
-						<span>Visit Website</span>
-						<span class="external-icon">↗</span>
-					</div>
-				</a>
-
-				<!-- AIMS STUDENT -->
-				<a href="https://aims.ucc-caloocan.edu.ph/ucc/students/" class="eservice-card" target="_blank" rel="noopener noreferrer">
-					<div class="service-logo service-logo-aims">
-						<img src="images/AIMS.png" alt="AIMS Student Portal">
-					</div>
-					<h2 class="aims-title">AIMS<br>Student Portal</h2>
-					<span class="service-category">STUDENT PORTAL</span>
-					<div class="service-divider">
-						<span></span>
-					</div>
-					<div class="service-button">
-						<span>Visit Website</span>
-						<span class="external-icon">↗</span>
-					</div>
-				</a>
-
-				<!-- DICT -->
-				<a href="https://www.facebook.com/univofcaloocanofficial" class="eservice-card" target="_blank" rel="noopener noreferrer">
-					<div class="service-logo service-logo-dict">
-						<img src="images/UCC2.png" alt="Official Facebook Page of University of Caloocan City">
-					</div>
-					<h2>Official Facebook Page of<br>University of Caloocan City</h2>
-					<span class="service-category">GOVERNMENT ICT</span>
-					<div class="service-divider">
-						<span></span>
-					</div>
-					<div class="service-button">
-						<span>Visit Website</span>
-						<span class="external-icon">↗</span>
-					</div>
-				</a>
-			</section>
+<main class="calendar-page">
+	<section class="calendar-hero">
+		<div class="calendar-hero-overlay"></div>
+		<div class="container calendar-hero-content">
+			<span>UNIVERSITY OF CALOOCAN CITY</span>
+			<h1>Academic Calendar</h1>
+			<p>Important academic schedules, examinations, and university dates.</p>
 		</div>
-	</main>
+	</section>
+	<section class="calendar-content-section">
+		<div class="container">
+            <a href="homepage.html" class="calendar-back-link">
+                <i data-lucide="arrow-left"></i>
+                <span>Back to Homepage</span>
+            </a>
+			<div id="calendarEventContainer"></div>
+		</div>
+	</section>
+</main>
+
 
 	<!-- FOOTER -->
 	<footer id="contact">
 		<div class="footer-building">
 			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
 		</div>
-
 		<div class="container footer-content">
 			<div class="footer-contact">
 				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-
 				<div class="footer-contact-info">
 					<h3>University of Caloocan City</h3>
-
 					<div class="contact-item">
 						<i data-lucide="map-pin"></i>
 						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
 					</div>
-
 					<div class="contact-item">
 						<i data-lucide="phone"></i>
 						<p>8528-4654</p>
 					</div>
-
 					<div class="contact-item">
 						<i data-lucide="mail"></i>
 						<p>admin@ucc-caloocan.edu.ph</p>
 					</div>
 				</div>
-
 				<!-- Social Media -->
 				<div class="footer-socials">
 					<a href="#" aria-label="Facebook">
@@ -284,10 +185,88 @@
 
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
+	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		lucide.createIcons();
-	</script>
+
+    <script src="script.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+	lucide.createIcons();
+	const calendarEvents={
+		finals:{
+			category:"ACADEMIC SCHEDULE",
+			title:"FINALS EXAMINATION WEEK",
+			date:"OCTOBER 25 – OCTOBER 31, 2026",
+			published:"PUBLISHED OCTOBER 1, 2026",
+			image:"images/CALENDAR.jpg",
+			description:"The University of Caloocan City will conduct its Final Examination Week for the First Semester of Academic Year 2026–2027. Students are advised to review their examination schedules and coordinate with their respective colleges and instructors for any additional instructions.",
+			details:[
+				["DATE","October 25 – October 31, 2026"],
+				["EVENT TYPE","Final Examination"],
+				["ACADEMIC YEAR","2026 – 2027"],
+				["AUDIENCE","All UCC Students"]
+			]
+		},
+		grades:{
+			category:"ACADEMIC SCHEDULE",
+			title:"SUBMISSION OF GRADES",
+			date:"NOVEMBER 3 – NOVEMBER 9, 2026",
+			published:"PUBLISHED OCTOBER 1, 2026",
+			image:"images/CALENDAR.jpg",
+			description:"Faculty members are reminded to complete and submit the required student grades within the designated submission period. All grades should be properly reviewed and submitted through the appropriate university procedures.",
+			details:[
+				["DATE","November 3 – November 9, 2026"],
+				["EVENT TYPE","Submission of Grades"],
+				["ACADEMIC YEAR","2026 – 2027"],
+				["AUDIENCE","UCC Faculty Members"]
+			]
+		}
+	};
+	const params=new URLSearchParams(window.location.search);
+	const eventKey=params.get("event")||"finals";
+	const event=calendarEvents[eventKey];
+	const container=document.getElementById("calendarEventContainer");
+	if(event){
+		container.innerHTML=`
+			<article class="calendar-detail-card">
+				<div class="calendar-detail-image">
+					<img src="${event.image}" alt="${event.title}">
+					<div class="calendar-detail-category">${event.category}</div>
+				</div>
+				<div class="calendar-detail-body">
+					<div class="calendar-detail-published">${event.published}</div>
+					<h2>${event.title}</h2>
+					<div class="calendar-detail-date">
+						<span>◷</span>
+						${event.date}
+					</div>
+					<div class="calendar-detail-divider"></div>
+					<p class="calendar-detail-description">${event.description}</p>
+					<div class="calendar-detail-information">
+						<h3>EVENT INFORMATION</h3>
+						<div class="calendar-detail-grid">
+							${event.details.map(detail=>`
+								<div class="calendar-detail-item">
+									<span>${detail[0]}</span>
+									<strong>${detail[1]}</strong>
+								</div>
+							`).join("")}
+						</div>
+					</div>
+				</div>
+			</article>
+		`;
+	}else{
+		container.innerHTML=`
+			<div class="calendar-not-found">
+				<h2>Calendar Event Not Found</h2>
+				<p>The calendar event you are looking for is unavailable.</p>
+				<a href="homepage.html">Return to Homepage</a>
+			</div>
+		`;
+	}
+</script>
+
 </body>
 </html>

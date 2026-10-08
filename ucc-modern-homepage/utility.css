@@ -1,6 +1,6 @@
 :root {
-  --green-950: #003b25;
-  --green-900: #004b2d;
+  --green-950: #02471e;
+  --green-900: #004b25;
   --green-800: #006039;
   --green-700: #087342;
   --green-600: #12804a;
@@ -75,7 +75,7 @@ button, input { font: inherit; }
 /*UTILITY BAR*/
 .utility-bar {
     height: 28px;
-    background: var(--green-950);
+    background: var(--green-800);
     color: #fff;
 }
 
@@ -97,7 +97,7 @@ button, input { font: inherit; }
     position: relative;
     padding: 0 12px;
     color: rgba(255, 255, 255, .88);
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: .1px;
     white-space: nowrap;
@@ -200,7 +200,7 @@ button, input { font: inherit; }
   border: none;
   outline: none;
   background: transparent;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: .15px;
   color: #173326;
@@ -215,7 +215,7 @@ button, input { font: inherit; }
 }
 
 .nav-links > a.active {
-  background: var(--green-900);
+  background: var(--green-700);
   color: #fff;
   border-radius: 999px;
   box-shadow:
@@ -223,7 +223,7 @@ button, input { font: inherit; }
 }
 
 .nav-dropdown > button.active {
-    background: var(--green-900);
+    background: var(--green-700);
     color: #fff;
     border-radius: 999px;
     box-shadow:
@@ -316,7 +316,7 @@ button, input { font: inherit; }
   border-radius: 9px;
   font-size: 11px;
   font-weight: 500;
-  color: #173326;
+  color: #015623;
   background: transparent;
   text-decoration: none;
   white-space: nowrap;
