@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>University of Caloocan City | E-Services</title>
+	<title>UCC | E-Services</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="utility.css">
 </head>
 <body>
+	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php include __DIR__ . '/includes/navbar.php'; ?>
+
 	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
@@ -18,82 +21,6 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html" class="active">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LEFT LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-
-						<!-- ABOUT DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ABOUT <span>⌄</span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="About.html" class="current-page">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-
-						<!-- ACADEMICS DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-
-			<!-- RIGHT AM LOGO -->
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
 
 	<!-- E-SERVICES MAIN CONTENT -->
 	<main class="eservices-page">
@@ -122,7 +49,6 @@
 					</div>
 
 					<p>Official website of the City Government of Caloocan.</p>
-
 				</div>
 
 				<div class="city-skyline">
@@ -138,7 +64,7 @@
 
 			<!-- E-SERVICES CARDS -->
 			<section class="eservices-grid">
-				<!-- CHED -->
+				<!-- UCC LIBRARY -->
 				<a href="https://sites.google.com/ucc-caloocan.edu.ph/ucclibrary/home" class="eservice-card" target="_blank" rel="noopener noreferrer">
 					<div class="service-logo service-logo-ched">
 						<img src="images/LIBRARY-LOGO.png" alt="University of Caloocan City Library">
@@ -186,7 +112,7 @@
 					</div>
 				</a>
 
-				<!-- DICT -->
+				<!-- OFFICIAL UCC FACEBOOK PAGE -->
 				<a href="https://www.facebook.com/univofcaloocanofficial" class="eservice-card" target="_blank" rel="noopener noreferrer">
 					<div class="service-logo service-logo-dict">
 						<img src="images/UCC2.png" alt="Official Facebook Page of University of Caloocan City">
@@ -205,82 +131,7 @@
 		</div>
 	</main>
 
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-
-				<!-- Social Media -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
+	<?php include __DIR__ . '/includes/footer.php'; ?>
 
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>University of Caloocan City | News</title>
+	<title>UCC | News</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,83 +12,23 @@
 	<link rel="stylesheet" href="news.css">
 </head>
 <body>
+	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php include __DIR__ . '/includes/navbar.php'; ?>
+
+	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html" class="active">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-						<!-- ABOUT DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ABOUT <span>⌄</span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="About.html" class="current-page">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-						<!-- ACADEMICS DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
+
 	<!-- NEWS MAIN CONTENT -->
 	<main class="news-page">
 		<div class="news-decor news-decor-top" aria-hidden="true"></div>
 		<div class="news-decor news-decor-right" aria-hidden="true"></div>
 		<div class="news-decor news-decor-bottom" aria-hidden="true"></div>
+
 		<section class="news-container">
 			<div class="news-heading">
 				<div>
@@ -101,6 +41,7 @@
 					<p>Stay updated with the latest news, announcements, achievements, academic developments, and student life at the University of Caloocan City.</p>
 				</div>
 			</div>
+
 			<div class="news-filters" role="tablist" aria-label="News categories">
 				<button type="button" class="news-filter active" data-filter="ALL">ALL</button>
 				<button type="button" class="news-filter" data-filter="ANNOUNCEMENTS">ANNOUNCEMENTS</button>
@@ -109,7 +50,9 @@
 				<button type="button" class="news-filter" data-filter="ACHIEVEMENTS">ACHIEVEMENTS</button>
 				<button type="button" class="news-filter" data-filter="STUDENT LIFE">STUDENT LIFE</button>
 			</div>
+
 			<section class="news-featured" id="featuredNews"></section>
+
 			<div class="news-section-title">
 				<div>
 					<span>MORE NEWS</span>
@@ -120,18 +63,22 @@
 					</div>
 				</div>
 			</div>
+
 			<section class="news-grid-wrapper">
 				<button type="button" class="news-slider-arrow news-slider-prev" id="newsPrev" aria-label="Previous news">‹</button>
 				<div class="news-grid" id="newsGrid"></div>
 				<button type="button" class="news-slider-arrow news-slider-next" id="newsNext" aria-label="Next news">›</button>
 			</section>
+
 			<div class="news-pagination" id="newsPagination"></div>
+
 			<button type="button" class="news-view-all" id="viewAllNews">
 				<span>▤</span>
 				VIEW ALL NEWS
 			</button>
 		</section>
 	</main>
+
 	<!-- NEWS MODAL -->
 	<div class="news-modal" id="newsModal" aria-hidden="true">
 		<div class="news-modal-backdrop" data-news-modal-close></div>
@@ -161,6 +108,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- FULL-SIZE NEWS IMAGE LIGHTBOX -->
 	<div class="news-image-lightbox" id="newsImageLightbox" aria-hidden="true">
 		<div class="news-image-lightbox-backdrop" data-news-image-close></div>
@@ -169,6 +117,7 @@
 			<img id="newsLightboxImage" src="" alt="">
 		</div>
 	</div>
+
 	<!-- NEWS SCRIPT -->
 	<script>
 		const newsData=[
@@ -251,6 +200,7 @@
 			{title:"MARCH 2024 LET RESULTS ARE OUT",category:"ACHIEVEMENTS",date:"Published 2 yrs ago",image:"images/News/NEWS-news-77.jpg"},
 			{title:"Celebrating UCC DTHIM Triumph at the Philippine Flair Wars 2024!",category:"ACHIEVEMENTS",date:"Published 2 yrs ago",image:"images/News/NEWS-news-78.jpg"}
 		];
+
 		let currentFilter="ALL";
 		let currentPage=1;
 		let showAllNews=false;
@@ -271,18 +221,21 @@
 		const newsModalImageLink=document.getElementById("newsModalImageLink");
 		const newsImageLightbox=document.getElementById("newsImageLightbox");
 		const newsLightboxImage=document.getElementById("newsLightboxImage");
+
 		function getFilteredNews(){
 			if(currentFilter==="ALL"){
 				return newsData;
 			}
 			return newsData.filter(news=>news.category===currentFilter);
 		}
+
 		function getExcerpt(title){
 			if(title.length<=105){
 				return title;
 			}
 			return title.substring(0,105).trim()+"...";
 		}
+
 		function createNewsCard(news){
 			const newsIndex=newsData.indexOf(news);
 			return `
@@ -305,6 +258,7 @@
 				</article>
 			`;
 		}
+
 		function renderFeatured(){
 			const items=getFilteredNews();
 			if(!items.length){
@@ -338,10 +292,12 @@
 				</div>
 			`;
 		}
+
 		function renderCards(){
 			const items=getFilteredNews();
 			const cardItems=items.slice(1);
 			const totalPages=Math.ceil(cardItems.length/itemsPerPage);
+
 			if(showAllNews){
 				newsGrid.innerHTML=cardItems.length?cardItems.map(news=>createNewsCard(news)).join(""):`<div class="news-empty"><h3>No news available</h3><p>There are no news articles in this category.</p></div>`;
 				newsPagination.innerHTML="";
@@ -349,11 +305,14 @@
 				newsNext.style.display="none";
 				return;
 			}
+
 			if(currentPage>totalPages){
 				currentPage=totalPages||1;
 			}
+
 			const start=(currentPage-1)*itemsPerPage;
 			const pageItems=cardItems.slice(start,start+itemsPerPage);
+
 			if(!pageItems.length){
 				newsGrid.innerHTML=`
 					<div class="news-empty">
@@ -364,14 +323,17 @@
 			}else{
 				newsGrid.innerHTML=pageItems.map(news=>createNewsCard(news)).join("");
 			}
+
 			renderPagination(totalPages);
 			updateArrowButtons(totalPages);
 		}
+
 		function renderPagination(totalPages){
 			newsPagination.innerHTML="";
 			if(showAllNews||totalPages<=1){
 				return;
 			}
+
 			const previous=document.createElement("button");
 			previous.type="button";
 			previous.className="news-page-arrow";
@@ -386,6 +348,7 @@
 				}
 			});
 			newsPagination.appendChild(previous);
+
 			for(let i=1;i<=totalPages;i++){
 				const button=document.createElement("button");
 				button.type="button";
@@ -402,6 +365,7 @@
 				});
 				newsPagination.appendChild(button);
 			}
+
 			const next=document.createElement("button");
 			next.type="button";
 			next.className="news-page-arrow";
@@ -417,6 +381,7 @@
 			});
 			newsPagination.appendChild(next);
 		}
+
 		function updateArrowButtons(totalPages){
 			if(showAllNews||totalPages<=1){
 				newsPrev.style.display="none";
@@ -428,6 +393,7 @@
 			newsPrev.disabled=currentPage===1;
 			newsNext.disabled=currentPage===totalPages;
 		}
+
 		function scrollToNewsPage(){
 			const newsPage=document.querySelector(".news-page");
 			if(!newsPage){
@@ -439,6 +405,7 @@
 				behavior:"smooth"
 			});
 		}
+
 		function setActiveFilter(selectedButton){
 			newsFilters.forEach(button=>{
 				button.classList.remove("active");
@@ -447,6 +414,7 @@
 				selectedButton.classList.add("active");
 			}
 		}
+
 		function updateViewAllButton(){
 			if(showAllNews){
 				viewAllNews.innerHTML="<span>▤</span> SHOW LESS NEWS";
@@ -454,6 +422,7 @@
 				viewAllNews.innerHTML="<span>▤</span> VIEW ALL NEWS";
 			}
 		}
+
 		function openNewsModal(index){
 			const news=newsData[index];
 			if(!news){
@@ -471,12 +440,14 @@
 			newsModal.setAttribute("aria-hidden","false");
 			document.body.classList.add("news-modal-open");
 		}
+
 		function closeNewsModal(){
 			closeNewsImageLightbox();
 			newsModal.classList.remove("active");
 			newsModal.setAttribute("aria-hidden","true");
 			document.body.classList.remove("news-modal-open");
 		}
+
 		function attachNewsModalTriggers(){
 			document.querySelectorAll("[data-news-index]").forEach(button=>{
 				button.addEventListener("click",event=>{
@@ -486,6 +457,7 @@
 				});
 			});
 		}
+
 		function openNewsImageLightbox(){
 			const image=newsModalImageLink.dataset.image;
 			if(!image){
@@ -496,21 +468,25 @@
 			newsImageLightbox.classList.add("active");
 			newsImageLightbox.setAttribute("aria-hidden","false");
 		}
+
 		function closeNewsImageLightbox(){
 			newsImageLightbox.classList.remove("active");
 			newsImageLightbox.setAttribute("aria-hidden","true");
 			newsLightboxImage.src="";
 		}
+
 		newsModalImageLink.addEventListener("click",event=>{
 			event.preventDefault();
 			event.stopPropagation();
 			openNewsImageLightbox();
 		});
+
 		newsImageLightbox.addEventListener("click",event=>{
 			if(event.target.closest("[data-news-image-close]")){
 				closeNewsImageLightbox();
 			}
 		});
+
 		newsFilters.forEach(button=>{
 			button.addEventListener("click",()=>{
 				currentFilter=button.dataset.filter;
@@ -527,6 +503,7 @@
 				});
 			});
 		});
+
 		newsPrev.addEventListener("click",()=>{
 			if(currentPage>1&&!showAllNews){
 				currentPage--;
@@ -535,6 +512,7 @@
 				scrollToNewsPage();
 			}
 		});
+
 		newsNext.addEventListener("click",()=>{
 			const cardItems=getFilteredNews().slice(1);
 			const totalPages=Math.ceil(cardItems.length/itemsPerPage);
@@ -545,6 +523,7 @@
 				scrollToNewsPage();
 			}
 		});
+
 		viewAllNews.addEventListener("click",()=>{
 			if(showAllNews){
 				showAllNews=false;
@@ -566,11 +545,13 @@
 			renderCards();
 			attachNewsModalTriggers();
 		});
+
 		newsModal.addEventListener("click",event=>{
 			if(event.target.closest("[data-news-modal-close]")){
 				closeNewsModal();
 			}
 		});
+
 		document.addEventListener("keydown",event=>{
 			if(event.key==="Escape"){
 				if(newsImageLightbox.classList.contains("active")){
@@ -582,79 +563,18 @@
 				}
 			}
 		});
+
 		renderFeatured();
 		renderCards();
 		updateViewAllButton();
 		attachNewsModalTriggers();
 	</script>
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-				<!-- Social Media -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
+
+	<!-- SHARED FOOTER -->
+	<?php include __DIR__ . '/includes/footer.php'; ?>
+
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
 	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>

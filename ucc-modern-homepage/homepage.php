@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>University of Caloocan City | Homepage</title>
+	<title>UCC | Homepage</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="assets/utility-bar.css">
+	<link rel="stylesheet" href="assets/navbar.css">
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
 <body>
 	<div class="page-dots" aria-hidden="true">
@@ -17,74 +20,8 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LEFT LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html" class="active">HOME</a>
-						<!-- ABOUT DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ABOUT <span>⌄</span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="About.html" class="current-page">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-						<!-- ACADEMICS DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-			<!-- RIGHT AM LOGO -->
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
+	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
 	<main>
 		<!-- HERO -->
 		<section class="hero" id="home">
@@ -95,44 +32,11 @@
 			<div class="hero-curve" aria-hidden="true">
 				<svg viewBox="0 0 1000 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 					<!-- YELLOW -->
-					<path
-						class="curve-gold"
-						d="
-							M0 70
-							C150 20, 350 20, 800 70
-							C650 120, 820 120, 930 75
-							C965 60, 985 35, 1000 25
-							L1000 140
-							L0 140
-							Z
-						"
-					/>
+					<path class="curve-gold" d="M0 70 C150 20, 350 20, 800 70 C650 120, 820 120, 930 75 C965 60, 985 35, 1000 25 L1000 140 L0 140 Z"/>
 					<!-- GREEN -->
-					<path
-						class="curve-green"
-						d="
-							M0 75
-							C150 25, 350 25, 700 75
-							C650 125, 820 125, 930 80
-							C965 65, 985 40, 1000 15
-							L1000 140
-							L0 140
-							Z
-						"
-					/>
+					<path class="curve-green" d="M0 75 C150 25, 350 25, 700 75 C650 125, 820 125, 930 80 C965 65, 985 40, 1000 15 L1000 140 L0 140 Z"/>
 					<!-- WHITE -->
-					<path
-						class="curve-white"
-						d="
-							M0 80
-							C150 30, 350 30, 600 80
-							C650 130, 820 130, 930 85
-							C965 70, 985 45, 1000 20
-							L1000 140
-							L0 140
-							Z
-						"
-					/>
+					<path class="curve-white" d="M0 80 C150 30, 350 30, 600 80 C650 130, 820 130, 930 85 C965 70, 985 45, 1000 20 L1000 140 L0 140 Z"/>
 				</svg>
 			</div>
 			<!-- HERO CONTENT -->
@@ -155,12 +59,8 @@
 						to the community.
 					</p>
 					<div class="hero-buttons">
-						<a class="btn btn-primary" href="#programs">
-							EXPLORE UCC <b>➜</b>
-						</a>
-						<a class="btn btn-light" href="#">
-							APPLY NOW <b>➜</b>
-						</a>
+						<a class="btn btn-primary" href="#programs">EXPLORE UCC <b>➜</b></a>
+						<a class="btn btn-light" href="#">APPLY NOW <b>➜</b></a>
 					</div>
 					<div class="slider-dots" aria-label="Hero slides">
 						<button class="active"></button>
@@ -170,7 +70,6 @@
 				</div>
 			</div>
 		</section>
-			
 		<!-- NEWS + CALENDAR -->
 		<section class="news-section" id="news">
 			<div class="container two-column">
@@ -188,10 +87,7 @@
 							<div class="news-body">
 								<h3>ANNOUNCEMENT | Official Overall List of Qualified Applicants for Enrollment A.Y. 2026 – 2027</h3>
 								<small>Published 1 month ago</small>
-								<a href="#" class="read-more" data-news-index="2">
-									Read More
-									<span>→</span>
-								</a>
+								<a href="#" class="read-more" data-news-index="2">Read More <span>→</span></a>
 							</div>
 						</article>
 						<!-- NEWS 2 -->
@@ -200,10 +96,7 @@
 							<div class="news-body">
 								<h3>OFFICIAL ANNOUNCEMENT | Opening of First Semester A.Y. 2026 – 2027</h3>
 								<small>Published 2 months ago</small>
-								<a href="#" class="read-more" data-news-index="3">
-									Read More
-									<span>→</span>
-								</a>
+								<a href="#" class="read-more" data-news-index="3">Read More <span>→</span></a>
 							</div>
 						</article>
 						<!-- NEWS 3 -->
@@ -212,10 +105,7 @@
 							<div class="news-body">
 								<h3>University of Caloocan City Surpasses National Passing Rate in CPALE May 2026</h3>
 								<small>Published 2 months ago</small>
-								<a href="#" class="read-more" data-news-index="4">
-									Read More
-									<span>→</span>
-								</a>
+								<a href="#" class="read-more" data-news-index="4">Read More <span>→</span></a>
 							</div>
 						</article>
 					</div>
@@ -268,10 +158,7 @@
 							<img src="images/ALONG.png" alt="Chairman of the Board of Regents">
 							<img class="chairman-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
 							<div class="chairman-content">
-								<h3>
-									CHAIRMAN OF THE<br>
-									BOARD OF REGENTS
-								</h3>
+								<h3>CHAIRMAN OF THE<br>BOARD OF REGENTS</h3>
 							</div>
 						</div>
 					</aside>
@@ -285,9 +172,7 @@
 				<div class="explore-heading">
 					<span>DISCOVER EVENTS</span>
 					<h2>Program Events</h2>
-					<p>
-						Discover exciting events, activities, and celebrations organized by each academic program at UCC.
-					</p>
+					<p>Discover exciting events, activities, and celebrations organized by each academic program at UCC.</p>
 				</div>
 				<!-- PROGRAM EVENTS + QUICK LINKS -->
 				<div class="explore-bottom">
@@ -298,13 +183,9 @@
 								<img src="images/STUDENT-LIFE.jpg" alt="Computer Science program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true">
-										<img src="images/STUDENT2.png" alt="">
-									</div>
+									<div class="feature-icon" aria-hidden="true"><img src="images/STUDENT2.png" alt=""></div>
 									<h3>Computer Science</h3>
-									<p>
-										Explore events, competitions, and activities organized by the Computer Science program.
-									</p>
+									<p>Explore events, competitions, and activities organized by the Computer Science program.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
@@ -312,13 +193,9 @@
 								<img src="images/7.jpg" alt="Business Administration program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true">
-										<img src="images/FACILITIES.png" alt="">
-									</div>
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
 									<h3>Business Administration</h3>
-									<p>
-										Discover activities, seminars, and events organized by the Business Administration program.
-									</p>
+									<p>Discover activities, seminars, and events organized by the Business Administration program.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
@@ -326,13 +203,9 @@
 								<img src="images/COMMUNITY.png" alt="Education program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true">
-										<img src="images/COMMUNITY2.png" alt="">
-									</div>
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
 									<h3>Education</h3>
-									<p>
-										Explore academic activities and special events organized by the Education program.
-									</p>
+									<p>Explore academic activities and special events organized by the Education program.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
@@ -340,38 +213,26 @@
 								<img src="images/ALUMNI.jpg" alt="Engineering program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true">
-										<img src="images/ALUMNI2.png" alt="">
-									</div>
+									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
 									<h3>Engineering</h3>
-									<p>
-										Discover innovative projects, competitions, and events from the Engineering program.
-									</p>
+									<p>Discover innovative projects, competitions, and events from the Engineering program.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
 						</div>
 						<!-- PROGRAM EVENT CONTROLS -->
 						<div class="program-event-controls">
-							<button type="button" class="program-event-control" id="programPrev" aria-label="Previous program events">
-								←
-							</button>
+							<button type="button" class="program-event-control" id="programPrev" aria-label="Previous program events">←</button>
 							<div class="program-event-dots" id="programEventDots" aria-label="Program event pages"></div>
-							<button type="button" class="program-event-control" id="programNext" aria-label="Next program events">
-								→
-							</button>
+							<button type="button" class="program-event-control" id="programNext" aria-label="Next program events">→</button>
 						</div>
 					</div>
 					<!-- QUICK LINKS -->
 					<aside class="quick-links" aria-labelledby="quick-links-title">
 						<h2 id="quick-links-title">Quick Links</h2>
 						<div class="quick-links-grid">
-							<a href="https://caloocancity.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer">
-								<img src="images/Caloocan.png" alt="City Government of Caloocan">
-							</a>
-							<a href="https://ched.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer">
-								<img src="images/CHED.png" alt="CHED">
-							</a>
+							<a href="https://caloocancity.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer"><img src="images/Caloocan.png" alt="City Government of Caloocan"></a>
+							<a href="https://ched.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer"><img src="images/CHED.png" alt="CHED"></a>
 							<a href="https://aims.ucc-caloocan.edu.ph/ucc/faculty/" class="quick-link-item" target="_blank" rel="noopener noreferrer">
 								<img src="images/AIMS.png" alt="AIMS Faculty Portal">
 								<span>AIMS Faculty Portal</span>
@@ -381,12 +242,8 @@
 								<span>AIMS Student Portal</span>
 							</a>
 							<!-- DOST HAS NO LINK -->
-							<div class="quick-link-item">
-								<img src="images/DOST.png" alt="DOST">
-							</div>
-							<a href="https://dict.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer">
-								<img src="images/DICT.png" alt="DICT">
-							</a>
+							<div class="quick-link-item"><img src="images/DOST.png" alt="DOST"></div>
+							<a href="https://dict.gov.ph/" class="quick-link-item" target="_blank" rel="noopener noreferrer"><img src="images/DICT.png" alt="DICT"></a>
 						</div>
 					</aside>
 				</div>
@@ -405,10 +262,7 @@
 				<div class="stat reveal">
 					<img src="images/STUDENT.png" alt="" class="stat-icon">
 					<div class="stat-info">
-						<div class="stat-number">
-							<strong data-count="13000">0</strong>
-							<em>+</em>
-						</div>
+						<div class="stat-number"><strong data-count="13000">0</strong><em>+</em></div>
 						<span>Students</span>
 					</div>
 				</div>
@@ -422,10 +276,7 @@
 				<div class="stat reveal">
 					<img src="images/COLLEGES.png" alt="" class="stat-icon">
 					<div class="stat-info">
-						<div class="stat-number">
-							<strong data-count="7">0</strong>
-							<em>+</em>
-						</div>
+						<div class="stat-number"><strong data-count="7">0</strong><em>+</em></div>
 						<span>Colleges</span>
 					</div>
 				</div>
@@ -434,14 +285,8 @@
 		<!-- CURVE BETWEEN STATS AND FOOTER -->
 		<div class="stats-footer-curve" aria-hidden="true">
 			<svg viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-				<path
-					fill="#c5df2b"
-					d="M0,45 C250,5 500,5 1000,45 L1000,100 L0,100 Z"
-				/>
-				<path
-					fill="#003b29"
-					d="M0,52 C250,12 500,12 1000,52 L1000,100 L0,100 Z"
-				/>
+				<path fill="#c5df2b" d="M0,45 C250,5 500,5 1000,45 L1000,100 L0,100 Z"/>
+				<path fill="#003b29" d="M0,52 C250,12 500,12 1000,52 L1000,100 L0,100 Z"/>
 			</svg>
 		</div>
 	</main>
@@ -459,14 +304,14 @@
 						<h3>FINALS EXAMINATION WEEK</h3>
 						<p>October 25 – October 31, 2026</p>
 					</div>
-					<a href="calendar.html" class="calendar-modal-read-more">Read More <span>→</span></a>
+				<a href="calendar.php?event=finals" class="calendar-modal-read-more"> Read More <span>→</span> </a>				
 				</article>
 				<article class="calendar-modal-event">
 					<div class="calendar-modal-event-info">
 						<h3>SUBMISSION OF GRADES</h3>
 						<p>November 3 – November 9, 2026</p>
 					</div>
-					<a href="calendar.html" class="calendar-modal-read-more">Read More <span>→</span></a>
+				<a href="calendar.php?event=grades" class="calendar-modal-read-more"> Read More <span>→</span> </a>
 				</article>
 			</div>
 		</div>
@@ -483,92 +328,15 @@
 				<button type="button" class="news-modal-close" id="newsModalClose" aria-label="Close news popup">×</button>
 			</div>
 			<div class="news-modal-body">
-				<figure class="news-modal-image">
-					<img id="newsModalImage" src="" alt="">
-				</figure>
-				<div class="news-modal-meta">
-					<span class="news-modal-date" id="newsModalDate">Published</span>
-				</div>
+				<figure class="news-modal-image"><img id="newsModalImage" src="" alt=""></figure>
+				<div class="news-modal-meta"><span class="news-modal-date" id="newsModalDate">Published</span></div>
 				<div class="news-modal-accent"></div>
 				<p class="news-modal-placeholder" id="newsModalDescription"></p>
 			</div>
-			<div class="news-modal-footer">
-				UNIVERSITY OF CALOOCAN CITY
-				<span>•</span>
-				NEWS
-			</div>
+			<div class="news-modal-footer">UNIVERSITY OF CALOOCAN CITY <span>•</span> NEWS</div>
 		</div>
 	</div>
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>
-							Biglang Awa Street, Cor 11th Ave Catleya,<br>
-							Caloocan, 1400 Metro Manila, Philippines
-						</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-				<!-- SOCIAL MEDIA -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
+	<?php require_once __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
@@ -676,12 +444,8 @@
 					openNewsModal(index);
 				});
 			});
-			if(newsModalClose){
-				newsModalClose.addEventListener("click",closeNewsModal);
-			}
-			if(newsModalBackdrop){
-				newsModalBackdrop.addEventListener("click",closeNewsModal);
-			}
+			if(newsModalClose)newsModalClose.addEventListener("click",closeNewsModal);
+			if(newsModalBackdrop)newsModalBackdrop.addEventListener("click",closeNewsModal);
 			document.addEventListener("keydown",function(event){
 				if(event.key==="Escape"&&newsModal&&newsModal.classList.contains("active")){
 					closeNewsModal();

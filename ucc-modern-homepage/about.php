@@ -10,8 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="About.css">
 </head>
-
-<!-- BODY -->
 <body>
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
@@ -19,76 +17,10 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- NAVBAR	-->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-						<!-- ABOUT DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button" class="active">
-								ABOUT <span>⌄</span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="About.html" class="current-page">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-						<!-- ACADEMICS DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
-	<!-- HERO -->
+	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
 	<main class="about-page">
+		<!-- HERO -->
 		<section class="about-hero">
 			<div class="about-hero-overlay"></div>
 			<div class="container about-hero-content">
@@ -96,13 +28,13 @@
 				<h1>ABOUT THE<span>UNIVERSITY OF CALOOCAN CITY</span></h1>
 			</div>
 		</section>
-
+		<!-- ABOUT UCC INTRODUCTION -->
 		<section id="about-ucc" class="ucc-introduction">
 			<div class="container ucc-intro-grid">
 				<div class="ucc-intro-image">
-					<img src="images/UCC-ABOUT.png" alt="University of Caloocan City Building">
+					<img src="images/UCC-ABOUT.png" alt="University of Caloocan City building">
 					<div class="ucc-seal">
-						<img src="images/UCC2.png" alt="University of Caloocan City Seal">
+						<img src="images/UCC2.png" alt="University of Caloocan City seal">
 					</div>
 				</div>
 				<div class="ucc-intro-divider"></div>
@@ -112,10 +44,13 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- UNIVERSITY HISTORY -->
 		<section id="history" class="history-section">
 			<div class="container">
-				<div class="section-heading centered"><span>UNIVERSITY HISTORY</span><i></i></div>
+				<div class="section-heading centered">
+					<span>UNIVERSITY HISTORY</span>
+					<i></i>
+				</div>
 				<h2 class="section-title centered">UCC HISTORICAL DEVELOPMENT</h2>
 				<div class="history-timeline">
 					<div class="history-item">
@@ -143,7 +78,7 @@
 						<div class="history-year">2000</div>
 						<p>Student population reached 3,600.</p>
 						<div class="history-image">
-							<img src="images/ABOUT-2000.jpg" alt="UCC in 2000">
+							<img src="images/ABOUT-2000.jpg" alt="UCC in 2000" loading="lazy">
 						</div>
 					</div>
 					<div class="history-item has-image">
@@ -151,7 +86,7 @@
 						<div class="history-year">2004</div>
 						<p>Officially proclaimed the University of Caloocan City.</p>
 						<div class="history-image">
-							<img src="images/UCC-SOUTH.png" alt="UCC in 2004">
+							<img src="images/UCC-SOUTH.png" alt="UCC in 2004" loading="lazy">
 						</div>
 					</div>
 					<div class="history-item has-image">
@@ -159,7 +94,7 @@
 						<div class="history-year">2017</div>
 						<p>UCC College of Law established.</p>
 						<div class="history-image">
-							<img src="images/ABOUT-2017.jpg" alt="UCC in 2017">
+							<img src="images/ABOUT-2017.jpg" alt="UCC in 2017" loading="lazy">
 						</div>
 					</div>
 					<div class="history-item has-image">
@@ -167,16 +102,19 @@
 						<div class="history-year">2022</div>
 						<p>New administration and continued expansion.</p>
 						<div class="history-image">
-						<img src="images/ABOUT-2022.jpg" alt="UCC in 2022">
+							<img src="images/ABOUT-2022.jpg" alt="UCC in 2022" loading="lazy">
+						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</section>
-
+		<!-- THE NEW UCC -->
 		<section class="new-ucc-section">
 			<div class="container">
-				<div class="section-heading"><span>THE NEW UCC</span><i></i></div>
+				<div class="section-heading">
+					<span>THE NEW UCC</span>
+					<i></i>
+				</div>
 				<div class="new-ucc-grid">
 					<article class="info-card">
 						<div class="card-icon"><i data-lucide="landmark"></i></div>
@@ -209,10 +147,13 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- PROGRESS AND OPPORTUNITIES -->
 		<section class="progress-section">
 			<div class="container">
-				<div class="section-heading centered"><span>PROGRESS &amp; OPPORTUNITIES</span><i></i></div>
+				<div class="section-heading centered">
+					<span>PROGRESS &amp; OPPORTUNITIES</span>
+					<i></i>
+				</div>
 				<div class="progress-grid">
 					<article class="progress-card">
 						<div class="progress-icon"><i data-lucide="trophy"></i></div>
@@ -241,7 +182,6 @@
 							</ul>
 						</div>
 					</article>
-
 					<article class="progress-card">
 						<div class="progress-icon"><i data-lucide="book-open"></i></div>
 						<div>
@@ -269,7 +209,7 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- QUOTE -->
 		<section class="about-quote">
 			<div class="container">
 				<div class="quote-mark">“</div>
@@ -278,62 +218,8 @@
 			</div>
 		</section>
 	</main>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-			</div>
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-	
+	<?php require_once __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>lucide.createIcons();</script>

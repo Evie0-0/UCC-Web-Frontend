@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore the College of Business and Accountancy programs at the University of Caloocan City.">
 	<title>UCC | College of Business Accountancy</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,68 +18,8 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-	<header>
-		<div class="utility-bar">
-			<div class="utility-inner">
-				<div class="utility-links">
-					<a href="e-services.html">E-SERVICES</a>
-					<a href="student-life.html">STUDENT LIFE</a>
-					<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-					<a href="admission.html">ADMISSION</a>
-					<a href="news.html">NEWS</a>
-					<a href="alumni.html">ALUMNI</a>
-					<a href="careers.html">CAREERS</a>
-				</div>
-			</div>
-		</div>
-		<div class="brand-header">
-			<div class="container brand-inner">
-				<div class="brand-logos">
-					<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-					<img src="images/Caloocan.png" alt="Caloocan City">
-					<img src="images/UCC2.png" alt="University of Caloocan City seal">
-				</div>
-				<nav class="main-nav" id="mainNav">
-					<div class="nav-inner">
-						<div class="nav-links">
-							<a href="homepage.html">HOME</a>
-							<div class="nav-dropdown">
-								<button type="button">
-									ABOUT <span>⌄</span>
-								</button>
-								<div class="dropdown-menu">
-									<a href="About.html">About UCC</a>
-									<a href="board-of-regents.html">Board of Regents</a>
-									<a href="executive-officials.html">Executive Officials</a>
-								</div>
-							</div>
-							<div class="nav-dropdown">
-								<button type="button" class="active">
-									ACADEMICS <span>⌄</span>
-								</button>
-								<div class="dropdown-menu academics-menu">
-									<a href="business-accountancy.html" class="current-page">College of Business and Accountancy</a>
-									<a href="criminal-justice.html">College of Criminal Justice Education</a>
-									<a href="education.html">College of Education</a>
-									<a href="engineering.html">College of Engineering</a>
-									<a href="law.html">College of Law</a>
-									<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-									<a href="graduate-school.html">Graduate School</a>
-								</div>
-							</div>
-							<a href="campus.html">CAMPUS</a>
-							<a href="contacts.html">CONTACTS</a>
-						</div>
-						<form class="search-box" onsubmit="return false;">
-							<input type="search" placeholder="Search..." aria-label="Search UCC">
-							<button type="submit" aria-label="Search">⌕</button>
-						</form>
-					</div>
-				</nav>
-				<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-			</div>
-		</div>
-	</header>
+	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
 	<main class="cba-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -135,7 +76,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="cba-programs">
+		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
@@ -148,66 +89,67 @@
 					<p>Explore our academic programs designed for future business leaders.</p>
 				</div>
 				<div class="cba-filters">
-					<button class="active">ALL PROGRAMS</button>
-					<button>ACCOUNTANCY</button>
-					<button>BUSINESS ADMINISTRATION</button>
-					<button>ENTREPRENEURSHIP</button>
-					<button>HOSPITALITY</button>
-					<button>OFFICE ADMINISTRATION</button>
-					<button>TOURISM</button>
+					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
+					<button type="button" data-filter="accountancy">ACCOUNTANCY</button>
+					<button type="button" data-filter="business-administration">BUSINESS ADMINISTRATION</button>
+					<button type="button" data-filter="entrepreneurship">ENTREPRENEURSHIP</button>
+					<button type="button" data-filter="hospitality">HOSPITALITY</button>
+					<button type="button" data-filter="office-administration">OFFICE ADMINISTRATION</button>
+					<button type="button" data-filter="tourism">TOURISM</button>
 				</div>
 				<div class="cba-program-grid">
-					<article class="cba-program-card" data-program="accountancy">
+					<article class="cba-program-card" data-program="accountancy" data-category="accountancy">
 						<div class="cba-program-number">01</div>
 						<h3>Bachelor of Science in Accountancy</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="accounting-information-system">
+					<article class="cba-program-card" data-program="accounting-information-system" data-category="accountancy">
 						<div class="cba-program-number">02</div>
 						<h3>Bachelor of Science in Accounting Information System</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="financial-management">
+					<article class="cba-program-card" data-program="financial-management" data-category="business-administration">
 						<div class="cba-program-number">03</div>
 						<h3>Bachelor of Science in Business Administration, Major in Financial Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="human-resource-management">
+					<article class="cba-program-card" data-program="human-resource-management" data-category="business-administration">
 						<div class="cba-program-number">04</div>
 						<h3>Bachelor of Science in Business Administration, Major in Human Resource Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="marketing-management">
+					<article class="cba-program-card" data-program="marketing-management" data-category="business-administration">
 						<div class="cba-program-number">05</div>
 						<h3>Bachelor of Science in Business Administration, Major in Marketing Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="entrepreneurship">
+					<article class="cba-program-card" data-program="entrepreneurship" data-category="entrepreneurship">
 						<div class="cba-program-number">06</div>
 						<h3>Bachelor of Science in Entrepreneurship</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="hospitality-management">
+					<article class="cba-program-card" data-program="hospitality-management" data-category="hospitality">
 						<div class="cba-program-number">07</div>
 						<h3>Bachelor of Science in Hospitality Management</h3>
-					<a href="#" class="program-read-more">Read more <span>→</span></a>
+						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="office-administration">
+					<article class="cba-program-card" data-program="office-administration" data-category="office-administration">
 						<div class="cba-program-number">08</div>
 						<h3>Bachelor of Science in Office Administration</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-					<article class="cba-program-card" data-program="tourism-management">
+					<article class="cba-program-card" data-program="tourism-management" data-category="tourism">
 						<div class="cba-program-number">09</div>
 						<h3>Bachelor of Science in Tourism Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
 				</div>
+				<p id="noProgramsMessage" style="display:none;">No programs found in this category.</p>
 			</div>
 		</section>
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
-				<a href="#">
+				<a href="#programs">
 					<div class="cba-quick-icon">
 						<i data-lucide="graduation-cap"></i>
 					</div>
@@ -217,7 +159,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="#about-college">
 					<div class="cba-quick-icon">
 						<i data-lucide="book-open"></i>
 					</div>
@@ -227,7 +169,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="contacts.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="building-2"></i>
 					</div>
@@ -237,7 +179,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="admission.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="users-round"></i>
 					</div>
@@ -268,14 +210,14 @@
 						<span class="program-modal-section-line"></span>
 						<h3>VISION</h3>
 					</div>
-					<p id="programModalVision"></p>
+					<p id="programModalVision">Program vision information has not been provided yet.</p>
 				</div>
 				<div class="program-modal-section">
 					<div class="program-modal-section-heading">
 						<span class="program-modal-section-line"></span>
 						<h3>MISSION</h3>
 					</div>
-					<p id="programModalMission"></p>
+					<p id="programModalMission">Program mission information has not been provided yet.</p>
 				</div>
 			</div>
 			<div class="program-modal-footer">
@@ -283,78 +225,34 @@
 			</div>
 		</div>
 	</div>
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<script src="script.js"></script>
+	<?php require_once __DIR__ . '/includes/footer.php'; ?>
+		<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded",function(){
-			lucide.createIcons();
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
+			if(window.lucide){
+				lucide.createIcons();
+			}
+			const filterButtons=document.querySelectorAll(".cba-filters button");
+			const programCards=document.querySelectorAll(".cba-program-card");
+			const noProgramsMessage=document.getElementById("noProgramsMessage");
+			filterButtons.forEach(function(button){
+				button.addEventListener("click",function(){
+					const filter=button.dataset.filter;
+					let visibleCount=0;
+					filterButtons.forEach(function(item){
+						item.classList.toggle("active",item===button);
+					});
+					programCards.forEach(function(card){
+						const matches=filter==="all"||card.dataset.category===filter;
+						card.style.display=matches?"":"none";
+						if(matches){
+							visibleCount++;
+						}
+					});
+					noProgramsMessage.style.display=visibleCount===0?"block":"none";
+				});
+			});
 			const modal=document.getElementById("programModal");
 			const modalTitle=document.getElementById("programModalTitle");
 			const modalVision=document.getElementById("programModalVision");
@@ -365,53 +263,52 @@
 			const programDescriptions={
 				"accountancy":{
 					title:"Bachelor of Science in Accountancy",
-					vision:"PASTE THE COMPLETE ACCOUNTANCY VISION HERE.",
-					mission:"PASTE THE COMPLETE ACCOUNTANCY MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"accounting-information-system":{
 					title:"Bachelor of Science in Accounting Information System",
-					vision:"PASTE THE COMPLETE ACCOUNTING INFORMATION SYSTEM VISION HERE.",
-					mission:"PASTE THE COMPLETE ACCOUNTING INFORMATION SYSTEM MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"financial-management":{
 					title:"Bachelor of Science in Business Administration, Major in Financial Management",
-					vision:"PASTE THE COMPLETE FINANCIAL MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE FINANCIAL MANAGEMENT MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"human-resource-management":{
 					title:"Bachelor of Science in Business Administration, Major in Human Resource Management",
-					vision:"PASTE THE COMPLETE HUMAN RESOURCE MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE HUMAN RESOURCE MANAGEMENT MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"marketing-management":{
 					title:"Bachelor of Science in Business Administration, Major in Marketing Management",
-					vision:"PASTE THE COMPLETE MARKETING MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE MARKETING MANAGEMENT MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"entrepreneurship":{
 					title:"Bachelor of Science in Entrepreneurship",
-					vision:"PASTE THE COMPLETE ENTREPRENEURSHIP VISION HERE.",
-					mission:"PASTE THE COMPLETE ENTREPRENEURSHIP MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"hospitality-management":{
 					title:"Bachelor of Science in Hospitality Management",
-					vision:"PASTE THE COMPLETE HOSPITALITY MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE HOSPITALITY MANAGEMENT MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"office-administration":{
 					title:"Bachelor of Science in Office Administration",
-					vision:"PASTE THE COMPLETE OFFICE ADMINISTRATION VISION HERE.",
-					mission:"PASTE THE COMPLETE OFFICE ADMINISTRATION MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				},
 				"tourism-management":{
 					title:"Bachelor of Science in Tourism Management",
-					vision:"PASTE THE COMPLETE TOURISM MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE TOURISM MANAGEMENT MISSION HERE."
+					vision:"Program vision information has not been provided yet.",
+					mission:"Program mission information has not been provided yet."
 				}
 			};
 			function openProgramModal(card){
-				const key=card.dataset.program;
-				const data=programDescriptions[key];
+				const data=programDescriptions[card.dataset.program];
 				const number=card.querySelector(".cba-program-number");
 				if(!data){
 					return;
@@ -419,7 +316,7 @@
 				modalTitle.textContent=data.title;
 				modalVision.textContent=data.vision;
 				modalMission.textContent=data.mission;
-				modalNumber.textContent=number ? number.textContent.trim() : "";
+				modalNumber.textContent=number?number.textContent.trim():"";
 				modal.classList.add("show");
 				modal.setAttribute("aria-hidden","false");
 				document.body.classList.add("program-modal-open");
@@ -439,9 +336,7 @@
 				});
 			});
 			closeButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					closeProgramModal();
-				});
+				button.addEventListener("click",closeProgramModal);
 			});
 			document.addEventListener("keydown",function(event){
 				if(event.key==="Escape"&&modal.classList.contains("show")){

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>University of Caloocan City | Student Life</title>
+	<title>UCC | Student Life</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -258,74 +258,10 @@
 	<span class="dot-pattern dot-3"></span>
 	<span class="dot-pattern dot-4"></span>
 </div>
-<!-- TOP UTILITY BAR -->
-<div class="utility-bar">
-	<div class="utility-inner">
-		<div class="utility-links">
-			<a href="e-services.html">E-SERVICES</a>
-			<a href="student-life.html" class="active">STUDENT LIFE</a>
-			<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-			<a href="admission.html">ADMISSION</a>
-			<a href="news.html">NEWS</a>
-			<a href="alumni.html">ALUMNI</a>
-			<a href="careers.html">CAREERS</a>
-		</div>
-	</div>
-</div>
-<!-- BRAND HEADER -->
-<header class="brand-header">
-	<div class="container brand-inner">
-		<!-- LEFT LOGOS -->
-		<div class="brand-logos">
-			<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-			<img src="images/Caloocan.png" alt="Caloocan City">
-			<img src="images/UCC2.png" alt="University of Caloocan City seal">
-		</div>
-		<!-- MAIN NAVIGATION -->
-		<nav class="main-nav" id="mainNav">
-			<div class="nav-inner">
-				<div class="nav-links">
-					<a href="homepage.html">HOME</a>
-					<!-- ABOUT DROPDOWN -->
-					<div class="nav-dropdown">
-						<button type="button">
-							ABOUT <span>⌄</span>
-						</button>
-						<div class="dropdown-menu">
-							<a href="About.html" class="current-page">About UCC</a>
-							<a href="board-of-regents.html">Board of Regents</a>
-							<a href="executive-officials.html">Executive Officials</a>
-						</div>
-					</div>
-					<!-- ACADEMICS DROPDOWN -->
-					<div class="nav-dropdown">
-						<button type="button">
-							ACADEMICS <span>⌄</span>
-						</button>
-						<div class="dropdown-menu academics-menu">
-							<a href="business-accountancy.html">College of Business and Accountancy</a>
-							<a href="criminal-justice.html">College of Criminal Justice Education</a>
-							<a href="education.html">College of Education</a>
-							<a href="engineering.html">College of Engineering</a>
-							<a href="law.html">College of Law</a>
-							<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-							<a href="graduate-school.html">Graduate School</a>
-						</div>
-					</div>
-					<a href="campus.html">CAMPUS</a>
-					<a href="contacts.html">CONTACTS</a>
-				</div>
-				<!-- SEARCH -->
-				<form class="search-box" onsubmit="return false;">
-					<input type="search" placeholder="Search..." aria-label="Search UCC">
-					<button type="submit" aria-label="Search">⌕</button>
-				</form>
-			</div>
-		</nav>
-		<!-- RIGHT AM LOGO -->
-		<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-	</div>
-</header>
+
+<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+<?php include __DIR__ . '/includes/navbar.php'; ?>
+
 <!-- STUDENT LIFE MAIN CONTENT -->
 <main class="student-life-page">
 	<div class="student-life-container">
@@ -512,78 +448,12 @@
 	</div>
 </div>
 
-<!-- FOOTER -->
-<footer id="contact">
-	<div class="footer-building">
-		<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-	</div>
-	<div class="container footer-content">
-		<div class="footer-contact">
-			<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-			<div class="footer-contact-info">
-				<h3>University of Caloocan City</h3>
-				<div class="contact-item">
-					<i data-lucide="map-pin"></i>
-					<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-				</div>
-				<div class="contact-item">
-					<i data-lucide="phone"></i>
-					<p>8528-4654</p>
-				</div>
-				<div class="contact-item">
-					<i data-lucide="mail"></i>
-					<p>admin@ucc-caloocan.edu.ph</p>
-				</div>
-			</div>
-			<!-- Social Media -->
-			<div class="footer-socials">
-				<a href="#" aria-label="Facebook">
-					<i data-lucide="facebook"></i>
-				</a>
-				<a href="#" aria-label="Instagram">
-					<i data-lucide="instagram"></i>
-				</a>
-				<a href="#" aria-label="YouTube">
-					<i data-lucide="youtube"></i>
-				</a>
-			</div>
-		</div>
-		<!-- INQUIRY FORM -->
-		<div class="footer-links">
-			<h4>INQUIRY FORM</h4>
-			<a href="#">Student Affairs</a>
-			<a href="#">Academic Office</a>
-			<a href="#">Accounting Matters</a>
-			<a href="#">Alumni Association</a>
-			<a href="#">Daily Consultation</a>
-			<a href="#">Graduate School</a>
-		</div>
-		<!-- SERVICES -->
-		<div class="footer-links">
-			<h4>SERVICES</h4>
-			<a href="#">Library</a>
-			<a href="#">Guidance and Counselling</a>
-			<a href="#">Registrar's Office</a>
-			<a href="#">Alumni Connect</a>
-			<a href="#">Faculty Portal</a>
-			<a href="#">Student Portal</a>
-		</div>
-	</div>
-	<!-- FOOTER BOTTOM -->
-	<div class="container footer-bottom">
-		<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-		<div class="footer-legal">
-			<a href="#">Privacy Policy</a>
-			<a href="#">Terms of Use</a>
-			<a href="#">Accessibility</a>
-		</div>
-	</div>
-</footer>
+<?php include __DIR__ . '/includes/footer.php'; ?>
+
 <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 <script src="script.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
-<script> lucide.createIcons(); </script>
-
+<script>lucide.createIcons();</script>
 
 <script>
 	const studentModal=document.getElementById("studentModal");
@@ -613,67 +483,67 @@
 				</ul>
 			`
 		},
-    organizations:{
-      category:"STUDENT ORGANIZATIONS",
-      title:"LIST OF ACCREDITED STUDENT ORGANIZATIONS",
-      content:`
-        <p>UCC has a diverse community of accredited student organizations that provide opportunities for leadership, academic engagement, professional development, community involvement, and student activities.</p>
-        <h3>Supreme Student Council</h3>
-        <ul>
-          <li>Supreme Student Council</li>
-          <li>The New Crossroad</li>
-        </ul>
-        <h3>College of Education</h3>
-        <ul>
-          <li>College of Education Council</li>
-          <li>BECED Council</li>
-          <li>BSE English Council</li>
-          <li>BSE Science Council</li>
-          <li>BTLED Home Economics Council</li>
-        </ul>
-        <h3>College of Business and Accountancy</h3>
-        <ul>
-          <li>College of Business and Accountancy Council</li>
-          <li>Junior Philippine Institute of Accountant</li>
-          <li>Accounting Information System Youth Associates</li>
-          <li>Young Entrepreneurs Society</li>
-          <li>Junior Marketing Association</li>
-          <li>Junior Financial Executives</li>
-          <li>Human Resource Management Society</li>
-          <li>Philippine Association of Students in Office Administration</li>
-          <li>Council of Hospitality Industry Management Students</li>
-          <li>Society of Tourism Advocates and Representatives</li>
-          <li>Tourism Organization of Uccians for the Refinement of Student Leaders</li>
-        </ul>
-        <h3>College of Liberal Arts and Sciences</h3>
-        <ul>
-          <li>College of Liberal Arts and Sciences Council</li>
-          <li>BS Math Council</li>
-          <li>Psychology Society</li>
-          <li>Association of Computer E-Students</li>
-          <li>Communication Advocates Council</li>
-          <li>Bachelor of Public Administration Society</li>
-          <li>Alliance of Students for the Advancement of Politics</li>
-        </ul>
-        <h3>College of Criminal Justice Education</h3>
-        <ul>
-          <li>Association of Students in Law Enforcement Administration</li>
-        </ul>
-        <h3>Non-Academic Organization</h3>
-        <ul>
-          <li>Center for UCC’s Best Entertainers</li>
-          <li>Physical Education Club</li>
-          <li>Student Association of Books and Library Advocates</li>
-          <li>Rotaract Club of University of Caloocan City</li>
-          <li>Rotaract Club of UCC CBA</li>
-          <li>Bayanihan Youth for Peace UCC</li>
-          <li>Advance Life Saver and Emergency Response Team</li>
-          <li>Peer Counseling Club</li>
-          <li>Dance Troupe</li>
-          <li>Campus Christian Ministry</li>
-        </ul>
-      `
-    },
+		organizations:{
+			category:"STUDENT ORGANIZATIONS",
+			title:"LIST OF ACCREDITED STUDENT ORGANIZATIONS",
+			content:`
+				<p>UCC has a diverse community of accredited student organizations that provide opportunities for leadership, academic engagement, professional development, community involvement, and student activities.</p>
+				<h3>Supreme Student Council</h3>
+				<ul>
+					<li>Supreme Student Council</li>
+					<li>The New Crossroad</li>
+				</ul>
+				<h3>College of Education</h3>
+				<ul>
+					<li>College of Education Council</li>
+					<li>BECED Council</li>
+					<li>BSE English Council</li>
+					<li>BSE Science Council</li>
+					<li>BTLED Home Economics Council</li>
+				</ul>
+				<h3>College of Business and Accountancy</h3>
+				<ul>
+					<li>College of Business and Accountancy Council</li>
+					<li>Junior Philippine Institute of Accountant</li>
+					<li>Accounting Information System Youth Associates</li>
+					<li>Young Entrepreneurs Society</li>
+					<li>Junior Marketing Association</li>
+					<li>Junior Financial Executives</li>
+					<li>Human Resource Management Society</li>
+					<li>Philippine Association of Students in Office Administration</li>
+					<li>Council of Hospitality Industry Management Students</li>
+					<li>Society of Tourism Advocates and Representatives</li>
+					<li>Tourism Organization of Uccians for the Refinement of Student Leaders</li>
+				</ul>
+				<h3>College of Liberal Arts and Sciences</h3>
+				<ul>
+					<li>College of Liberal Arts and Sciences Council</li>
+					<li>BS Math Council</li>
+					<li>Psychology Society</li>
+					<li>Association of Computer E-Students</li>
+					<li>Communication Advocates Council</li>
+					<li>Bachelor of Public Administration Society</li>
+					<li>Alliance of Students for the Advancement of Politics</li>
+				</ul>
+				<h3>College of Criminal Justice Education</h3>
+				<ul>
+					<li>Association of Students in Law Enforcement Administration</li>
+				</ul>
+				<h3>Non-Academic Organization</h3>
+				<ul>
+					<li>Center for UCC’s Best Entertainers</li>
+					<li>Physical Education Club</li>
+					<li>Student Association of Books and Library Advocates</li>
+					<li>Rotaract Club of University of Caloocan City</li>
+					<li>Rotaract Club of UCC CBA</li>
+					<li>Bayanihan Youth for Peace UCC</li>
+					<li>Advance Life Saver and Emergency Response Team</li>
+					<li>Peer Counseling Club</li>
+					<li>Dance Troupe</li>
+					<li>Campus Christian Ministry</li>
+				</ul>
+			`
+		},
 		lcuaa:{
 			category:"CAMPUS ATHLETICS",
 			title:"UCC HEROES DOMINATE LCUAA 2025: A CELEBRATION OF EXCELLENCE AND HEART",
@@ -746,9 +616,9 @@
 					<li>Christophen Monte</li>
 					<li>Eddion Derek Cagomoc</li>
 				</ul>
-        <br>
-        <p> Each triumph, whether individual or team—embodies the passion, perseverance, and pride of every UCC Hero who competed with courage and heart. </p>
-        <p>Your remarkable achievements have once again brought honor and glory to the University of Caloocan City.</p>
+				<br>
+				<p>Each triumph, whether individual or team—embodies the passion, perseverance, and pride of every UCC Hero who competed with courage and heart.</p>
+				<p>Your remarkable achievements have once again brought honor and glory to the University of Caloocan City.</p>
 			`
 		},
 		heroes:{
@@ -809,6 +679,5 @@
 		}
 	});
 </script>
-
 </body>
 </html>

@@ -17,67 +17,8 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-						<div class="nav-dropdown">
-							<button type="button" class="active">ABOUT <span>⌄</span></button>
-							<div class="dropdown-menu">
-								<a href="About.html">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html" class="current-page">Executive Officials</a>
-							</div>
-						</div>
-						<div class="nav-dropdown">
-							<button type="button">ACADEMICS <span>⌄</span></button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
+	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
 	<!-- EXECUTIVE OFFICIALS PAGE -->
 	<main class="executive-page">
 		<!-- PAGE HERO -->
@@ -89,7 +30,6 @@
 				<h1>EXECUTIVE OFFICIALS</h1>
 			</div>
 		</section>
-
 		<!-- UNIVERSITY PRESIDENT -->
 		<section class="executive-president-section">
 			<div class="container">
@@ -109,7 +49,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- UNIVERSITY EXECUTIVE OFFICIALS -->
 		<section class="executive-officials-section">
 			<div class="container">
@@ -118,7 +57,6 @@
 					<h2>UNIVERSITY EXECUTIVE OFFICIALS</h2>
 					<div class="executive-heading-line"></div>
 				</div>
-
 				<!-- EXECUTIVE OFFICIALS GRID -->
 				<div class="executive-grid">
 					<article class="executive-card">
@@ -132,7 +70,6 @@
 							<span>Dean, College of Engineering</span>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-DANTAY.png" alt="Rodrigo M. Dantay Jr., DPA, EdD">
@@ -143,7 +80,6 @@
 							<h3>Rodrigo M. Dantay Jr., DPA, EdD</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-PRADO.png" alt="Ramona A. Prado, EdD, LPT">
@@ -155,7 +91,6 @@
 							<span>Dean, College of Education</span>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-ENRIQUEZ.png" alt="Bernadette B. Enriquez, DPA, LPT, CESE">
@@ -167,7 +102,6 @@
 							<span>Dean, College of Liberal Arts and Sciences</span>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-BAUTISTA.png" alt="Melinda M. Bautista, DPA, LPT">
@@ -178,7 +112,6 @@
 							<h3>Melinda M. Bautista, DPA, LPT</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-MACKAY.png" alt="Eloisa P. Mackay, PhD, LPT">
@@ -190,7 +123,6 @@
 							<span>Dean, College of Business and Accountancy</span>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-CARANDANG.png" alt="Reynaldo H. Carandang Jr., MBA">
@@ -201,7 +133,6 @@
 							<h3>Reynaldo H. Carandang Jr., MBA</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-DELEON.png" alt="Ms. Edna R. De Leon">
@@ -212,7 +143,6 @@
 							<h3>Ms. Edna R. De Leon</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-REYES.png" alt="Dionisio S. Reyes, DPA, LPT">
@@ -223,7 +153,6 @@
 							<h3>Dionisio S. Reyes, DPA, LPT</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-MACARAEG.png" alt="Teodoro A. Macaraeg Jr., DPA, DIT">
@@ -234,7 +163,6 @@
 							<h3>Teodoro A. Macaraeg Jr., DPA, DIT</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-ESPINO.png" alt="Anna Lea Sheryl P. Espino, MAEd, LPT">
@@ -246,7 +174,6 @@
 							<span>University Registrar, North</span>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-AGUILAR.png" alt="Janette L. Aguilar, DBA">
@@ -257,7 +184,6 @@
 							<h3>Janette L. Aguilar, DBA</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-DEMESA.png" alt="Juanito R. De Mesa III, DPA">
@@ -268,7 +194,6 @@
 							<h3>Juanito R. De Mesa III, DPA</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-JULIANES.png" alt="Melchor S. Julianes, EdD, PhD, DPA, DBA">
@@ -279,7 +204,6 @@
 							<h3>Melchor S. Julianes, EdD, PhD, DPA, DBA</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-CALIZAR.png" alt="Atty. Dexter B. Calizar">
@@ -290,7 +214,6 @@
 							<h3>Atty. Dexter B. Calizar</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-DIZON.png" alt="Nelson C. Dizon, PhD Crim, RCrim">
@@ -301,7 +224,6 @@
 							<h3>Nelson C. Dizon, PhD Crim, RCrim</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-PILI.png" alt="Ms. Allora C. Pili">
@@ -312,7 +234,6 @@
 							<h3>Ms. Allora C. Pili</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-MARIANO.png" alt="Monica B. Mariano, CPA">
@@ -323,7 +244,6 @@
 							<h3>Monica B. Mariano, CPA</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-SAENZ.png" alt="Ma. Cecilia M. Saenz, DPA, LPT, RPM">
@@ -334,7 +254,6 @@
 							<h3>Ma. Cecilia M. Saenz, DPA, LPT, RPM</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-VICTORIA.png" alt="Efren P. Victoria, MIT">
@@ -345,7 +264,6 @@
 							<h3>Efren P. Victoria, MIT</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-YEE.png" alt="Catlleya C. Yee, PhD-ELL, LPT">
@@ -356,7 +274,6 @@
 							<h3>Catlleya C. Yee, PhD-ELL, LPT</h3>
 						</div>
 					</article>
-
 					<article class="executive-card">
 						<div class="executive-photo">
 							<img src="images/Executive-Officials/EO-NACIONALES.png" alt="Ms. Ailamarie R. Nacionales">
@@ -371,81 +288,10 @@
 			</div>
 		</section>
 	</main>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-				<!-- Social Media -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-
+	<?php require_once __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		lucide.createIcons();
-	</script>
+	<script>lucide.createIcons();</script>
 </body>
 </html>

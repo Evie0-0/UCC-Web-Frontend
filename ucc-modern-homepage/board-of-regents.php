@@ -17,82 +17,8 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-
-						<!-- ABOUT DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button" class="active">
-								ABOUT <span>⌄</span>
-							</button>
-							<div class="dropdown-menu">
-								<a href="About.html">About UCC</a>
-								<a href="board-of-regents.html" class="current-page">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-
-						<!-- ACADEMICS DROPDOWN -->
-						<div class="nav-dropdown">
-							<button type="button">
-								ACADEMICS <span>⌄</span>
-							</button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
+	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
 	<!-- BOARD OF REGENTS PAGE -->
 	<main class="board-page">
 		<section class="board-hero">
@@ -104,7 +30,6 @@
 				<h1>CHAIRMAN OF THE BOARD OF REGENTS</h1>
 			</div>
 		</section>
-
 		<!-- CHAIRMAN OF THE BOARD -->
 		<section class="chairman-section">
 			<div class="container">
@@ -112,8 +37,6 @@
 					<div class="chairman-photo">
 						<img src="images/ALONG.png" alt="Hon. Dale Gonzalo Along R. Malapitan">
 					</div>
-
-					<!-- CHAIRMAN INFORMATION -->
 					<div class="chairman-content">
 						<div class="chairman-copy">
 							<h2>
@@ -140,7 +63,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- MEMBERS OF THE BOARD OF REGENTS -->
 		<section class="regents-section">
 			<div class="container">
@@ -149,8 +71,6 @@
 					<h2>MEMBERS OF THE BOARD OF REGENTS</h2>
 					<div class="regents-heading-line"></div>
 				</div>
-
-				<!-- BOARD MEMBERS GRID -->
 				<div class="regents-grid">
 					<article class="regent-card">
 						<div class="regent-photo">
@@ -163,7 +83,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-CIEGO.png" alt="EnP. Aurora C. Ciego, DPA">
@@ -175,7 +94,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-CAMINA.png" alt="Atty. Michael Arthur Camina">
@@ -187,7 +105,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-CUNANAN.png" alt="Hon. Carolyn C. Cunanan">
@@ -199,7 +116,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-PRADO.png" alt="Hon. Atty. Patrick L. Prado">
@@ -212,7 +128,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-LOPEZ.png" alt="Engr. Wenald H. Lopez, PhD">
@@ -224,7 +139,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-JUNIO.png" alt="Mr. John Nicklaus S. Junio">
@@ -236,7 +150,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-DANTAY.png" alt="Rodrigo M. Dantay Jr., DPA, EdD">
@@ -249,7 +162,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-CARANDANG.png" alt="Cecille G. Carandang, CESO VI">
@@ -261,7 +173,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-REYES.png" alt="Dionisio S. Reyes, DPA, LPT">
@@ -273,7 +184,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-MACKAY.png" alt="Dr. Eloisa P. Mackay">
@@ -285,7 +195,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-RABANAL.png" alt="Mr. Paul Daniel C. Rabanal">
@@ -297,7 +206,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-GARCIA.png" alt="Ms. Princess Garcia">
@@ -309,7 +217,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-YAKIT.png" alt="Ms. Leslie Anne C. Yakit">
@@ -321,7 +228,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-GONZALES.png" alt="Ms. Violeta Y. Gonzales">
@@ -333,7 +239,6 @@
 							<span>BOARD MEMBER</span>
 						</div>
 					</article>
-
 					<article class="regent-card">
 						<div class="regent-photo">
 							<img src="images/Board-of-Regents/BOR-YEE.png" alt="Catlleya C. Yee, PhD-ELL, LPT">
@@ -349,7 +254,6 @@
 			</div>
 		</section>
 	</main>
-
 	<!-- CHAIRMAN'S CORNER MODAL -->
 	<div class="student-modal" id="chairmanModal" aria-hidden="true">
 		<div class="student-modal-backdrop" data-modal-close></div>
@@ -361,157 +265,46 @@
 				</div>
 				<button type="button" class="student-modal-close" data-modal-close aria-label="Close modal">×</button>
 			</div>
-
 			<div class="student-modal-body">
 				<div class="student-modal-accent"></div>
-
 				<div class="chairman-modal-profile">
 					<div class="chairman-modal-image">
 						<img src="images/ALONG.png" alt="Mayor Dale Gonzalo “Along” Malapitan">
 					</div>
-
 					<div class="chairman-modal-content">
 						<h3>Mayor Dale Gonzalo “Along” Malapitan</h3>
 						<span class="chairman-modal-position">Chairman of the Board of Regents</span>
-
-						<p>
-							Mayor Dale Gonzalo “Along” Malapitan is the 25th local chief executive of the historic City of Caloocan and the Chairman of the Board of Regents of the University of Caloocan City (UCC).
-						</p>
-
-						<p>
-							With over 15 years of public service, he began his career as Barangay Chairman of Barangay 137. He later served as a council of the 1st District and as President of Caloocan City’s Liga ng mga Barangay.
-						</p>
-
-						<p>
-							During this time, he led the Sangguniang Panlungsod in passing landmark ordinances that prioritized improving the city’s education system. These included providing free tuition for students at all UCC campuses and establishing the first law school in CAMANAVA, the University of Caloocan College of Law.
-						</p>
-
-						<p>
-							As a two-term Representative of the 1st District, he authored several notable laws, including one that increased the bed capacity of Dr. Jose Rodriguez Memorial Hospital to 800, and another that established the 3rd District.
-						</p>
-
-						<p>
-							Before his term ended, he advocated for the establishment of the Polytechnic University of the Philippines (PUP) Caloocan North.
-						</p>
-
-						<p>
-							Now, in his first term as City Mayor, the City Government of Caloocan has strengthened its focus on providing a wide range of educational and career opportunities for all Batang Kankaloo. This effort is highlighted by the inauguration of new programs at the UCC College of Engineering and various initiatives aimed at safeguarding the interests of the youth through health and public safety programs.
-						</p>
-
-						<p>
-							He continues to live by his longtime motto, Aksyon at Malasakit, striving to make the entire city thrive under a progressive governance that puts the needs of the people above all else, emphasizing swift, direct, and lasting government action.
-						</p>
-
-						<p>
-							Mayor Along is married to Aubrey N. Malapitan and has three children, Alexis Adrienne, Oscar Dale, and Gabrielle.
-						</p>
+						<p>Mayor Dale Gonzalo “Along” Malapitan is the 25th local chief executive of the historic City of Caloocan and the Chairman of the Board of Regents of the University of Caloocan City (UCC).</p>
+						<p>With over 15 years of public service, he began his career as Barangay Chairman of Barangay 137. He later served as a council of the 1st District and as President of Caloocan City’s Liga ng mga Barangay.</p>
+						<p>During this time, he led the Sangguniang Panlungsod in passing landmark ordinances that prioritized improving the city’s education system. These included providing free tuition for students at all UCC campuses and establishing the first law school in CAMANAVA, the University of Caloocan College of Law.</p>
+						<p>As a two-term Representative of the 1st District, he authored several notable laws, including one that increased the bed capacity of Dr. Jose Rodriguez Memorial Hospital to 800, and another that established the 3rd District.</p>
+						<p>Before his term ended, he advocated for the establishment of the Polytechnic University of the Philippines (PUP) Caloocan North.</p>
+						<p>Now, in his first term as City Mayor, the City Government of Caloocan has strengthened its focus on providing a wide range of educational and career opportunities for all Batang Kankaloo. This effort is highlighted by the inauguration of new programs at the UCC College of Engineering and various initiatives aimed at safeguarding the interests of the youth through health and public safety programs.</p>
+						<p>He continues to live by his longtime motto, Aksyon at Malasakit, striving to make the entire city thrive under a progressive governance that puts the needs of the people above all else, emphasizing swift, direct, and lasting government action.</p>
+						<p>Mayor Along is married to Aubrey N. Malapitan and has three children, Alexis Adrienne, Oscar Dale, and Gabrielle.</p>
 					</div>
 				</div>
 			</div>
-
 			<div class="student-modal-footer"></div>
 		</div>
 	</div>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-
-				<!-- SOCIAL MEDIA -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-
+	<?php require_once __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
 		lucide.createIcons();
-
 		const chairmanModal = document.getElementById("chairmanModal");
-
 		function openChairmanModal() {
 			chairmanModal.classList.add("active");
 			chairmanModal.setAttribute("aria-hidden", "false");
 			document.body.classList.add("student-modal-open");
 		}
-
 		function closeChairmanModal() {
 			chairmanModal.classList.remove("active");
 			chairmanModal.setAttribute("aria-hidden", "true");
 			document.body.classList.remove("student-modal-open");
 		}
-
 		document.querySelectorAll('[data-modal-trigger="chairman-corner"]').forEach(button => {
 			button.addEventListener("click", function(event) {
 				event.preventDefault();
@@ -519,13 +312,11 @@
 				openChairmanModal();
 			});
 		});
-
 		chairmanModal.addEventListener("click", function(event) {
 			if (event.target.closest("[data-modal-close]")) {
 				closeChairmanModal();
 			}
 		});
-
 		document.addEventListener("keydown", function(event) {
 			if (event.key === "Escape" && chairmanModal.classList.contains("active")) {
 				closeChairmanModal();

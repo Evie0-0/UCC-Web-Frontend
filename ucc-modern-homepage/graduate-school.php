@@ -18,79 +18,8 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-
-						<!-- ABOUT -->
-						<div class="nav-dropdown">
-							<button type="button">ABOUT <span>⌄</span></button>
-							<div class="dropdown-menu">
-								<a href="About.html">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-
-						<!-- ACADEMICS -->
-						<div class="nav-dropdown">
-							<button type="button" class="active">ACADEMICS <span>⌄</span></button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html" class="current-page">Graduate School</a>
-							</div>
-						</div>
-
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
-	<!-- GRADUATE SCHOOL -->
+	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php include __DIR__ . '/includes/navbar.php'; ?>
 	<main class="ccje-page graduate-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -121,7 +50,6 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
-
 		<section class="ccje-about">
 			<div class="container">
 				<div class="cba-section-title">
@@ -152,8 +80,7 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="cba-programs">
+		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
@@ -165,57 +92,48 @@
 					</div>
 					<p>Explore the graduate programs offered by the University of Caloocan City Graduate School.</p>
 				</div>
-
-				<div class="cba-filters">
-					<button class="active">ALL PROGRAMS</button>
-					<button>DOCTORAL</button>
-					<button>MASTER'S</button>
+				<div class="cba-filters" aria-label="Filter graduate programs">
+					<button type="button" class="active" data-filter="all" aria-pressed="true">ALL PROGRAMS</button>
+					<button type="button" data-filter="doctoral" aria-pressed="false">DOCTORAL</button>
+					<button type="button" data-filter="masters" aria-pressed="false">MASTER'S</button>
 				</div>
-
 				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="doctor-public-administration">
+					<article class="cba-program-card" data-number="01" data-program="doctor-public-administration" data-category="doctoral">
 						<div class="cba-program-number">01</div>
 						<h3>Doctor in Public Administration</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="02" data-program="doctor-philosophy-educational-management">
+					<article class="cba-program-card" data-number="02" data-program="doctor-philosophy-educational-management" data-category="doctoral">
 						<div class="cba-program-number">02</div>
 						<h3>Doctor of Philosophy, Major in Educational Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="03" data-program="master-public-administration">
+					<article class="cba-program-card" data-number="03" data-program="master-public-administration" data-category="masters">
 						<div class="cba-program-number">03</div>
 						<h3>Master in Public Administration</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="04" data-program="ma-education-management">
+					<article class="cba-program-card" data-number="04" data-program="ma-education-management" data-category="masters">
 						<div class="cba-program-number">04</div>
 						<h3>Master of Arts in Education, Major in Educational Management</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="05" data-program="ma-teaching-early-grades">
+					<article class="cba-program-card" data-number="05" data-program="ma-teaching-early-grades" data-category="masters">
 						<div class="cba-program-number">05</div>
 						<h3>Master of Arts in Education, Major in Teaching in the Early Grades</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="06" data-program="ma-teaching-science">
+					<article class="cba-program-card" data-number="06" data-program="ma-teaching-science" data-category="masters">
 						<div class="cba-program-number">06</div>
 						<h3>Master of Arts in Education, Major in Teaching Science</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="07" data-program="master-business-administration">
+					<article class="cba-program-card" data-number="07" data-program="master-business-administration" data-category="masters">
 						<div class="cba-program-number">07</div>
 						<h3>Master of Business Administration</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
 					</article>
-
-					<article class="cba-program-card" data-number="08" data-program="master-criminal-justice">
+					<article class="cba-program-card" data-number="08" data-program="master-criminal-justice" data-category="masters">
 						<div class="cba-program-number">08</div>
 						<h3>Master of Science in Criminal Justice, Major in Criminology</h3>
 						<a href="#" class="program-read-more">Read more <span>→</span></a>
@@ -223,10 +141,9 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
-				<a href="#">
+				<a href="#programs">
 					<div class="cba-quick-icon">
 						<i data-lucide="graduation-cap"></i>
 					</div>
@@ -236,7 +153,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="#about-graduate-school">
 					<div class="cba-quick-icon">
 						<i data-lucide="book-open"></i>
 					</div>
@@ -246,7 +163,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="contacts.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="building-2"></i>
 					</div>
@@ -256,7 +173,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="admission.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="users-round"></i>
 					</div>
@@ -269,7 +186,6 @@
 			</div>
 		</section>
 	</main>
-
 	<!-- PROGRAM MODAL -->
 	<div class="program-modal" id="programModal" aria-hidden="true">
 		<div class="program-modal-backdrop" data-modal-close></div>
@@ -304,86 +220,17 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-				<!-- Social Media -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-
+	<!-- SHARED FOOTER -->
+	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded",function(){
-			lucide.createIcons();
+			if(window.lucide){
+				lucide.createIcons();
+			}
 			const modal=document.getElementById("programModal");
 			const modalTitle=document.getElementById("programModalTitle");
 			const modalVision=document.getElementById("programModalVision");
@@ -391,6 +238,8 @@
 			const modalNumber=document.getElementById("programModalNumber");
 			const programLinks=document.querySelectorAll(".program-read-more");
 			const closeButtons=document.querySelectorAll("[data-modal-close]");
+			const filterButtons=document.querySelectorAll(".cba-filters button");
+			const programCards=document.querySelectorAll(".cba-program-card");
 			const graduateSchoolVision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City.";
 			const graduateSchoolMission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.";
 			const programDescriptions={
@@ -420,8 +269,7 @@
 				}
 			};
 			function openProgramModal(card){
-				const key=card.dataset.program;
-				const data=programDescriptions[key];
+				const data=programDescriptions[card.dataset.program];
 				const number=card.querySelector(".cba-program-number");
 				if(!data){
 					return;
@@ -449,8 +297,20 @@
 				});
 			});
 			closeButtons.forEach(function(button){
+				button.addEventListener("click",closeProgramModal);
+			});
+			filterButtons.forEach(function(button){
 				button.addEventListener("click",function(){
-					closeProgramModal();
+					const selectedFilter=button.dataset.filter;
+					filterButtons.forEach(function(filterButton){
+						const isActive=filterButton===button;
+						filterButton.classList.toggle("active",isActive);
+						filterButton.setAttribute("aria-pressed",String(isActive));
+					});
+					programCards.forEach(function(card){
+						const matchesFilter=selectedFilter==="all"||card.dataset.category===selectedFilter;
+						card.hidden=!matchesFilter;
+					});
 				});
 			});
 			document.addEventListener("keydown",function(event){

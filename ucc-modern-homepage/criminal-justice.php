@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore the University of Caloocan City College of Criminal Justice Education, its vision, mission, goals, objectives, and academic programs.">
 	<title>UCC | College of Criminal Justice Education</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,78 +19,14 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- TOP UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="e-services.html">E-SERVICES</a>
-				<a href="student-life.html">STUDENT LIFE</a>
-				<a href="community-extension.html">COMMUNITY EXTENSION SERVICES</a>
-				<a href="admission.html">ADMISSION</a>
-				<a href="news.html">NEWS</a>
-				<a href="alumni.html">ALUMNI</a>
-				<a href="careers.html">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-						<div class="nav-dropdown">
-							<button type="button">ABOUT <span>⌄</span></button>
-							<div class="dropdown-menu">
-								<a href="About.html">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-						<div class="nav-dropdown">
-							<button type="button" class="active">ACADEMICS <span>⌄</span></button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html" class="current-page">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
+	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php include __DIR__ . '/includes/navbar.php'; ?>
 	<!-- COLLEGE OF CRIMINAL JUSTICE EDUCATION -->
 	<main class="ccje-page">
 		<section class="cba-hero">
 			<div class="cba-building">
 				<img src="images/FOOTER.jpg" alt="">
 			</div>
-
 			<div class="cba-hero-inner">
 				<div class="cba-dean">
 					<div class="cba-dean-photo">
@@ -98,7 +35,6 @@
 					<h2>Nelson C. Dizon, PhDCrim, RCrim</h2>
 					<p>Dean, College of Criminal Justice Education</p>
 				</div>
-
 				<div class="cba-hero-content">
 					<div class="cba-breadcrumb">
 						<span>ACADEMICS</span>
@@ -117,23 +53,19 @@
 					</h1>
 				</div>
 			</div>
-
 			<div class="cba-hero-wave"></div>
 		</section>
-
 		<!-- ABOUT CCJE -->
-		<section class="ccje-about">
+		<section class="ccje-about" id="about-college">
 			<div class="container">
 				<div class="cba-section-title">
 					<h2>ABOUT THE COLLEGE</h2>
 					<span></span>
 				</div>
-
 				<div class="cba-about-grid">
 					<div class="cba-about-logo">
 						<img src="images/CCJE-LOGO.png" alt="College of Criminal Justice Education Logo">
 					</div>
-
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>VISION</h3>
@@ -141,7 +73,6 @@
 							To be a leading institution that produces knowledgeable, skilled, and ethical professionals dedicated to advancing the criminal justice system and promoting a safer, more just society through innovation, research, and community engagement.
 						</p>
 					</div>
-
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>MISSION</h3>
@@ -150,7 +81,6 @@
 						</p>
 					</div>
 				</div>
-
 				<div class="cba-about-grid" style="margin-top:30px;">
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
@@ -159,7 +89,6 @@
 							To excel in the criminal justice education field by providing students with a rigorous academic foundation, practical skills, and ethical principles necessary for effective and responsible practice of law enforcement, corrections, and related areas.
 						</p>
 					</div>
-
 					<div class="cba-about-block" style="grid-column:span 2;">
 						<div class="cba-quote">“</div>
 						<h3>OBJECTIVES</h3>
@@ -181,9 +110,8 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- PROGRAMS -->
-		<section class="cba-programs">
+		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
@@ -197,20 +125,15 @@
 						Explore our academic programs designed for future criminal justice professionals.
 					</p>
 				</div>
-
 				<div class="cba-filters">
-					<button class="active">ALL PROGRAMS</button>
-					<button>CRIMINOLOGY</button>
-					<button>INDUSTRIAL SECURITY</button>
+					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
+					<button type="button" data-filter="criminology">CRIMINOLOGY</button>
+					<button type="button" data-filter="industrial-security">INDUSTRIAL SECURITY</button>
 				</div>
-
 				<div class="cba-program-grid">
 					<article class="cba-program-card" data-number="01" data-program="criminology">
 						<div class="cba-program-number">01</div>
-						<h3>
-							Bachelor of Science
-							in Criminology
-						</h3>
+						<h3>Bachelor of Science in Criminology</h3>
 						<p>
 							The Bachelor of Science in Criminology (BS Crim) program is designed to produce knowledgeable, skilled, and ethical professionals in the criminal justice system. It equips students with a solid foundation in law enforcement, criminology, corrections, forensic science, criminal law, and the judicial process, integrating theory with practical training. The program emphasizes critical thinking, research, and community engagement, with a required practicum or field immersion to provide hands-on experience.
 						</p>
@@ -219,14 +142,9 @@
 							<span>→</span>
 						</a>
 					</article>
-
 					<article class="cba-program-card" data-number="02" data-program="industrial-security">
 						<div class="cba-program-number">02</div>
-						<h3>
-							Bachelor of Science
-							in Industrial Security
-							Management
-						</h3>
+						<h3>Bachelor of Science in Industrial Security Management</h3>
 						<p>
 							The Bachelor of Science in Industrial Security Management (BSISM) program trains students in security principles, risk management, and protective services for industrial, corporate, and institutional settings. It equips graduates with skills in security administration, investigations, emergency preparedness, and asset protection through both theoretical and practical training. Graduates are prepared for careers as security managers, corporate security officers, and related professionals.
 						</p>
@@ -238,11 +156,10 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- QUICK LINKS -->
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
-				<a href="#">
+				<a href="#programs">
 					<div class="cba-quick-icon">
 						<i data-lucide="graduation-cap"></i>
 					</div>
@@ -252,8 +169,7 @@
 					</div>
 					<b>→</b>
 				</a>
-
-				<a href="#">
+				<a href="#about-college">
 					<div class="cba-quick-icon">
 						<i data-lucide="book-open"></i>
 					</div>
@@ -263,8 +179,7 @@
 					</div>
 					<b>→</b>
 				</a>
-
-				<a href="#">
+				<a href="contacts.php#office-directory">
 					<div class="cba-quick-icon">
 						<i data-lucide="building-2"></i>
 					</div>
@@ -274,8 +189,7 @@
 					</div>
 					<b>→</b>
 				</a>
-
-				<a href="#">
+				<a href="admission.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="users-round"></i>
 					</div>
@@ -288,7 +202,6 @@
 			</div>
 		</section>
 	</main>
-
 	<!-- PROGRAM MODAL -->
 	<div class="program-modal" id="programModal" aria-hidden="true">
 		<div class="program-modal-backdrop" data-modal-close></div>
@@ -323,90 +236,16 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-
-				<!-- Social Media -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-
+	<!-- SHARED FOOTER -->
+	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded",function(){
-			lucide.createIcons();
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
+			if(window.lucide){
+				lucide.createIcons();
+			}
 			const modal=document.getElementById("programModal");
 			const modalTitle=document.getElementById("programModalTitle");
 			const modalVision=document.getElementById("programModalVision");
@@ -414,6 +253,8 @@
 			const modalNumber=document.getElementById("programModalNumber");
 			const programLinks=document.querySelectorAll(".program-read-more");
 			const closeButtons=document.querySelectorAll("[data-modal-close]");
+			const programCards=document.querySelectorAll(".cba-program-card");
+			const filterButtons=document.querySelectorAll(".cba-filters button");
 			const programDescriptions={
 				"criminology":{
 					title:"Bachelor of Science in Criminology",
@@ -427,8 +268,7 @@
 				}
 			};
 			function openProgramModal(card){
-				const key=card.dataset.program;
-				const data=programDescriptions[key];
+				const data=programDescriptions[card.dataset.program];
 				const number=card.querySelector(".cba-program-number");
 				if(!data){
 					return;
@@ -436,7 +276,7 @@
 				modalTitle.textContent=data.title;
 				modalVision.textContent=data.vision;
 				modalMission.textContent=data.mission;
-				modalNumber.textContent=number ? number.textContent.trim() : "";
+				modalNumber.textContent=number?number.textContent.trim():"";
 				modal.classList.add("show");
 				modal.setAttribute("aria-hidden","false");
 				document.body.classList.add("program-modal-open");
@@ -456,14 +296,23 @@
 				});
 			});
 			closeButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					closeProgramModal();
-				});
+				button.addEventListener("click",closeProgramModal);
 			});
 			document.addEventListener("keydown",function(event){
 				if(event.key==="Escape"&&modal.classList.contains("show")){
 					closeProgramModal();
 				}
+			});
+			filterButtons.forEach(function(button){
+				button.addEventListener("click",function(){
+					const filter=button.dataset.filter;
+					filterButtons.forEach(function(item){
+						item.classList.toggle("active",item===button);
+					});
+					programCards.forEach(function(card){
+						card.style.display=filter==="all"||card.dataset.program===filter?"":"none";
+					});
+				});
 			});
 		});
 	</script>

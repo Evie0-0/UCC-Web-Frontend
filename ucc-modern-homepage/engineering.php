@@ -6,7 +6,6 @@
 	<title>UCC | College of Engineering</title>
 	<link rel="icon" type="image/png" href="images/UCC2.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="academics.css">
@@ -19,83 +18,13 @@
 		<span class="dot-pattern dot-3"></span>
 		<span class="dot-pattern dot-4"></span>
 	</div>
-
-	<!-- UTILITY BAR -->
-	<div class="utility-bar">
-		<div class="utility-inner">
-			<div class="utility-links">
-				<a href="#">E-SERVICES</a>
-				<a href="#">STUDENT LIFE</a>
-				<a href="#">COMMUNITY &amp; EXTENSION SERVICES</a>
-				<a href="#">ADMISSION</a>
-				<a href="#">NEWS</a>
-				<a href="#">ALUMNI</a>
-				<a href="#">CAREERS</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- BRAND HEADER -->
-	<header class="brand-header">
-		<div class="container brand-inner">
-			<!-- LOGOS -->
-			<div class="brand-logos">
-				<img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
-				<img src="images/Caloocan.png" alt="Caloocan City">
-				<img src="images/UCC2.png" alt="University of Caloocan City seal">
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<nav class="main-nav" id="mainNav">
-				<div class="nav-inner">
-					<div class="nav-links">
-						<a href="homepage.html">HOME</a>
-
-						<!-- ABOUT -->
-						<div class="nav-dropdown">
-							<button type="button">ABOUT <span>⌄</span></button>
-							<div class="dropdown-menu">
-								<a href="About.html">About UCC</a>
-								<a href="board-of-regents.html">Board of Regents</a>
-								<a href="executive-officials.html">Executive Officials</a>
-							</div>
-						</div>
-
-						<!-- ACADEMICS -->
-						<div class="nav-dropdown">
-							<button type="button" class="active">ACADEMICS <span>⌄</span></button>
-							<div class="dropdown-menu academics-menu">
-								<a href="business-accountancy.html">College of Business and Accountancy</a>
-								<a href="criminal-justice.html">College of Criminal Justice Education</a>
-								<a href="education.html">College of Education</a>
-								<a href="engineering.html" class="current-page">College of Engineering</a>
-								<a href="law.html">College of Law</a>
-								<a href="liberal-arts-sciences.html">College of Liberal Arts and Sciences</a>
-								<a href="graduate-school.html">Graduate School</a>
-							</div>
-						</div>
-
-						<a href="campus.html">CAMPUS</a>
-						<a href="contacts.html">CONTACTS</a>
-					</div>
-
-					<!-- SEARCH -->
-					<form class="search-box" onsubmit="return false;">
-						<input type="search" placeholder="Search..." aria-label="Search UCC">
-						<button type="submit" aria-label="Search">⌕</button>
-					</form>
-				</div>
-			</nav>
-
-			<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-		</div>
-	</header>
-
+	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
+	<?php include __DIR__ . '/includes/navbar.php'; ?>
 	<!-- COLLEGE OF ENGINEERING -->
 	<main class="ccje-page coe-page">
 		<section class="cba-hero">
 			<div class="cba-building">
-				<img src="images/FOOTER.jpg" alt="">
+				<img src="images/FOOTER.jpg" alt="University of Caloocan City building">
 			</div>
 			<div class="cba-hero-inner">
 				<div class="cba-dean">
@@ -125,14 +54,13 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
-
-		<section class="ccje-about">
+		<!-- ABOUT THE COLLEGE -->
+		<section class="ccje-about" id="about-college">
 			<div class="container">
 				<div class="cba-section-title">
 					<h2>ABOUT THE COLLEGE</h2>
 					<span></span>
 				</div>
-
 				<div class="cba-about-grid">
 					<div class="cba-about-logo">
 						<img src="https://ucc-caloocan.edu.ph/uploads/colleges/449599278_122137574288263173_7723356929386909159_n.png" alt="College of Engineering Logo">
@@ -148,13 +76,12 @@
 						<p>The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems.</p>
 					</div>
 				</div>
-
 				<div class="cba-about-grid" style="margin-top:30px;">
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
-						<h3>ADMISSION & RETENTION POLICY</h3>
-						<ol style="position:relative; z-index:2; margin:0; padding-left:20px; color:#3b443f; font-size:13px; line-height:1.75;">
-							<li>Applicants must meet UCC admission requirements and submit the required documents.;</li>
+						<h3>ADMISSION &amp; RETENTION POLICY</h3>
+						<ol style="position:relative;z-index:2;margin:0;padding-left:20px;color:#3b443f;font-size:13px;line-height:1.75;">
+							<li>Applicants must meet UCC admission requirements and submit the required documents.</li>
 							<li>Applicants must have a GWA of 90% or higher.</li>
 							<li>Applicants must pass the UCC Admission Test, including 50 additional items for Engineering.</li>
 							<li>Qualified applicants will be screened by the program chairs based on their skills and interests.</li>
@@ -164,14 +91,13 @@
 					<div class="cba-about-block" style="grid-column:span 2;">
 						<div class="cba-quote">“</div>
 						<h3>HISTORY</h3>
-						<P>In the heart of the largest barangay in North Caloocan, the University of Caloocan City – College of Engineering, located in Bagong Silang, emerged in 2023 as the first university for aspiring engineers. This newly established institution began its construction on June 14, 2021, under the leadership of Congressman Oca Malapitan and Mayor Along Malapitan. Following its completion, a visit from the Joint Regional Quality Assessment Team and Technical Panel for Engineering and Technology (RQAT-TPET) on October 27, 2023, evaluated UCC's adherence to CHED standards.
-						As another school year approaches, UCC-COEng stands prepared to welcome its first batch of students, eagerly awaiting the beginning of its academic journey. Today, the university serves as a proud testament to the city's dedication to advancing education and its continual march towards progress.</P>
+						<p>In the heart of the largest barangay in North Caloocan, the University of Caloocan City – College of Engineering, located in Bagong Silang, emerged in 2023 as the first university for aspiring engineers. This newly established institution began its construction on June 14, 2021, under the leadership of Congressman Oca Malapitan and Mayor Along Malapitan. Following its completion, a visit from the Joint Regional Quality Assessment Team and Technical Panel for Engineering and Technology (RQAT-TPET) on October 27, 2023, evaluated UCC's adherence to CHED standards. As another school year approaches, UCC-COEng stands prepared to welcome its first batch of students, eagerly awaiting the beginning of its academic journey. Today, the university serves as a proud testament to the city's dedication to advancing education and its continual march towards progress.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="cba-programs">
+		<!-- PROGRAMS -->
+		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
@@ -183,15 +109,13 @@
 					</div>
 					<p>Explore our engineering programs designed to develop competent, innovative, and globally competitive engineering professionals.</p>
 				</div>
-
 				<div class="cba-filters">
-					<button class="active">ALL PROGRAMS</button>
-					<button>COMPUTER ENGINEERING</button>
-					<button>ELECTRICAL ENGINEERING</button>
-					<button>ELECTRONICS ENGINEERING</button>
-					<button>INDUSTRIAL ENGINEERING</button>
+					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
+					<button type="button" data-filter="computer-engineering">COMPUTER ENGINEERING</button>
+					<button type="button" data-filter="electrical-engineering">ELECTRICAL ENGINEERING</button>
+					<button type="button" data-filter="electronics-engineering">ELECTRONICS ENGINEERING</button>
+					<button type="button" data-filter="industrial-engineering">INDUSTRIAL ENGINEERING</button>
 				</div>
-
 				<div class="cba-program-grid">
 					<article class="cba-program-card" data-number="01" data-program="computer-engineering">
 						<div class="cba-program-number">01</div>
@@ -216,10 +140,10 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- QUICK LINKS -->
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
-				<a href="#">
+				<a href="#programs">
 					<div class="cba-quick-icon">
 						<i data-lucide="graduation-cap"></i>
 					</div>
@@ -229,7 +153,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="#about-college">
 					<div class="cba-quick-icon">
 						<i data-lucide="book-open"></i>
 					</div>
@@ -239,7 +163,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="contacts.php#office-directory">
 					<div class="cba-quick-icon">
 						<i data-lucide="building-2"></i>
 					</div>
@@ -249,7 +173,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="admission.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="users-round"></i>
 					</div>
@@ -262,7 +186,6 @@
 			</div>
 		</section>
 	</main>
-
 	<!-- PROGRAM MODAL -->
 	<div class="program-modal" id="programModal" aria-hidden="true">
 		<div class="program-modal-backdrop" data-modal-close></div>
@@ -297,81 +220,9 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- FOOTER -->
-	<footer id="contact">
-		<div class="footer-building">
-			<img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
-		</div>
-		<div class="container footer-content">
-			<div class="footer-contact">
-				<img src="images/UCC2.png" alt="University of Caloocan City" class="footer-logo">
-				<div class="footer-contact-info">
-					<h3>University of Caloocan City</h3>
-					<div class="contact-item">
-						<i data-lucide="map-pin"></i>
-						<p>Biglang Awa Street, Cor 11th Ave Catleya,<br>Caloocan, 1400 Metro Manila, Philippines</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="phone"></i>
-						<p>8528-4654</p>
-					</div>
-					<div class="contact-item">
-						<i data-lucide="mail"></i>
-						<p>admin@ucc-caloocan.edu.ph</p>
-					</div>
-				</div>
-
-				<!-- SOCIAL MEDIA -->
-				<div class="footer-socials">
-					<a href="#" aria-label="Facebook">
-						<i data-lucide="facebook"></i>
-					</a>
-					<a href="#" aria-label="Instagram">
-						<i data-lucide="instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i data-lucide="youtube"></i>
-					</a>
-				</div>
-			</div>
-
-			<!-- INQUIRY FORM -->
-			<div class="footer-links">
-				<h4>INQUIRY FORM</h4>
-				<a href="#">Student Affairs</a>
-				<a href="#">Academic Office</a>
-				<a href="#">Accounting Matters</a>
-				<a href="#">Alumni Association</a>
-				<a href="#">Daily Consultation</a>
-				<a href="#">Graduate School</a>
-			</div>
-
-			<!-- SERVICES -->
-			<div class="footer-links">
-				<h4>SERVICES</h4>
-				<a href="#">Library</a>
-				<a href="#">Guidance and Counselling</a>
-				<a href="#">Registrar's Office</a>
-				<a href="#">Alumni Connect</a>
-				<a href="#">Faculty Portal</a>
-				<a href="#">Student Portal</a>
-			</div>
-		</div>
-
-		<!-- FOOTER BOTTOM -->
-		<div class="container footer-bottom">
-			<span>© 2026 University of Caloocan City. All Rights Reserved.</span>
-			<div class="footer-legal">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
-				<a href="#">Accessibility</a>
-			</div>
-		</div>
-	</footer>
-
+	<!-- SHARED FOOTER -->
+	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
 	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
@@ -385,6 +236,8 @@
 			const modalNumber=document.getElementById("programModalNumber");
 			const programLinks=document.querySelectorAll(".program-read-more");
 			const closeButtons=document.querySelectorAll("[data-modal-close]");
+			const filterButtons=document.querySelectorAll(".cba-filters button");
+			const programCards=document.querySelectorAll(".cba-program-card");
 			const programDescriptions={
 				"computer-engineering":{
 					title:"Bachelor of Science in Computer Engineering",
@@ -408,8 +261,7 @@
 				}
 			};
 			function openProgramModal(card){
-				const key=card.dataset.program;
-				const data=programDescriptions[key];
+				const data=programDescriptions[card.dataset.program];
 				const number=card.querySelector(".cba-program-number");
 				if(!data){
 					return;
@@ -417,7 +269,7 @@
 				modalTitle.textContent=data.title;
 				modalVision.textContent=data.vision;
 				modalMission.textContent=data.mission;
-				modalNumber.textContent=number ? number.textContent.trim() : "";
+				modalNumber.textContent=number?number.textContent.trim():"";
 				modal.classList.add("show");
 				modal.setAttribute("aria-hidden","false");
 				document.body.classList.add("program-modal-open");
@@ -437,14 +289,23 @@
 				});
 			});
 			closeButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					closeProgramModal();
-				});
+				button.addEventListener("click",closeProgramModal);
 			});
 			document.addEventListener("keydown",function(event){
 				if(event.key==="Escape"&&modal.classList.contains("show")){
 					closeProgramModal();
 				}
+			});
+			filterButtons.forEach(function(button){
+				button.addEventListener("click",function(){
+					const filter=button.dataset.filter;
+					filterButtons.forEach(function(item){
+						item.classList.toggle("active",item===button);
+					});
+					programCards.forEach(function(card){
+						card.style.display=filter==="all"||card.dataset.program===filter?"":"none";
+					});
+				});
 			});
 		});
 	</script>
