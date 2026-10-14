@@ -10,6 +10,62 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="academics.css">
+	<link rel="stylesheet" href="assets/utility-bar.css">
+	<link rel="stylesheet" href="assets/navbar.css">
+	<link rel="stylesheet" href="assets/footer.css">
+	<style>
+		/* CBA PAGE-SPECIFIC CONTENT SPACING */
+		.cba-page .cba-about > .cba-content-container,
+		.cba-page .cba-programs > .cba-content-container {
+			width: calc(100% - 120px);
+			max-width: 1350px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.cba-page .cba-quick-links > .cba-quick-grid {
+			width: calc(100% - 120px);
+			max-width: 1350px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.cba-page .cba-hero {
+			width: 100%;
+		}
+		.cba-page .cba-about-grid {
+			width: 100%;
+		}
+		@media (max-width: 768px) {
+			.cba-page .cba-about > .cba-content-container,
+			.cba-page .cba-programs > .cba-content-container,
+			.cba-page .cba-quick-links > .cba-quick-grid {
+				width: calc(100% - 32px);
+			}
+			.cba-page .cba-about-grid {
+				grid-template-columns: 1fr;
+			}
+			.cba-page .cba-hero-inner {
+				width: calc(100% - 32px);
+				grid-template-columns: 1fr;
+				padding-bottom: 45px;
+			}
+			.cba-page .cba-dean {
+				min-height: 270px;
+				border-right: none;
+			}
+			.cba-page .cba-hero-content {
+				padding: 25px 10px 40px;
+				transform: none !important;
+			}
+			.cba-page .cba-program-grid {
+				grid-template-columns: 1fr;
+			}
+			.cba-page .cba-quick-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div class="page-dots" aria-hidden="true">
@@ -53,8 +109,8 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
-		<section class="cba-about">
-			<div class="container">
+		<section class="cba-about" id="about-college">
+			<div class="container cba-content-container">
 				<div class="cba-section-title">
 					<h2>ABOUT THE COLLEGE</h2>
 					<span></span>
@@ -77,7 +133,7 @@
 			</div>
 		</section>
 		<section class="cba-programs" id="programs">
-			<div class="container">
+			<div class="container cba-content-container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
 					<h2>PROGRAMS</h2>
@@ -150,43 +206,23 @@
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
 				<a href="#programs">
-					<div class="cba-quick-icon">
-						<i data-lucide="graduation-cap"></i>
-					</div>
-					<div>
-						<strong>EXPLORE A PROGRAM</strong>
-						<span>Browse programs</span>
-					</div>
+					<div class="cba-quick-icon"><i data-lucide="graduation-cap"></i></div>
+					<div><strong>EXPLORE A PROGRAM</strong><span>Browse programs</span></div>
 					<b>→</b>
 				</a>
 				<a href="#about-college">
-					<div class="cba-quick-icon">
-						<i data-lucide="book-open"></i>
-					</div>
-					<div>
-						<strong>READ MORE</strong>
-						<span>Learn about CBA</span>
-					</div>
+					<div class="cba-quick-icon"><i data-lucide="book-open"></i></div>
+					<div><strong>READ MORE</strong><span>Learn about CBA</span></div>
 					<b>→</b>
 				</a>
 				<a href="contacts.php">
-					<div class="cba-quick-icon">
-						<i data-lucide="building-2"></i>
-					</div>
-					<div>
-						<strong>ACADEMIC OFFICE</strong>
-						<span>Contact us</span>
-					</div>
+					<div class="cba-quick-icon"><i data-lucide="building-2"></i></div>
+					<div><strong>ACADEMIC OFFICE</strong><span>Contact us</span></div>
 					<b>→</b>
 				</a>
 				<a href="admission.php">
-					<div class="cba-quick-icon">
-						<i data-lucide="users-round"></i>
-					</div>
-					<div>
-						<strong>ADMISSIONS</strong>
-						<span>Start your journey</span>
-					</div>
+					<div class="cba-quick-icon"><i data-lucide="users-round"></i></div>
+					<div><strong>ADMISSIONS</strong><span>Start your journey</span></div>
 					<b>→</b>
 				</a>
 			</div>
@@ -226,120 +262,114 @@
 		</div>
 	</div>
 	<?php require_once __DIR__ . '/includes/footer.php'; ?>
-		<script src="script.js"></script>
+	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			if(window.lucide){
+		document.addEventListener("DOMContentLoaded", function() {
+			if (window.lucide) {
 				lucide.createIcons();
 			}
-			const filterButtons=document.querySelectorAll(".cba-filters button");
-			const programCards=document.querySelectorAll(".cba-program-card");
-			const noProgramsMessage=document.getElementById("noProgramsMessage");
-			filterButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					const filter=button.dataset.filter;
-					let visibleCount=0;
-					filterButtons.forEach(function(item){
-						item.classList.toggle("active",item===button);
+			const filterButtons = document.querySelectorAll(".cba-filters button");
+			const programCards = document.querySelectorAll(".cba-program-card");
+			const noProgramsMessage = document.getElementById("noProgramsMessage");
+			filterButtons.forEach(function(button) {
+				button.addEventListener("click", function() {
+					const filter = button.dataset.filter;
+					let visibleCount = 0;
+					filterButtons.forEach(function(item) {
+						item.classList.toggle("active", item === button);
 					});
-					programCards.forEach(function(card){
-						const matches=filter==="all"||card.dataset.category===filter;
-						card.style.display=matches?"":"none";
-						if(matches){
-							visibleCount++;
-						}
+					programCards.forEach(function(card) {
+						const matches = filter === "all" || card.dataset.category === filter;
+						card.style.display = matches ? "" : "none";
+						if (matches) visibleCount++;
 					});
-					noProgramsMessage.style.display=visibleCount===0?"block":"none";
+					noProgramsMessage.style.display = visibleCount === 0 ? "block" : "none";
 				});
 			});
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const programDescriptions={
-				"accountancy":{
-					title:"Bachelor of Science in Accountancy",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+			const modal = document.getElementById("programModal");
+			const modalTitle = document.getElementById("programModalTitle");
+			const modalVision = document.getElementById("programModalVision");
+			const modalMission = document.getElementById("programModalMission");
+			const modalNumber = document.getElementById("programModalNumber");
+			const programLinks = document.querySelectorAll(".program-read-more");
+			const closeButtons = document.querySelectorAll("[data-modal-close]");
+			const programDescriptions = {
+				"accountancy": {
+					title: "Bachelor of Science in Accountancy",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"accounting-information-system":{
-					title:"Bachelor of Science in Accounting Information System",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"accounting-information-system": {
+					title: "Bachelor of Science in Accounting Information System",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"financial-management":{
-					title:"Bachelor of Science in Business Administration, Major in Financial Management",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"financial-management": {
+					title: "Bachelor of Science in Business Administration, Major in Financial Management",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"human-resource-management":{
-					title:"Bachelor of Science in Business Administration, Major in Human Resource Management",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"human-resource-management": {
+					title: "Bachelor of Science in Business Administration, Major in Human Resource Management",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"marketing-management":{
-					title:"Bachelor of Science in Business Administration, Major in Marketing Management",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"marketing-management": {
+					title: "Bachelor of Science in Business Administration, Major in Marketing Management",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"entrepreneurship":{
-					title:"Bachelor of Science in Entrepreneurship",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"entrepreneurship": {
+					title: "Bachelor of Science in Entrepreneurship",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"hospitality-management":{
-					title:"Bachelor of Science in Hospitality Management",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"hospitality-management": {
+					title: "Bachelor of Science in Hospitality Management",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"office-administration":{
-					title:"Bachelor of Science in Office Administration",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"office-administration": {
+					title: "Bachelor of Science in Office Administration",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				},
-				"tourism-management":{
-					title:"Bachelor of Science in Tourism Management",
-					vision:"Program vision information has not been provided yet.",
-					mission:"Program mission information has not been provided yet."
+				"tourism-management": {
+					title: "Bachelor of Science in Tourism Management",
+					vision: "Program vision information has not been provided yet.",
+					mission: "Program mission information has not been provided yet."
 				}
 			};
-			function openProgramModal(card){
-				const data=programDescriptions[card.dataset.program];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=data.vision;
-				modalMission.textContent=data.mission;
-				modalNumber.textContent=number?number.textContent.trim():"";
+			function openProgramModal(card) {
+				const data = programDescriptions[card.dataset.program];
+				const number = card.querySelector(".cba-program-number");
+				if (!data) return;
+				modalTitle.textContent = data.title;
+				modalVision.textContent = data.vision;
+				modalMission.textContent = data.mission;
+				modalNumber.textContent = number ? number.textContent.trim() : "";
 				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
+				modal.setAttribute("aria-hidden", "false");
 				document.body.classList.add("program-modal-open");
 			}
-			function closeProgramModal(){
+			function closeProgramModal() {
 				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
+				modal.setAttribute("aria-hidden", "true");
 				document.body.classList.remove("program-modal-open");
 			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
+			programLinks.forEach(function(link) {
+				link.addEventListener("click", function(event) {
 					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
+					const card = link.closest(".cba-program-card");
+					if (card) openProgramModal(card);
 				});
 			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",closeProgramModal);
+			closeButtons.forEach(function(button) {
+				button.addEventListener("click", closeProgramModal);
 			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
+			document.addEventListener("keydown", function(event) {
+				if (event.key === "Escape" && modal.classList.contains("show")) {
 					closeProgramModal();
 				}
 			});

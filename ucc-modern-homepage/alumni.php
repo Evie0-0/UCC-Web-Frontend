@@ -9,12 +9,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="utility.css">
-	<link rel="stylesheet" href="alumni.css">
+	<link rel="stylesheet" href="assets/utility-bar.css">
+	<link rel="stylesheet" href="assets/navbar.css">
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
 <body>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
-	
+
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>

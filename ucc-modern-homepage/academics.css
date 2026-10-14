@@ -1081,3 +1081,31 @@ body.program-modal-open{
 	background:#075532;
 }
 
+
+
+
+/* BUSINESS AND ACCOUNTANCY — CONTENT SIDE SPACING */
+.cba-page .cba-about > .container,
+.cba-page .cba-programs > .container {
+    width: calc(100% - 120px);
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* QUICK LINKS */
+.cba-page .cba-quick-links > .cba-quick-grid {
+    width: calc(100% - 120px);
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* HERO REMAINS FULL-WIDTH */
+.cba-page .cba-hero {
+    width: 100%;
+}
+
+
