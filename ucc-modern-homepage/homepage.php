@@ -59,8 +59,8 @@
 						to the community.
 					</p>
 					<div class="hero-buttons">
-						<a class="btn btn-primary" href="#programs">EXPLORE UCC <b>➜</b></a>
-						<a class="btn btn-light" href="#">APPLY NOW <b>➜</b></a>
+						<a class="btn btn-primary" href="about.php">EXPLORE UCC <b>➜</b></a>
+						<a class="btn btn-light" href="https://aims.ucc-caloocan.edu.ph/ucc/applicants/" target="_blank" rel="noopener noreferrer">APPLY NOW <b>➜</b></a>
 					</div>
 					<div class="slider-dots" aria-label="Hero slides">
 						<button class="active"></button>
@@ -70,6 +70,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- NEWS + CALENDAR -->
 		<section class="news-section" id="news">
 			<div class="container two-column">
@@ -78,93 +79,88 @@
 				<div class="news-area">
 					<div class="news-heading">
 						<h2>UNIVERSITY NEWS</h2>
-						<a href="news.html" class="view-news-btn">View All News</a>
+						<a href="news.php" class="view-news-btn">View All News</a>
 					</div>
 					<div class="news-grid">
 						<!-- NEWS 1 -->
 						<article class="news-card reveal" data-news="news1">
-							<div class="news-image news-one"></div>
+							<div class="news-image news-one" aria-hidden="true"></div>
 							<div class="news-body">
 								<h3>ANNOUNCEMENT | Official Overall List of Qualified Applicants for Enrollment A.Y. 2026 – 2027</h3>
 								<small>Published 1 month ago</small>
-								<a href="#" class="read-more" data-news-index="2">Read More <span>→</span></a>
+								<a href="#" class="read-more" data-news-index="2">Read More <span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 						<!-- NEWS 2 -->
 						<article class="news-card reveal" data-news="news2">
-							<div class="news-image news-two"></div>
+							<div class="news-image news-two" aria-hidden="true"></div>
 							<div class="news-body">
 								<h3>OFFICIAL ANNOUNCEMENT | Opening of First Semester A.Y. 2026 – 2027</h3>
 								<small>Published 2 months ago</small>
-								<a href="#" class="read-more" data-news-index="3">Read More <span>→</span></a>
+								<a href="#" class="read-more" data-news-index="3">Read More <span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 						<!-- NEWS 3 -->
 						<article class="news-card reveal" data-news="news3">
-							<div class="news-image news-three"></div>
+							<div class="news-image news-three" aria-hidden="true"></div>
 							<div class="news-body">
 								<h3>University of Caloocan City Surpasses National Passing Rate in CPALE May 2026</h3>
 								<small>Published 2 months ago</small>
-								<a href="#" class="read-more" data-news-index="4">Read More <span>→</span></a>
+								<a href="#" class="read-more" data-news-index="4">Read More <span aria-hidden="true">→</span></a>
 							</div>
 						</article>
 					</div>
-					<!-- NEWS SLIDER CONTROLS -->
-					<div class="news-controls">
-						<button class="news-control prev" type="button">‹</button>
-						<button class="news-control next" type="button">›</button>
-					</div>
 				</div>
 				<!-- RIGHT SIDEBAR -->
-				<div class="calendar-card reveal" id="calendar">
-					<aside class="right-sidebar">
-						<!-- ACADEMIC CALENDAR -->
-						<div class="calendar-card">
-							<div class="side-title">
-								<i data-lucide="calendar-days" class="calendar-icon"></i>
-								<span>ACADEMIC CALENDAR</span>
-							</div>
-							<!-- EVENT 1 -->
-							<div class="calendar-event">
-								<div class="date-badge">
-									<strong>OCT</strong>
-									<b>25–31</b>
-									<small>2026</small>
-								</div>
-								<div class="event-info">
-									<h3>FINALS EXAMINATION WEEK</h3>
-									<p>October 25 – October 31, 2026</p>
-								</div>
-							</div>
-							<!-- EVENT 2 -->
-							<div class="calendar-event">
-								<div class="date-badge">
-									<strong>NOV</strong>
-									<b>3–9</b>
-									<small>2026</small>
-								</div>
-								<div class="event-info">
-									<h3>SUBMISSION OF GRADES</h3>
-									<p>November 3 – November 9, 2026</p>
-								</div>
-							</div>
-							<!-- FULL CALENDAR BUTTON -->
-							<a class="calendar-button" href="#" id="viewFullCalendar">
-								<span>VIEW FULL CALENDAR</span>
-								<i data-lucide="arrow-right"></i>
-							</a>
+				<aside class="right-sidebar">
+					<!-- ACADEMIC CALENDAR -->
+					<div class="calendar-card reveal" id="calendar">
+						<div class="side-title">
+							<i data-lucide="calendar-days" class="calendar-icon" aria-hidden="true"></i>
+							<span>ACADEMIC CALENDAR</span>
 						</div>
-						<div class="chairman-card reveal">
-							<img src="images/ALONG.png" alt="Chairman of the Board of Regents">
-							<img class="chairman-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
-							<div class="chairman-content">
-								<h3>CHAIRMAN OF THE<br>BOARD OF REGENTS</h3>
+						<!-- EVENT 1 -->
+						<div class="calendar-event">
+							<div class="date-badge">
+								<strong>OCT</strong>
+								<b>25–31</b>
+								<small>2026</small>
+							</div>
+							<div class="event-info">
+								<h3>FINALS EXAMINATION WEEK</h3>
+								<p>October 25 – October 31, 2026</p>
 							</div>
 						</div>
-					</aside>
-				</div>
+						<!-- EVENT 2 -->
+						<div class="calendar-event">
+							<div class="date-badge">
+								<strong>NOV</strong>
+								<b>3–9</b>
+								<small>2026</small>
+							</div>
+							<div class="event-info">
+								<h3>SUBMISSION OF GRADES</h3>
+								<p>November 3 – November 9, 2026</p>
+							</div>
+						</div>
+						<!-- FULL CALENDAR BUTTON -->
+						<a class="calendar-button" href="#" id="viewFullCalendar">
+							<span>VIEW FULL CALENDAR</span>
+							<i data-lucide="arrow-right" aria-hidden="true"></i>
+						</a>
+					</div>
+					<!-- CHAIRMAN CARD -->
+					<div class="chairman-card reveal">
+						<img src="images/ALONG.png" alt="Chairman of the Board of Regents">
+						<img class="chairman-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">
+						<div class="chairman-content">
+							<h3>CHAIRMAN OF THE<br>BOARD OF REGENTS</h3>
+						</div>
+					</div>
+				</aside>
 			</div>
 		</section>
+		
 		<!-- PROGRAM EVENTS + QUICK LINKS -->
 		<section class="explore-section" id="program-events">
 			<div class="container">
@@ -179,7 +175,357 @@
 					<!-- PROGRAM EVENT CARDS -->
 					<div class="program-events-wrapper">
 						<div class="feature-grid" id="programEvents">
-							<a href="#" class="feature-card">
+							<a href="program-events.php?program=accountancy" class="feature-card">
+								<img src="images/7.jpg" alt="Accountancy program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Accountancy</h3>
+									<p>Explore activities, seminars, and events organized by the Accountancy program.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=accounting-information-system" class="feature-card">
+								<img src="images/7.jpg" alt="Accounting Information System program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Accounting Information System</h3>
+									<p>Discover academic activities and events for Accounting Information System students.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=financial-management" class="feature-card">
+								<img src="images/7.jpg" alt="Financial Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Financial Management</h3>
+									<p>Discover activities, seminars, and events organized by Financial Management.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=human-resource-management" class="feature-card">
+								<img src="images/7.jpg" alt="Human Resource Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Human Resource Management</h3>
+									<p>Explore events and activities focused on people management and organizational development.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=marketing-management" class="feature-card">
+								<img src="images/7.jpg" alt="Marketing Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Marketing Management</h3>
+									<p>Stay updated on marketing activities, seminars, and student-led events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=entrepreneurship" class="feature-card">
+								<img src="images/7.jpg" alt="Entrepreneurship program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Entrepreneurship</h3>
+									<p>Discover business showcases, entrepreneurial activities, and student events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=hospitality-management" class="feature-card">
+								<img src="images/7.jpg" alt="Hospitality Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Hospitality Management</h3>
+									<p>Explore hospitality activities, practical showcases, and program events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=office-administration" class="feature-card">
+								<img src="images/7.jpg" alt="Office Administration program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Office Administration</h3>
+									<p>Find activities and events that support professional and administrative skills.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=tourism-management" class="feature-card">
+								<img src="images/7.jpg" alt="Tourism Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Tourism Management</h3>
+									<p>Explore tourism-related activities, learning opportunities, and student events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=criminology" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Criminology program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Criminology</h3>
+									<p>Discover criminology activities, competitions, and academic events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=industrial-security-management" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Industrial Security Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Industrial Security Management</h3>
+									<p>Explore activities and events related to industrial security and safety.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=secondary-education-english" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Secondary Education English program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Secondary Education — English</h3>
+									<p>Explore academic activities and events for future English educators.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=secondary-education-english-chinese" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Secondary Education English-Chinese program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Secondary Education — English-Chinese</h3>
+									<p>Discover events and activities for English-Chinese education students.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=secondary-education-science" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Secondary Education Science program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Secondary Education — Science</h3>
+									<p>Find science education activities, seminars, and program events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=secondary-education-tle" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Secondary Education Technology and Livelihood Education program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Secondary Education — TLE</h3>
+									<p>Explore activities related to Technology and Livelihood Education.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=early-childhood-education" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Early Childhood Education program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Early Childhood Education</h3>
+									<p>Discover activities and learning events for aspiring early childhood educators.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=professional-education" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Professional Education program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Professional Education</h3>
+									<p>Explore professional learning activities and education-related events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=elementary-secondary-pe" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Elementary, Secondary and Physical Education program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Elementary, Secondary and Physical Education</h3>
+									<p>Find educational activities and events for future teachers and educators.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=computer-engineering" class="feature-card">
+								<img src="images/ALUMNI.jpg" alt="Computer Engineering program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
+									<h3>Computer Engineering</h3>
+									<p>Discover engineering projects, competitions, and academic activities.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=electrical-engineering" class="feature-card">
+								<img src="images/ALUMNI.jpg" alt="Electrical Engineering program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
+									<h3>Electrical Engineering</h3>
+									<p>Explore technical activities and events for Electrical Engineering students.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=electronics-engineering" class="feature-card">
+								<img src="images/ALUMNI.jpg" alt="Electronics Engineering program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
+									<h3>Electronics Engineering</h3>
+									<p>Discover electronics projects, technical activities, and program events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=industrial-engineering" class="feature-card">
+								<img src="images/ALUMNI.jpg" alt="Industrial Engineering program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
+									<h3>Industrial Engineering</h3>
+									<p>Explore process improvement, innovation, and engineering activities.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=doctor-public-administration" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Doctor in Public Administration program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Doctor in Public Administration</h3>
+									<p>Explore academic events and activities in public administration.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=phd-educational-management" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="PhD Educational Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>PhD — Educational Management</h3>
+									<p>Find graduate-level academic activities and education events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=master-public-administration" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Master in Public Administration program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Master in Public Administration</h3>
+									<p>Discover graduate academic activities and public administration events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=ma-education-management" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Master of Arts in Education Educational Management program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>MA Education — Educational Management</h3>
+									<p>Explore graduate-level activities for educational management students.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=ma-teaching-early-grades" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Master of Arts in Education Teaching in the Early Grades program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>MA Education — Teaching in the Early Grades</h3>
+									<p>Find graduate learning activities and education-related events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=ma-teaching-science" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Master of Arts in Education Teaching Science program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>MA Education — Teaching Science</h3>
+									<p>Discover graduate activities related to science education.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=master-business-administration" class="feature-card">
+								<img src="images/7.jpg" alt="Master of Business Administration program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
+									<h3>Master of Business Administration</h3>
+									<p>Explore graduate-level business activities, seminars, and events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=ms-criminal-justice-criminology" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Master of Science in Criminal Justice Criminology program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>MS Criminal Justice — Criminology</h3>
+									<p>Discover graduate activities and events in criminal justice and criminology.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=law" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Law program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Law</h3>
+									<p>Stay updated on legal debates, academic activities, and Law program events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=political-science" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Political Science program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>AB Political Science</h3>
+									<p>Explore discussions, academic activities, and events in political science.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=communication" class="feature-card">
+								<img src="images/STUDENT-LIFE.jpg" alt="Communication program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/STUDENT2.png" alt=""></div>
+									<h3>BA Communication</h3>
+									<p>Discover media, communication, and creative student activities.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=public-administration" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Public Administration program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Public Administration</h3>
+									<p>Explore public service activities, seminars, and academic events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=public-administration-special" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Public Administration Special Program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Public Administration — Special Program</h3>
+									<p>Discover activities and events for the Public Administration Special Program.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=computer-science" class="feature-card">
 								<img src="images/STUDENT-LIFE.jpg" alt="Computer Science program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
@@ -189,33 +535,53 @@
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
-							<a href="#" class="feature-card">
-								<img src="images/7.jpg" alt="Business Administration program events">
+							<a href="program-events.php?program=entertainment-multimedia-computing" class="feature-card">
+								<img src="images/STUDENT-LIFE.jpg" alt="Entertainment and Multimedia Computing program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true"><img src="images/FACILITIES.png" alt=""></div>
-									<h3>Business Administration</h3>
-									<p>Discover activities, seminars, and events organized by the Business Administration program.</p>
+									<div class="feature-icon" aria-hidden="true"><img src="images/STUDENT2.png" alt=""></div>
+									<h3>Entertainment and Multimedia Computing</h3>
+									<p>Discover multimedia projects, creative showcases, and computing events.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
-							<a href="#" class="feature-card">
-								<img src="images/COMMUNITY.png" alt="Education program events">
+							<a href="program-events.php?program=information-system" class="feature-card">
+								<img src="images/STUDENT-LIFE.jpg" alt="Information System program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/STUDENT2.png" alt=""></div>
+									<h3>Information System</h3>
+									<p>Explore information systems activities, seminars, and student projects.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=information-technology" class="feature-card">
+								<img src="images/STUDENT-LIFE.jpg" alt="Information Technology program events">
+								<div class="feature-overlay"></div>
+								<div class="feature-content">
+									<div class="feature-icon" aria-hidden="true"><img src="images/STUDENT2.png" alt=""></div>
+									<h3>Information Technology</h3>
+									<p>Discover IT activities, technology showcases, and program events.</p>
+								</div>
+								<span class="feature-arrow" aria-hidden="true">→</span>
+							</a>
+							<a href="program-events.php?program=mathematics" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Mathematics program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
 									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
-									<h3>Education</h3>
-									<p>Explore academic activities and special events organized by the Education program.</p>
+									<h3>Mathematics</h3>
+									<p>Explore academic competitions, learning activities, and mathematics events.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
-							<a href="#" class="feature-card">
-								<img src="images/ALUMNI.jpg" alt="Engineering program events">
+							<a href="program-events.php?program=psychology" class="feature-card">
+								<img src="images/COMMUNITY.png" alt="Psychology program events">
 								<div class="feature-overlay"></div>
 								<div class="feature-content">
-									<div class="feature-icon" aria-hidden="true"><img src="images/ALUMNI2.png" alt=""></div>
-									<h3>Engineering</h3>
-									<p>Discover innovative projects, competitions, and events from the Engineering program.</p>
+									<div class="feature-icon" aria-hidden="true"><img src="images/COMMUNITY2.png" alt=""></div>
+									<h3>Psychology</h3>
+									<p>Discover psychology-related activities, seminars, and student events.</p>
 								</div>
 								<span class="feature-arrow" aria-hidden="true">→</span>
 							</a>
@@ -290,6 +656,7 @@
 			</svg>
 		</div>
 	</main>
+
 	<!-- ACADEMIC CALENDAR MODAL -->
 	<div class="calendar-modal" id="calendarModal" aria-hidden="true">
 		<div class="calendar-modal-backdrop" id="calendarModalBackdrop"></div>
@@ -304,14 +671,14 @@
 						<h3>FINALS EXAMINATION WEEK</h3>
 						<p>October 25 – October 31, 2026</p>
 					</div>
-				<a href="calendar.php?event=finals" class="calendar-modal-read-more"> Read More <span>→</span> </a>				
+					<a href="calendar.php?event=finals" class="calendar-modal-read-more">Read More <span>→</span></a>
 				</article>
 				<article class="calendar-modal-event">
 					<div class="calendar-modal-event-info">
 						<h3>SUBMISSION OF GRADES</h3>
 						<p>November 3 – November 9, 2026</p>
 					</div>
-				<a href="calendar.php?event=grades" class="calendar-modal-read-more"> Read More <span>→</span> </a>
+					<a href="calendar.php?event=grades" class="calendar-modal-read-more">Read More <span>→</span></a>
 				</article>
 			</div>
 		</div>
@@ -338,119 +705,18 @@
 	</div>
 	<?php require_once __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<script src="script.js"></script>
+
 	<script src="https://unpkg.com/lucide@latest"></script>
+	<script src="script.js"></script>
+	<script src="homepage-modals.js"></script>
 	<script>
-		lucide.createIcons();
-	</script>
-	<!-- ACADEMIC CALENDAR MODAL SCRIPT -->
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			const calendarModal=document.getElementById("calendarModal");
-			const calendarModalClose=document.getElementById("calendarModalClose");
-			const calendarModalBackdrop=document.getElementById("calendarModalBackdrop");
-			const viewFullCalendar=document.querySelector(".calendar-button");
-			if(!calendarModal||!calendarModalClose||!calendarModalBackdrop||!viewFullCalendar)return;
-			function openCalendarModal(){
-				calendarModal.classList.add("show");
-				calendarModal.setAttribute("aria-hidden","false");
-				document.body.classList.add("calendar-modal-open");
-			}
-			function closeCalendarModal(){
-				calendarModal.classList.remove("show");
-				calendarModal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("calendar-modal-open");
-			}
-			viewFullCalendar.addEventListener("click",function(event){
-				event.preventDefault();
-				openCalendarModal();
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelectorAll(".news-section .reveal").forEach(function (element) {
+				element.classList.add("show");
 			});
-			calendarModalClose.addEventListener("click",closeCalendarModal);
-			calendarModalBackdrop.addEventListener("click",closeCalendarModal);
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&calendarModal.classList.contains("show")){
-					closeCalendarModal();
-				}
-			});
-		});
-	</script>
-	<!-- NEWS MODAL SCRIPT -->
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			const newsData=[
-				{
-					title:"UCC - College of Engineering Strengthens Learning Environment with New Drafting Room and Library",
-					category:"ACADEMIC",
-					date:"Published 1 day ago",
-					image:"images/News/NEWS-CollegeofEngineering.jpg"
-				},
-				{
-					title:"Congratulations, August 2026 Criminologists Licensure Examination Passers!",
-					category:"ACHIEVEMENTS",
-					date:"Published 1 day ago",
-					image:"images/News/NEWS-2026Criminologists.jpg"
-				},
-				{
-					title:"ANNOUNCEMENT | Official Overall List of Qualified Applicants for Enrollment A.Y. 2026-2027",
-					category:"ANNOUNCEMENTS",
-					date:"Published 2 mos ago",
-					image:"images/News/NEWS-QualifiedApplicants.jpg"
-				},
-				{
-					title:"OFFICIAL ANNOUNCEMENT | Opening of Classes for the First Semester, Academic Year 2026 to 2027",
-					category:"ANNOUNCEMENTS",
-					date:"Published 2 mos ago",
-					image:"images/News/NEWS-FirstSem.jpg"
-				},
-				{
-					title:"University of Caloocan City Surpassed National Passing Rate in May 2026 Certified Public Accountant Licensure Examination (CPALE)",
-					category:"ACHIEVEMENTS",
-					date:"Published 3 mos ago",
-					image:"images/News/NEWS-CPA.jpg"
-				}
-			];
-			const newsModal=document.getElementById("newsModal");
-			const newsModalBackdrop=document.getElementById("newsModalBackdrop");
-			const newsModalClose=document.getElementById("newsModalClose");
-			const newsModalTitle=document.getElementById("newsModalTitle");
-			const newsModalCategory=document.getElementById("newsModalCategory");
-			const newsModalDate=document.getElementById("newsModalDate");
-			const newsModalImage=document.getElementById("newsModalImage");
-			const newsModalDescription=document.getElementById("newsModalDescription");
-			function openNewsModal(index){
-				const news=newsData[index];
-				if(!news||!newsModal)return;
-				newsModalTitle.textContent=news.title;
-				newsModalCategory.textContent=news.category;
-				newsModalDate.textContent=news.date;
-				newsModalImage.src=news.image;
-				newsModalImage.alt=news.title;
-				newsModalDescription.textContent="ARTICLE CONTENT WILL BE ADDED HERE.";
-				newsModal.classList.add("active");
-				newsModal.setAttribute("aria-hidden","false");
-				document.body.classList.add("news-modal-open");
+			if (window.lucide) {
+				window.lucide.createIcons();
 			}
-			function closeNewsModal(){
-				if(!newsModal)return;
-				newsModal.classList.remove("active");
-				newsModal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("news-modal-open");
-			}
-			document.querySelectorAll(".news-card .read-more").forEach(button=>{
-				button.addEventListener("click",function(event){
-					event.preventDefault();
-					event.stopPropagation();
-					const index=Number(this.dataset.newsIndex);
-					openNewsModal(index);
-				});
-			});
-			if(newsModalClose)newsModalClose.addEventListener("click",closeNewsModal);
-			if(newsModalBackdrop)newsModalBackdrop.addEventListener("click",closeNewsModal);
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&newsModal&&newsModal.classList.contains("active")){
-					closeNewsModal();
-				}
-			});
 		});
 	</script>
 </body>

@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="academics.css">
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
-	<link rel="stylesheet" href="assets/footer.css">	
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
+
 <body>
-	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
@@ -23,11 +23,11 @@
 	</div>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
-	<!-- COLLEGE OF LAW -->
+
 	<main class="ccje-page law-page">
 		<section class="cba-hero">
 			<div class="cba-building">
-				<img src="images/FOOTER.jpg" alt="">
+				<img src="images/FOOTER.jpg" alt="University of Caloocan City building">
 			</div>
 			<div class="cba-hero-inner">
 				<div class="cba-dean">
@@ -57,7 +57,8 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
-		<section class="ccje-about">
+		<!-- ABOUT THE COLLEGE -->
+		<section class="ccje-about" id="about-college">
 			<div class="container">
 				<div class="cba-section-title">
 					<h2>ABOUT THE COLLEGE</h2>
@@ -87,7 +88,7 @@
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>OBJECTIVES</h3>
-						<ol style="position:relative; z-index:2; margin:0; padding-left:20px; color:#3b443f; font-size:13px; line-height:1.75;">
+						<ol style="position:relative;z-index:2;margin:0;padding-left:20px;color:#3b443f;font-size:13px;line-height:1.75;">
 							<li>Develop future legal professionals with relevant legal knowledge, skills, and values.</li>
 							<li>Promote academic excellence and ethical conduct in the study and practice of law.</li>
 							<li>Develop socially sensitive and community-aware legal professionals committed to service.</li>
@@ -104,7 +105,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="cba-programs">
+		<!-- PROGRAMS -->
+		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
 					<div class="cba-heading-line"></div>
@@ -116,22 +118,22 @@
 					</div>
 					<p>Explore the legal education program of the University of Caloocan City College of Law.</p>
 				</div>
-				<div class="cba-filters">
-					<button class="active">ALL PROGRAMS</button>
-					<button>LAW</button>
-				</div>
 				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="law">
+					<article class="cba-program-card" data-program="law" data-vision="A quality higher legal educational institution that strives for distinction imbued with relevant knowledge, skills and values and contributes to the community by motivating the legal professionals in and for the service of the people." data-mission="To develop future legal professionals to excel academically and ethically in their professional and personal lives by being driven, socially sensitive and community aware.">
 						<div class="cba-program-number">01</div>
 						<h3>Law</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
+						<div class="cba-program-actions">
+							<a href="#" class="program-read-more">Read more <span>→</span></a>
+							<a href="program-events.php?program=law" class="program-events-link">Events <span>↗</span></a>
+						</div>
 					</article>
 				</div>
 			</div>
 		</section>
+		<!-- QUICK LINKS -->
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
-				<a href="#">
+				<a href="#programs">
 					<div class="cba-quick-icon">
 						<i data-lucide="graduation-cap"></i>
 					</div>
@@ -141,7 +143,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="#about-college">
 					<div class="cba-quick-icon">
 						<i data-lucide="book-open"></i>
 					</div>
@@ -151,7 +153,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="contacts.php#office-directory">
 					<div class="cba-quick-icon">
 						<i data-lucide="building-2"></i>
 					</div>
@@ -161,7 +163,7 @@
 					</div>
 					<b>→</b>
 				</a>
-				<a href="#">
+				<a href="admission.php">
 					<div class="cba-quick-icon">
 						<i data-lucide="users-round"></i>
 					</div>
@@ -211,66 +213,8 @@
 	<!-- SHARED FOOTER -->
 	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			lucide.createIcons();
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const programDescriptions={
-				"law":{
-					title:"Law",
-					vision:"A quality higher legal educational institution that strives for distinction imbued with relevant knowledge, skills and values and contributes to the community by motivating the legal professionals in and for the service of the people.",
-					mission:"To develop future legal professionals to excel academically and ethically in their professional and personal lives by being driven, socially sensitive and community aware."
-				}
-			};
-			function openProgramModal(card){
-				const key=card.dataset.program;
-				const data=programDescriptions[key];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=data.vision;
-				modalMission.textContent=data.mission;
-				modalNumber.textContent=number ? number.textContent.trim() : "";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal(){
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
-					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
-				});
-			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					closeProgramModal();
-				});
-			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
-					closeProgramModal();
-				}
-			});
-		});
-	</script>
+	<script src="academics.js"></script>
 </body>
 </html>

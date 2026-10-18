@@ -531,42 +531,6 @@ button, input { font: inherit; }
 .cba-heading-line:first-child {
     right: calc(50% + 105px);
 }
-/* FILTERS */
-.cba-filters {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 30px;
-}
-.cba-filters button:hover,
-.cba-filters button.active {
-    color: #fff;
-    border-color: #003b25;
-    background: #003b25;
-    box-shadow: 0 7px 18px rgba(0,59,37,.15);
-}
-.cba-filters button {
-    padding: 9px 17px;
-    border: 1px solid #dfe5df;
-    border-radius: 999px;
-    background: rgba(255,255,255,.85);
-    color: #314039;
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: .2px;
-    cursor: pointer;
-    transition: all .25s ease;
-}
-.cba-filters button:hover,
-.cba-filters button.active {
-    color: #fff;
-    border-color: #006039;
-    background: #006039;
-    box-shadow: 0 5px 12px rgba(0,75,45,.12);
-}
 
 
 /* PROGRAM GRID */
@@ -716,6 +680,106 @@ button, input { font: inherit; }
 	background: transparent;
 	transform: translateX(3px);
 }
+
+
+/* PROGRAM CARD ACTION BUTTONS */
+.cba-program-actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 10px;
+	position: relative;
+	z-index: 2;
+}
+.cba-program-card .cba-program-actions a {
+	margin-top: 0;
+	align-self: auto;
+}
+/* READ MORE BUTTON */
+.cba-program-card .program-read-more {
+	position: relative;
+	z-index: 2;
+	padding: 7px 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: 1px solid #027b16;
+	border-radius: 8px;
+	background: #fff;
+	color: #026220;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .25s ease;
+}
+.cba-program-card .program-read-more span {
+	width: auto;
+	height: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	color: #025829;
+	font-size: 15px;
+	line-height: 1;
+	transition: transform .25s ease;
+}
+.cba-program-card .program-read-more:hover {
+	border-color: #04a833d0;
+	background: #01672f;
+	color: #fff;
+}
+.cba-program-card .program-read-more:hover span {
+	color: #fff;
+	transform: translateX(3px);
+}
+
+/* EVENTS BUTTON */
+.cba-program-card .program-events-link {
+	position: relative;
+	z-index: 2;
+	padding: 7px 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: 1px solid #c89a0b;
+	border-radius: 8px;
+	background: #fffaf0;
+	color: #805c00;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .25s ease;
+}
+.cba-program-card .program-events-link span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #805c00;
+	font-size: 14px;
+	line-height: 1;
+	transition: transform .25s ease;
+}
+.cba-program-card .program-events-link:hover {
+	border-color: #c89a0b;
+	background: #c89a0b;
+	color: #fff;
+}
+.cba-program-card .program-events-link:hover span {
+	color: #fff;
+	transform: translate(2px,-2px);
+}
+
 
 /*QUICK LINKS*/
 .cba-quick-links {
@@ -1107,5 +1171,37 @@ body.program-modal-open{
 .cba-page .cba-hero {
     width: 100%;
 }
+
+
+
+
+
+
+/* CBA PAGE-SPECIFIC CONTENT SPACING */
+.cba-page .cba-about > .cba-content-container,
+.cba-page .cba-programs > .cba-content-container {
+	width: calc(100% - 120px);
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cba-page .cba-quick-links > .cba-quick-grid {
+	width: calc(100% - 120px);
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+.cba-page .cba-hero {
+	width: 100%;
+}
+.cba-page .cba-about-grid {
+	width: 100%;
+}
+.cba-no-programs-message {
+	display: none;
+}
+
 
 

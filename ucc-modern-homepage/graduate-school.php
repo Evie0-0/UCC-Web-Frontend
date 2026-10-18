@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="academics.css">
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
-	<link rel="stylesheet" href="assets/footer.css">	
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
+
 <body>
-	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
@@ -23,10 +23,11 @@
 	</div>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
+
 	<main class="ccje-page graduate-page">
 		<section class="cba-hero">
 			<div class="cba-building">
-				<img src="images/FOOTER.jpg" alt="">
+				<img src="images/FOOTER.jpg" alt="University of Caloocan City building">
 			</div>
 			<div class="cba-hero-inner">
 				<div class="cba-dean">
@@ -53,7 +54,8 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
-		<section class="ccje-about">
+		<!-- ABOUT THE GRADUATE SCHOOL -->
+		<section class="ccje-about" id="about-graduate-school">
 			<div class="container">
 				<div class="cba-section-title">
 					<h2>ABOUT THE GRADUATE SCHOOL</h2>
@@ -83,6 +85,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- PROGRAMS -->
 		<section class="cba-programs" id="programs">
 			<div class="container">
 				<div class="cba-program-heading">
@@ -95,55 +98,75 @@
 					</div>
 					<p>Explore the graduate programs offered by the University of Caloocan City Graduate School.</p>
 				</div>
-				<div class="cba-filters" aria-label="Filter graduate programs">
-					<button type="button" class="active" data-filter="all" aria-pressed="true">ALL PROGRAMS</button>
-					<button type="button" data-filter="doctoral" aria-pressed="false">DOCTORAL</button>
-					<button type="button" data-filter="masters" aria-pressed="false">MASTER'S</button>
-				</div>
-				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="doctor-public-administration" data-category="doctoral">
-						<div class="cba-program-number">01</div>
-						<h3>Doctor in Public Administration</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="02" data-program="doctor-philosophy-educational-management" data-category="doctoral">
-						<div class="cba-program-number">02</div>
-						<h3>Doctor of Philosophy, Major in Educational Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="03" data-program="master-public-administration" data-category="masters">
-						<div class="cba-program-number">03</div>
-						<h3>Master in Public Administration</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="04" data-program="ma-education-management" data-category="masters">
-						<div class="cba-program-number">04</div>
-						<h3>Master of Arts in Education, Major in Educational Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="05" data-program="ma-teaching-early-grades" data-category="masters">
-						<div class="cba-program-number">05</div>
-						<h3>Master of Arts in Education, Major in Teaching in the Early Grades</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="06" data-program="ma-teaching-science" data-category="masters">
-						<div class="cba-program-number">06</div>
-						<h3>Master of Arts in Education, Major in Teaching Science</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="07" data-program="master-business-administration" data-category="masters">
-						<div class="cba-program-number">07</div>
-						<h3>Master of Business Administration</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="08" data-program="master-criminal-justice" data-category="masters">
-						<div class="cba-program-number">08</div>
-						<h3>Master of Science in Criminal Justice, Major in Criminology</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-				</div>
+					<div class="cba-program-grid">
+						<article class="cba-program-card" data-program="doctor-public-administration" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">01</div>
+							<h3>Doctor in Public Administration</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=doctor-public-administration" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="phd-educational-management" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">02</div>
+							<h3>Doctor of Philosophy, Major in Educational Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=phd-educational-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="master-public-administration" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">03</div>
+							<h3>Master in Public Administration</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=master-public-administration" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="ma-education-management" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">04</div>
+							<h3>Master of Arts in Education, Major in Educational Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=ma-education-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="ma-teaching-early-grades" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">05</div>
+							<h3>Master of Arts in Education, Major in Teaching in the Early Grades</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=ma-teaching-early-grades" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="ma-teaching-science" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">06</div>
+							<h3>Master of Arts in Education, Major in Teaching Science</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=ma-teaching-science" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="master-business-administration" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">07</div>
+							<h3>Master of Business Administration</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=master-business-administration" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="ms-criminal-justice-criminology" data-vision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City." data-mission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.">
+							<div class="cba-program-number">08</div>
+							<h3>Master of Science in Criminal Justice, Major in Criminology</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=ms-criminal-justice-criminology" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+					</div>
 			</div>
 		</section>
+		<!-- QUICK LINKS -->
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
 				<a href="#programs">
@@ -226,102 +249,8 @@
 	<!-- SHARED FOOTER -->
 	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			if(window.lucide){
-				lucide.createIcons();
-			}
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const filterButtons=document.querySelectorAll(".cba-filters button");
-			const programCards=document.querySelectorAll(".cba-program-card");
-			const graduateSchoolVision="A high quality of learning that will bring forth a high quality of life, more particularly in Caloocan City.";
-			const graduateSchoolMission="To maintain and support an adequate system of tertiary education that will help promote economic growth of the country, strengthen the character and well-being of its graduates as productive members of the community.";
-			const programDescriptions={
-				"doctor-public-administration":{
-					title:"Doctor in Public Administration"
-				},
-				"doctor-philosophy-educational-management":{
-					title:"Doctor of Philosophy, Major in Educational Management"
-				},
-				"master-public-administration":{
-					title:"Master in Public Administration"
-				},
-				"ma-education-management":{
-					title:"Master of Arts in Education, Major in Educational Management"
-				},
-				"ma-teaching-early-grades":{
-					title:"Master of Arts in Education, Major in Teaching in the Early Grades"
-				},
-				"ma-teaching-science":{
-					title:"Master of Arts in Education, Major in Teaching Science"
-				},
-				"master-business-administration":{
-					title:"Master of Business Administration"
-				},
-				"master-criminal-justice":{
-					title:"Master of Science in Criminal Justice, Major in Criminology"
-				}
-			};
-			function openProgramModal(card){
-				const data=programDescriptions[card.dataset.program];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=graduateSchoolVision;
-				modalMission.textContent=graduateSchoolMission;
-				modalNumber.textContent=number ? number.textContent.trim() : "";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal(){
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
-					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
-				});
-			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",closeProgramModal);
-			});
-			filterButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					const selectedFilter=button.dataset.filter;
-					filterButtons.forEach(function(filterButton){
-						const isActive=filterButton===button;
-						filterButton.classList.toggle("active",isActive);
-						filterButton.setAttribute("aria-pressed",String(isActive));
-					});
-					programCards.forEach(function(card){
-						const matchesFilter=selectedFilter==="all"||card.dataset.category===selectedFilter;
-						card.hidden=!matchesFilter;
-					});
-				});
-			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
-					closeProgramModal();
-				}
-			});
-		});
-	</script>
+	<script src="academics.js"></script>
 </body>
 </html>

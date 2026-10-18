@@ -11,10 +11,9 @@
 	<link rel="stylesheet" href="academics.css">
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
-	<link rel="stylesheet" href="assets/footer.css">	
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
 <body>
-	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
@@ -23,7 +22,7 @@
 	</div>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
-	<!-- COLLEGE OF ENGINEERING -->
+
 	<main class="ccje-page coe-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -112,35 +111,40 @@
 					</div>
 					<p>Explore our engineering programs designed to develop competent, innovative, and globally competitive engineering professionals.</p>
 				</div>
-				<div class="cba-filters">
-					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
-					<button type="button" data-filter="computer-engineering">COMPUTER ENGINEERING</button>
-					<button type="button" data-filter="electrical-engineering">ELECTRICAL ENGINEERING</button>
-					<button type="button" data-filter="electronics-engineering">ELECTRONICS ENGINEERING</button>
-					<button type="button" data-filter="industrial-engineering">INDUSTRIAL ENGINEERING</button>
-				</div>
-				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="computer-engineering">
-						<div class="cba-program-number">01</div>
-						<h3>Bachelor of Science in Computer Engineering</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="02" data-program="electrical-engineering">
-						<div class="cba-program-number">02</div>
-						<h3>Bachelor of Science in Electrical Engineering</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="03" data-program="electronics-engineering">
-						<div class="cba-program-number">03</div>
-						<h3>Bachelor of Science in Electronics Engineering</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="04" data-program="industrial-engineering">
-						<div class="cba-program-number">04</div>
-						<h3>Bachelor of Science in Industrial Engineering</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-				</div>
+					<div class="cba-program-grid">
+						<article class="cba-program-card" data-program="computer-engineering" data-vision="We envision UCC College of Engineering as a world-class, academically excellent, socially impactful, and industry-oriented engineering college recognized for its talented people, innovative technologies, and continually improving processes that contribute to civic consciousness, ecological sustainability, and a better quality of life." data-mission="The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse, and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems.">
+							<div class="cba-program-number">01</div>
+							<h3>Bachelor of Science in Computer Engineering</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=computer-engineering" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="electrical-engineering" data-vision="We envision UCC College of Engineering as a world-class, academically excellent, socially impactful, and industry-oriented engineering college recognized for its talented people, innovative technologies, and continually improving processes that contribute to civic consciousness, ecological sustainability, and a better quality of life." data-mission="The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse, and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems.">
+							<div class="cba-program-number">02</div>
+							<h3>Bachelor of Science in Electrical Engineering</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=electrical-engineering" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="electronics-engineering" data-vision="We envision UCC College of Engineering as a world-class, academically excellent, socially impactful, and industry-oriented engineering college recognized for its talented people, innovative technologies, and continually improving processes that contribute to civic consciousness, ecological sustainability, and a better quality of life." data-mission="The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse, and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems.">
+							<div class="cba-program-number">03</div>
+							<h3>Bachelor of Science in Electronics Engineering</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=electronics-engineering" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="industrial-engineering" data-vision="We envision UCC College of Engineering as a world-class, academically excellent, socially impactful, and industry-oriented engineering college recognized for its talented people, innovative technologies, and continually improving processes that contribute to civic consciousness, ecological sustainability, and a better quality of life." data-mission="The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse, and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems.">
+							<div class="cba-program-number">04</div>
+							<h3>Bachelor of Science in Industrial Engineering</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=industrial-engineering" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+					</div>
 			</div>
 		</section>
 		<!-- QUICK LINKS -->
@@ -226,91 +230,8 @@
 	<!-- SHARED FOOTER -->
 	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			lucide.createIcons();
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const filterButtons=document.querySelectorAll(".cba-filters button");
-			const programCards=document.querySelectorAll(".cba-program-card");
-			const programDescriptions={
-				"computer-engineering":{
-					title:"Bachelor of Science in Computer Engineering",
-					vision:"We envision UCC College of Engineering as: “A world-class, academically excellent, socially-impactful and industry-oriented engineering college recognized for its talented people, innovative technologies and continually improving processes that contribute to civic consciousness, ecological sustainability and better quality of life.”",
-					mission:"The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems."
-				},
-				"electrical-engineering":{
-					title:"Bachelor of Science in Electrical Engineering",
-					vision:"We envision UCC College of Engineering as: “A world-class, academically excellent, socially-impactful and industry-oriented engineering college recognized for its talented people, innovative technologies and continually improving processes that contribute to civic consciousness, ecological sustainability and better quality of life.”",
-					mission:"The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems."
-				},
-				"electronics-engineering":{
-					title:"Bachelor of Science in Electronics Engineering",
-					vision:"We envision UCC College of Engineering as: “A world-class, academically excellent, socially-impactful and industry-oriented engineering college recognized for its talented people, innovative technologies and continually improving processes that contribute to civic consciousness, ecological sustainability and better quality of life.”",
-					mission:"The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems."
-				},
-				"industrial-engineering":{
-					title:"Bachelor of Science in Industrial Engineering",
-					vision:"We envision UCC College of Engineering as: “A world-class, academically excellent, socially-impactful and industry-oriented engineering college recognized for its talented people, innovative technologies and continually improving processes that contribute to civic consciousness, ecological sustainability and better quality of life.”",
-					mission:"The mission of UCC College of Engineering is to build an academically excellent, professionally progressive, environmentally conscious, globally competitive, inclusive, diverse and responsible community through quality education, functional co-curricular activities, responsive community immersion programs, and continually improving management systems."
-				}
-			};
-			function openProgramModal(card){
-				const data=programDescriptions[card.dataset.program];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=data.vision;
-				modalMission.textContent=data.mission;
-				modalNumber.textContent=number?number.textContent.trim():"";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal(){
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
-					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
-				});
-			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",closeProgramModal);
-			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
-					closeProgramModal();
-				}
-			});
-			filterButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					const filter=button.dataset.filter;
-					filterButtons.forEach(function(item){
-						item.classList.toggle("active",item===button);
-					});
-					programCards.forEach(function(card){
-						card.style.display=filter==="all"||card.dataset.program===filter?"":"none";
-					});
-				});
-			});
-		});
-	</script>
+	<script src="academics.js"></script>
 </body>
 </html>

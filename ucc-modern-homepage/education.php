@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="academics.css">
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
-	<link rel="stylesheet" href="assets/footer.css">	
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
+
 <body>
-	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
@@ -24,7 +24,7 @@
 	</div>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
-	<!-- COLLEGE OF EDUCATION -->
+
 	<main class="ccje-page coe-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -118,49 +118,64 @@
 					</div>
 					<p>Explore our academic programs designed to prepare future educators and educational leaders.</p>
 				</div>
-				<div class="cba-filters">
-					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
-					<button type="button" data-filter="secondary">SECONDARY EDUCATION</button>
-					<button type="button" data-filter="early-childhood">EARLY CHILDHOOD EDUCATION</button>
-					<button type="button" data-filter="professional">PROFESSIONAL EDUCATION</button>
-				</div>
-				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="bse-english" data-category="secondary">
-						<div class="cba-program-number">01</div>
-						<h3>Bachelor in Secondary Education Major in English</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="02" data-program="bse-english-chinese" data-category="secondary">
-						<div class="cba-program-number">02</div>
-						<h3>Bachelor in Secondary Education Major in English - Chinese</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="03" data-program="bse-science" data-category="secondary">
-						<div class="cba-program-number">03</div>
-						<h3>Bachelor in Secondary Education Major in Science</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="04" data-program="bse-technology-livelihood" data-category="secondary">
-						<div class="cba-program-number">04</div>
-						<h3>Bachelor in Secondary Education Major in Technology and Livelihood Education</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="05" data-program="early-childhood-education" data-category="early-childhood">
-						<div class="cba-program-number">05</div>
-						<h3>Bachelor of Early Childhood Education</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="06" data-program="certificate-professional-education" data-category="professional">
-						<div class="cba-program-number">06</div>
-						<h3>Certificate in Professional Education</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-number="07" data-program="elementary-secondary-pe" data-category="professional">
-						<div class="cba-program-number">07</div>
-						<h3>Elementary | Secondary | P.E.</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-				</div>
+					<div class="cba-program-grid">
+						<article class="cba-program-card" data-program="secondary-education-english" data-vision="" data-mission="">
+							<div class="cba-program-number">01</div>
+							<h3>Bachelor in Secondary Education Major in English</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=secondary-education-english" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="secondary-education-english-chinese" data-vision="" data-mission="">
+							<div class="cba-program-number">02</div>
+							<h3>Bachelor in Secondary Education Major in English - Chinese</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=secondary-education-english-chinese" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="secondary-education-science" data-vision="" data-mission="">
+							<div class="cba-program-number">03</div>
+							<h3>Bachelor in Secondary Education Major in Science</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=secondary-education-science" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="secondary-education-tle" data-vision="" data-mission="">
+							<div class="cba-program-number">04</div>
+							<h3>Bachelor in Secondary Education Major in Technology and Livelihood Education</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=secondary-education-tle" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="early-childhood-education" data-vision="" data-mission="">
+							<div class="cba-program-number">05</div>
+							<h3>Bachelor of Early Childhood Education</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=early-childhood-education" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="professional-education" data-vision="" data-mission="">
+							<div class="cba-program-number">06</div>
+							<h3>Certificate in Professional Education</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=professional-education" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="elementary-secondary-pe" data-vision="" data-mission="">
+							<div class="cba-program-number">07</div>
+							<h3>Elementary | Secondary | P.E.</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=elementary-secondary-pe" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+					</div>
 			</div>
 		</section>
 		<!-- QUICK LINKS -->
@@ -246,108 +261,8 @@
 	<!-- SHARED FOOTER -->
 	<?php include __DIR__ . '/includes/footer.php'; ?>
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-	<!-- SCRIPTS -->
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			if(window.lucide){
-				lucide.createIcons();
-			}
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const programCards=document.querySelectorAll(".cba-program-card");
-			const filterButtons=document.querySelectorAll(".cba-filters button");
-			const programDescriptions={
-				"bse-english":{
-					title:"Bachelor in Secondary Education Major in English",
-					vision:"PASTE THE COMPLETE BSE ENGLISH VISION HERE.",
-					mission:"PASTE THE COMPLETE BSE ENGLISH MISSION HERE."
-				},
-				"bse-english-chinese":{
-					title:"Bachelor in Secondary Education Major in English - Chinese",
-					vision:"PASTE THE COMPLETE BSE ENGLISH - CHINESE VISION HERE.",
-					mission:"PASTE THE COMPLETE BSE ENGLISH - CHINESE MISSION HERE."
-				},
-				"bse-science":{
-					title:"Bachelor in Secondary Education Major in Science",
-					vision:"PASTE THE COMPLETE BSE SCIENCE VISION HERE.",
-					mission:"PASTE THE COMPLETE BSE SCIENCE MISSION HERE."
-				},
-				"bse-technology-livelihood":{
-					title:"Bachelor in Secondary Education Major in Technology and Livelihood Education",
-					vision:"PASTE THE COMPLETE BSE TECHNOLOGY AND LIVELIHOOD EDUCATION VISION HERE.",
-					mission:"PASTE THE COMPLETE BSE TECHNOLOGY AND LIVELIHOOD EDUCATION MISSION HERE."
-				},
-				"early-childhood-education":{
-					title:"Bachelor of Early Childhood Education",
-					vision:"PASTE THE COMPLETE EARLY CHILDHOOD EDUCATION VISION HERE.",
-					mission:"PASTE THE COMPLETE EARLY CHILDHOOD EDUCATION MISSION HERE."
-				},
-				"certificate-professional-education":{
-					title:"Certificate in Professional Education",
-					vision:"PASTE THE COMPLETE CERTIFICATE IN PROFESSIONAL EDUCATION VISION HERE.",
-					mission:"PASTE THE COMPLETE CERTIFICATE IN PROFESSIONAL EDUCATION MISSION HERE."
-				},
-				"elementary-secondary-pe":{
-					title:"Elementary | Secondary | P.E.",
-					vision:"PASTE THE COMPLETE ELEMENTARY | SECONDARY | P.E. VISION HERE.",
-					mission:"PASTE THE COMPLETE ELEMENTARY | SECONDARY | P.E. MISSION HERE."
-				}
-			};
-			function openProgramModal(card){
-				const data=programDescriptions[card.dataset.program];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=data.vision;
-				modalMission.textContent=data.mission;
-				modalNumber.textContent=number?number.textContent.trim():"";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal(){
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
-					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
-				});
-			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",closeProgramModal);
-			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
-					closeProgramModal();
-				}
-			});
-			filterButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					const filter=button.dataset.filter;
-					filterButtons.forEach(function(item){
-						item.classList.toggle("active",item===button);
-					});
-					programCards.forEach(function(card){
-						card.style.display=filter==="all"||card.dataset.category===filter?"":"none";
-					});
-				});
-			});
-		});
-	</script>
+	<script src="academics.js"></script>
 </body>
 </html>

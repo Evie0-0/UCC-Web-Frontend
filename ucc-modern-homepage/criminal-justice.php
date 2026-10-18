@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,9 @@
 	<link rel="stylesheet" href="academics.css">
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
-	<link rel="stylesheet" href="assets/footer.css">	
+	<link rel="stylesheet" href="assets/footer.css">
 </head>
 <body>
-	<!-- PAGE DOTS -->
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
 		<span class="dot-pattern dot-2"></span>
@@ -24,7 +24,7 @@
 	</div>
 	<?php include __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php include __DIR__ . '/includes/navbar.php'; ?>
-	<!-- COLLEGE OF CRIMINAL JUSTICE EDUCATION -->
+
 	<main class="ccje-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -58,6 +58,7 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
+
 		<!-- ABOUT CCJE -->
 		<section class="ccje-about" id="about-college">
 			<div class="container">
@@ -72,47 +73,34 @@
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>VISION</h3>
-						<p>
-							To be a leading institution that produces knowledgeable, skilled, and ethical professionals dedicated to advancing the criminal justice system and promoting a safer, more just society through innovation, research, and community engagement.
-						</p>
+						<p>To be a leading institution that produces knowledgeable, skilled, and ethical professionals dedicated to advancing the criminal justice system and promoting a safer, more just society through innovation, research, and community engagement.</p>
 					</div>
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>MISSION</h3>
-						<p>
-							To provide quality education and training, utilizing innovation and research, that equips students with the knowledge, skills, and ethical foundation necessary to become leading criminal justice professionals capable of effectively addressing complex issues and advancing the criminal justice system.
-						</p>
+						<p>To provide quality education and training, utilizing innovation and research, that equips students with the knowledge, skills, and ethical foundation necessary to become leading criminal justice professionals capable of effectively addressing complex issues and advancing the criminal justice system.</p>
 					</div>
 				</div>
 				<div class="cba-about-grid" style="margin-top:30px;">
 					<div class="cba-about-block">
 						<div class="cba-quote">“</div>
 						<h3>GOALS</h3>
-						<p>
-							To excel in the criminal justice education field by providing students with a rigorous academic foundation, practical skills, and ethical principles necessary for effective and responsible practice of law enforcement, corrections, and related areas.
-						</p>
+						<p>To excel in the criminal justice education field by providing students with a rigorous academic foundation, practical skills, and ethical principles necessary for effective and responsible practice of law enforcement, corrections, and related areas.</p>
 					</div>
 					<div class="cba-about-block" style="grid-column:span 2;">
 						<div class="cba-quote">“</div>
 						<h3>OBJECTIVES</h3>
 						<ol style="position:relative;z-index:2;margin:0;padding-left:20px;color:#3b443f;font-size:13px;line-height:1.75;">
-							<li>
-								Provide students with comprehensive knowledge of criminal justice theories, principles, and practices to prepare them for professional competence.
-							</li>
-							<li>
-								Develop skilled and ethical practitioners capable of effectively addressing crime and justice-related issues while upholding integrity and accountability.
-							</li>
-							<li>
-								Promote critical thinking, research, and innovative approaches that contribute to the advancement of the criminal justice system.
-							</li>
-							<li>
-								Develop graduates’ leadership, communication, and cultural competence while fostering collaboration with communities and stakeholders to promote public safety and social development.
-							</li>
+							<li>Provide students with comprehensive knowledge of criminal justice theories, principles, and practices to prepare them for professional competence.</li>
+							<li>Develop skilled and ethical practitioners capable of effectively addressing crime and justice-related issues while upholding integrity and accountability.</li>
+							<li>Promote critical thinking, research, and innovative approaches that contribute to the advancement of the criminal justice system.</li>
+							<li>Develop graduates’ leadership, communication, and cultural competence while fostering collaboration with communities and stakeholders to promote public safety and social development.</li>
 						</ol>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<!-- PROGRAMS -->
 		<section class="cba-programs" id="programs">
 			<div class="container">
@@ -124,37 +112,26 @@
 						<i></i>
 						<i></i>
 					</div>
-					<p>
-						Explore our academic programs designed for future criminal justice professionals.
-					</p>
-				</div>
-				<div class="cba-filters">
-					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
-					<button type="button" data-filter="criminology">CRIMINOLOGY</button>
-					<button type="button" data-filter="industrial-security">INDUSTRIAL SECURITY</button>
+					<p>Explore our academic programs designed for future criminal justice professionals.</p>
 				</div>
 				<div class="cba-program-grid">
-					<article class="cba-program-card" data-number="01" data-program="criminology">
+					<article class="cba-program-card" data-program="criminology" data-vision="" data-mission="">
 						<div class="cba-program-number">01</div>
 						<h3>Bachelor of Science in Criminology</h3>
-						<p>
-							The Bachelor of Science in Criminology (BS Crim) program is designed to produce knowledgeable, skilled, and ethical professionals in the criminal justice system. It equips students with a solid foundation in law enforcement, criminology, corrections, forensic science, criminal law, and the judicial process, integrating theory with practical training. The program emphasizes critical thinking, research, and community engagement, with a required practicum or field immersion to provide hands-on experience.
-						</p>
-						<a href="#" class="program-read-more">
-							Read more
-							<span>→</span>
-						</a>
+						<p>The Bachelor of Science in Criminology (BS Crim) program is designed to produce knowledgeable, skilled, and ethical professionals in the criminal justice system. It equips students with a solid foundation in law enforcement, criminology, corrections, forensic science, criminal law, and the judicial process, integrating theory with practical training. The program emphasizes critical thinking, research, and community engagement, with a required practicum or field immersion to provide hands-on experience.</p>
+						<div class="cba-program-actions">
+							<a href="#" class="program-read-more">Read more <span>→</span></a>
+							<a href="program-events.php?program=criminology" class="program-events-link">Events <span>↗</span></a>
+						</div>
 					</article>
-					<article class="cba-program-card" data-number="02" data-program="industrial-security">
+					<article class="cba-program-card" data-program="industrial-security-management" data-vision="" data-mission="">
 						<div class="cba-program-number">02</div>
 						<h3>Bachelor of Science in Industrial Security Management</h3>
-						<p>
-							The Bachelor of Science in Industrial Security Management (BSISM) program trains students in security principles, risk management, and protective services for industrial, corporate, and institutional settings. It equips graduates with skills in security administration, investigations, emergency preparedness, and asset protection through both theoretical and practical training. Graduates are prepared for careers as security managers, corporate security officers, and related professionals.
-						</p>
-						<a href="#" class="program-read-more">
-							Read more
-							<span>→</span>
-						</a>
+						<p>The Bachelor of Science in Industrial Security Management (BSISM) program trains students in security principles, risk management, and protective services for industrial, corporate, and institutional settings. It equips graduates with skills in security administration, investigations, emergency preparedness, and asset protection through both theoretical and practical training. Graduates are prepared for careers as security managers, corporate security officers, and related professionals.</p>
+						<div class="cba-program-actions">
+							<a href="#" class="program-read-more">Read more <span>→</span></a>
+							<a href="program-events.php?program=industrial-security-management" class="program-events-link">Events <span>↗</span></a>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -244,80 +221,6 @@
 	<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded",function(){
-			if(window.lucide){
-				lucide.createIcons();
-			}
-			const modal=document.getElementById("programModal");
-			const modalTitle=document.getElementById("programModalTitle");
-			const modalVision=document.getElementById("programModalVision");
-			const modalMission=document.getElementById("programModalMission");
-			const modalNumber=document.getElementById("programModalNumber");
-			const programLinks=document.querySelectorAll(".program-read-more");
-			const closeButtons=document.querySelectorAll("[data-modal-close]");
-			const programCards=document.querySelectorAll(".cba-program-card");
-			const filterButtons=document.querySelectorAll(".cba-filters button");
-			const programDescriptions={
-				"criminology":{
-					title:"Bachelor of Science in Criminology",
-					vision:"PASTE THE COMPLETE CRIMINOLOGY VISION HERE.",
-					mission:"PASTE THE COMPLETE CRIMINOLOGY MISSION HERE."
-				},
-				"industrial-security":{
-					title:"Bachelor of Science in Industrial Security Management",
-					vision:"PASTE THE COMPLETE INDUSTRIAL SECURITY MANAGEMENT VISION HERE.",
-					mission:"PASTE THE COMPLETE INDUSTRIAL SECURITY MANAGEMENT MISSION HERE."
-				}
-			};
-			function openProgramModal(card){
-				const data=programDescriptions[card.dataset.program];
-				const number=card.querySelector(".cba-program-number");
-				if(!data){
-					return;
-				}
-				modalTitle.textContent=data.title;
-				modalVision.textContent=data.vision;
-				modalMission.textContent=data.mission;
-				modalNumber.textContent=number?number.textContent.trim():"";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden","false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal(){
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden","true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link){
-				link.addEventListener("click",function(event){
-					event.preventDefault();
-					const card=link.closest(".cba-program-card");
-					if(card){
-						openProgramModal(card);
-					}
-				});
-			});
-			closeButtons.forEach(function(button){
-				button.addEventListener("click",closeProgramModal);
-			});
-			document.addEventListener("keydown",function(event){
-				if(event.key==="Escape"&&modal.classList.contains("show")){
-					closeProgramModal();
-				}
-			});
-			filterButtons.forEach(function(button){
-				button.addEventListener("click",function(){
-					const filter=button.dataset.filter;
-					filterButtons.forEach(function(item){
-						item.classList.toggle("active",item===button);
-					});
-					programCards.forEach(function(card){
-						card.style.display=filter==="all"||card.dataset.program===filter?"":"none";
-					});
-				});
-			});
-		});
-	</script>
+	<script src="academics.js"></script>
 </body>
 </html>

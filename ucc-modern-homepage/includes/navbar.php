@@ -70,11 +70,6 @@ $academicsActive = in_array($currentPage, $academicPages, true);
 					<a href="campus.php" class="<?= navActive('campus.php', $currentPage) ?>">CAMPUS</a>
 					<a href="contacts.php" class="<?= navActive('contacts.php', $currentPage) ?>">CONTACTS</a>
 				</div>
-
-				<form class="search-box" onsubmit="return false;">
-					<input type="search" placeholder="Search..." aria-label="Search UCC">
-					<button type="submit" aria-label="Search">⌕</button>
-				</form>
 			</div>
 		</nav>
 		<img class="am-logo" src="images/AM-LOGO.png" alt="Aksyon at Malasakit">

@@ -13,60 +13,8 @@
 	<link rel="stylesheet" href="assets/utility-bar.css">
 	<link rel="stylesheet" href="assets/navbar.css">
 	<link rel="stylesheet" href="assets/footer.css">
-	<style>
-		/* CBA PAGE-SPECIFIC CONTENT SPACING */
-		.cba-page .cba-about > .cba-content-container,
-		.cba-page .cba-programs > .cba-content-container {
-			width: calc(100% - 120px);
-			max-width: 1350px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.cba-page .cba-quick-links > .cba-quick-grid {
-			width: calc(100% - 120px);
-			max-width: 1350px;
-			margin-left: auto;
-			margin-right: auto;
-			padding-left: 0;
-			padding-right: 0;
-		}
-		.cba-page .cba-hero {
-			width: 100%;
-		}
-		.cba-page .cba-about-grid {
-			width: 100%;
-		}
-		@media (max-width: 768px) {
-			.cba-page .cba-about > .cba-content-container,
-			.cba-page .cba-programs > .cba-content-container,
-			.cba-page .cba-quick-links > .cba-quick-grid {
-				width: calc(100% - 32px);
-			}
-			.cba-page .cba-about-grid {
-				grid-template-columns: 1fr;
-			}
-			.cba-page .cba-hero-inner {
-				width: calc(100% - 32px);
-				grid-template-columns: 1fr;
-				padding-bottom: 45px;
-			}
-			.cba-page .cba-dean {
-				min-height: 270px;
-				border-right: none;
-			}
-			.cba-page .cba-hero-content {
-				padding: 25px 10px 40px;
-				transform: none !important;
-			}
-			.cba-page .cba-program-grid {
-				grid-template-columns: 1fr;
-			}
-			.cba-page .cba-quick-grid {
-				grid-template-columns: 1fr;
-			}
-		}
-	</style>
 </head>
+
 <body>
 	<div class="page-dots" aria-hidden="true">
 		<span class="dot-pattern dot-1"></span>
@@ -76,6 +24,7 @@
 	</div>
 	<?php require_once __DIR__ . '/includes/utility-bar.php'; ?>
 	<?php require_once __DIR__ . '/includes/navbar.php'; ?>
+
 	<main class="cba-page">
 		<section class="cba-hero">
 			<div class="cba-building">
@@ -109,6 +58,8 @@
 			</div>
 			<div class="cba-hero-wave"></div>
 		</section>
+
+		<!-- ABOUT CBA -->
 		<section class="cba-about" id="about-college">
 			<div class="container cba-content-container">
 				<div class="cba-section-title">
@@ -132,6 +83,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- PROGRAMS -->
 		<section class="cba-programs" id="programs">
 			<div class="container cba-content-container">
 				<div class="cba-program-heading">
@@ -144,65 +97,83 @@
 					</div>
 					<p>Explore our academic programs designed for future business leaders.</p>
 				</div>
-				<div class="cba-filters">
-					<button type="button" class="active" data-filter="all">ALL PROGRAMS</button>
-					<button type="button" data-filter="accountancy">ACCOUNTANCY</button>
-					<button type="button" data-filter="business-administration">BUSINESS ADMINISTRATION</button>
-					<button type="button" data-filter="entrepreneurship">ENTREPRENEURSHIP</button>
-					<button type="button" data-filter="hospitality">HOSPITALITY</button>
-					<button type="button" data-filter="office-administration">OFFICE ADMINISTRATION</button>
-					<button type="button" data-filter="tourism">TOURISM</button>
-				</div>
-				<div class="cba-program-grid">
-					<article class="cba-program-card" data-program="accountancy" data-category="accountancy">
-						<div class="cba-program-number">01</div>
-						<h3>Bachelor of Science in Accountancy</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="accounting-information-system" data-category="accountancy">
-						<div class="cba-program-number">02</div>
-						<h3>Bachelor of Science in Accounting Information System</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="financial-management" data-category="business-administration">
-						<div class="cba-program-number">03</div>
-						<h3>Bachelor of Science in Business Administration, Major in Financial Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="human-resource-management" data-category="business-administration">
-						<div class="cba-program-number">04</div>
-						<h3>Bachelor of Science in Business Administration, Major in Human Resource Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="marketing-management" data-category="business-administration">
-						<div class="cba-program-number">05</div>
-						<h3>Bachelor of Science in Business Administration, Major in Marketing Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="entrepreneurship" data-category="entrepreneurship">
-						<div class="cba-program-number">06</div>
-						<h3>Bachelor of Science in Entrepreneurship</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="hospitality-management" data-category="hospitality">
-						<div class="cba-program-number">07</div>
-						<h3>Bachelor of Science in Hospitality Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="office-administration" data-category="office-administration">
-						<div class="cba-program-number">08</div>
-						<h3>Bachelor of Science in Office Administration</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-					<article class="cba-program-card" data-program="tourism-management" data-category="tourism">
-						<div class="cba-program-number">09</div>
-						<h3>Bachelor of Science in Tourism Management</h3>
-						<a href="#" class="program-read-more">Read more <span>→</span></a>
-					</article>
-				</div>
-				<p id="noProgramsMessage" style="display:none;">No programs found in this category.</p>
+					<div class="cba-program-grid">
+						<article class="cba-program-card" data-program="accountancy" data-category="accountancy" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">01</div>
+							<h3>Bachelor of Science in Accountancy</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=accountancy" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="accounting-information-system" data-category="accountancy" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">02</div>
+							<h3>Bachelor of Science in Accounting Information System</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=accounting-information-system" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="financial-management" data-category="business-administration" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">03</div>
+							<h3>Bachelor of Science in Business Administration, Major in Financial Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=financial-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="human-resource-management" data-category="business-administration" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">04</div>
+							<h3>Bachelor of Science in Business Administration, Major in Human Resource Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=human-resource-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="marketing-management" data-category="business-administration" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">05</div>
+							<h3>Bachelor of Science in Business Administration, Major in Marketing Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=marketing-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="entrepreneurship" data-category="entrepreneurship" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">06</div>
+							<h3>Bachelor of Science in Entrepreneurship</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=entrepreneurship" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="hospitality-management" data-category="hospitality" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">07</div>
+							<h3>Bachelor of Science in Hospitality Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=hospitality-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="office-administration" data-category="office-administration" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">08</div>
+							<h3>Bachelor of Science in Office Administration</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=office-administration" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+						<article class="cba-program-card" data-program="tourism-management" data-category="tourism" data-vision="Program vision information has not been provided yet." data-mission="Program mission information has not been provided yet.">
+							<div class="cba-program-number">09</div>
+							<h3>Bachelor of Science in Tourism Management</h3>
+							<div class="cba-program-actions">
+								<a href="#" class="program-read-more">Read more <span>→</span></a>
+								<a href="program-events.php?program=tourism-management" class="program-events-link">Events <span>↗</span></a>
+							</div>
+						</article>
+					</div>
 			</div>
 		</section>
+		<!-- QUICK LINKS -->
 		<section class="cba-quick-links">
 			<div class="container cba-quick-grid">
 				<a href="#programs">
@@ -228,6 +199,7 @@
 			</div>
 		</section>
 	</main>
+	<!-- PROGRAM MODAL -->
 	<div class="program-modal" id="programModal" aria-hidden="true">
 		<div class="program-modal-backdrop" data-modal-close></div>
 		<div class="program-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="programModalTitle">
@@ -261,119 +233,10 @@
 			</div>
 		</div>
 	</div>
+	<!-- SHARED FOOTER -->
 	<?php require_once __DIR__ . '/includes/footer.php'; ?>
-	<script src="script.js"></script>
+	<script src="academics.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			if (window.lucide) {
-				lucide.createIcons();
-			}
-			const filterButtons = document.querySelectorAll(".cba-filters button");
-			const programCards = document.querySelectorAll(".cba-program-card");
-			const noProgramsMessage = document.getElementById("noProgramsMessage");
-			filterButtons.forEach(function(button) {
-				button.addEventListener("click", function() {
-					const filter = button.dataset.filter;
-					let visibleCount = 0;
-					filterButtons.forEach(function(item) {
-						item.classList.toggle("active", item === button);
-					});
-					programCards.forEach(function(card) {
-						const matches = filter === "all" || card.dataset.category === filter;
-						card.style.display = matches ? "" : "none";
-						if (matches) visibleCount++;
-					});
-					noProgramsMessage.style.display = visibleCount === 0 ? "block" : "none";
-				});
-			});
-			const modal = document.getElementById("programModal");
-			const modalTitle = document.getElementById("programModalTitle");
-			const modalVision = document.getElementById("programModalVision");
-			const modalMission = document.getElementById("programModalMission");
-			const modalNumber = document.getElementById("programModalNumber");
-			const programLinks = document.querySelectorAll(".program-read-more");
-			const closeButtons = document.querySelectorAll("[data-modal-close]");
-			const programDescriptions = {
-				"accountancy": {
-					title: "Bachelor of Science in Accountancy",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"accounting-information-system": {
-					title: "Bachelor of Science in Accounting Information System",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"financial-management": {
-					title: "Bachelor of Science in Business Administration, Major in Financial Management",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"human-resource-management": {
-					title: "Bachelor of Science in Business Administration, Major in Human Resource Management",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"marketing-management": {
-					title: "Bachelor of Science in Business Administration, Major in Marketing Management",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"entrepreneurship": {
-					title: "Bachelor of Science in Entrepreneurship",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"hospitality-management": {
-					title: "Bachelor of Science in Hospitality Management",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"office-administration": {
-					title: "Bachelor of Science in Office Administration",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				},
-				"tourism-management": {
-					title: "Bachelor of Science in Tourism Management",
-					vision: "Program vision information has not been provided yet.",
-					mission: "Program mission information has not been provided yet."
-				}
-			};
-			function openProgramModal(card) {
-				const data = programDescriptions[card.dataset.program];
-				const number = card.querySelector(".cba-program-number");
-				if (!data) return;
-				modalTitle.textContent = data.title;
-				modalVision.textContent = data.vision;
-				modalMission.textContent = data.mission;
-				modalNumber.textContent = number ? number.textContent.trim() : "";
-				modal.classList.add("show");
-				modal.setAttribute("aria-hidden", "false");
-				document.body.classList.add("program-modal-open");
-			}
-			function closeProgramModal() {
-				modal.classList.remove("show");
-				modal.setAttribute("aria-hidden", "true");
-				document.body.classList.remove("program-modal-open");
-			}
-			programLinks.forEach(function(link) {
-				link.addEventListener("click", function(event) {
-					event.preventDefault();
-					const card = link.closest(".cba-program-card");
-					if (card) openProgramModal(card);
-				});
-			});
-			closeButtons.forEach(function(button) {
-				button.addEventListener("click", closeProgramModal);
-			});
-			document.addEventListener("keydown", function(event) {
-				if (event.key === "Escape" && modal.classList.contains("show")) {
-					closeProgramModal();
-				}
-			});
-		});
-	</script>
+	<script src="cba.js"></script>
 </body>
 </html>
