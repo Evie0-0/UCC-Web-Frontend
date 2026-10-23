@@ -1,32 +1,19 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
-
+$currentCollege = isset($_GET['college']) ? (string) $_GET['college'] : '';
 function navActive($pages, $currentPage) {
 	return in_array($currentPage, (array) $pages, true) ? 'active' : '';
 }
-
 function navCurrent($pages, $currentPage) {
 	return in_array($currentPage, (array) $pages, true) ? 'current-page' : '';
 }
-
 $aboutPages = [
 	'about.php',
 	'board-of-regents.php',
 	'executive-officials.php'
 ];
-
-$academicPages = [
-	'business-accountancy.php',
-	'criminal-justice.php',
-	'education.php',
-	'engineering.php',
-	'law.php',
-	'liberal-arts-sciences.php',
-	'graduate-school.php'
-];
-
 $aboutActive = in_array($currentPage, $aboutPages, true);
-$academicsActive = in_array($currentPage, $academicPages, true);
+$academicsActive = ($currentPage === 'colleges.php');
 ?>
 <!-- BRAND HEADER -->
 <header class="brand-header">
@@ -40,33 +27,30 @@ $academicsActive = in_array($currentPage, $academicPages, true);
 			<div class="nav-inner">
 				<div class="nav-links">
 					<a href="homepage.php" class="<?= navActive('homepage.php', $currentPage) ?>">HOME</a>
-
-				<div class="nav-dropdown <?= $aboutActive ? 'active' : '' ?>">
-					<button type="button" class="<?= $aboutActive ? 'active' : '' ?>" aria-expanded="false">
-						ABOUT <span>⌄</span>
-					</button>
-					<div class="dropdown-menu">
-						<a href="about.php" class="<?= navCurrent('about.php', $currentPage) ?>">About UCC</a>
-						<a href="board-of-regents.php" class="<?= navCurrent('board-of-regents.php', $currentPage) ?>">Board of Regents</a>
-						<a href="executive-officials.php" class="<?= navCurrent('executive-officials.php', $currentPage) ?>">Executive Officials</a>
+					<div class="nav-dropdown <?= $aboutActive ? 'active' : '' ?>">
+						<button type="button" class="<?= $aboutActive ? 'active' : '' ?>" aria-expanded="false">
+							ABOUT <span>⌄</span>
+						</button>
+						<div class="dropdown-menu">
+							<a href="about.php" class="<?= navCurrent('about.php', $currentPage) ?>">About UCC</a>
+							<a href="board-of-regents.php" class="<?= navCurrent('board-of-regents.php', $currentPage) ?>">Board of Regents</a>
+							<a href="executive-officials.php" class="<?= navCurrent('executive-officials.php', $currentPage) ?>">Executive Officials</a>
+						</div>
 					</div>
-				</div>
-
-				<div class="nav-dropdown <?= $academicsActive ? 'active' : '' ?>">
-					<button type="button" class="<?= $academicsActive ? 'active' : '' ?>" aria-expanded="false">
-						ACADEMICS <span>⌄</span>
-					</button>
-					<div class="dropdown-menu academics-menu">
-						<a href="business-accountancy.php" class="<?= navCurrent('business-accountancy.php', $currentPage) ?>">College of Business and Accountancy</a>
-						<a href="criminal-justice.php" class="<?= navCurrent('criminal-justice.php', $currentPage) ?>">College of Criminal Justice Education</a>
-						<a href="education.php" class="<?= navCurrent('education.php', $currentPage) ?>">College of Education</a>
-						<a href="engineering.php" class="<?= navCurrent('engineering.php', $currentPage) ?>">College of Engineering</a>
-						<a href="law.php" class="<?= navCurrent('law.php', $currentPage) ?>">College of Law</a>
-						<a href="liberal-arts-sciences.php" class="<?= navCurrent('liberal-arts-sciences.php', $currentPage) ?>">College of Liberal Arts and Sciences</a>
-						<a href="graduate-school.php" class="<?= navCurrent('graduate-school.php', $currentPage) ?>">Graduate School</a>
+					<div class="nav-dropdown <?= $academicsActive ? 'active' : '' ?>">
+						<button type="button" class="<?= $academicsActive ? 'active' : '' ?>" aria-expanded="false">
+							ACADEMICS <span>⌄</span>
+						</button>
+						<div class="dropdown-menu academics-menu">
+							<a href="colleges.php?college=business-accountancy" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'business-accountancy' ? 'current-page' : '' ?>">College of Business and Accountancy</a>
+							<a href="colleges.php?college=criminal-justice" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'criminal-justice' ? 'current-page' : '' ?>">College of Criminal Justice Education</a>
+							<a href="colleges.php?college=education" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'education' ? 'current-page' : '' ?>">College of Education</a>
+							<a href="colleges.php?college=engineering" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'engineering' ? 'current-page' : '' ?>">College of Engineering</a>
+							<a href="colleges.php?college=law" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'law' ? 'current-page' : '' ?>">College of Law</a>
+							<a href="colleges.php?college=liberal-arts-sciences" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'liberal-arts-sciences' ? 'current-page' : '' ?>">College of Liberal Arts and Sciences</a>
+							<a href="colleges.php?college=graduate-school" class="<?= $currentPage === 'colleges.php' && $currentCollege === 'graduate-school' ? 'current-page' : '' ?>">Graduate School</a>
+						</div>
 					</div>
-				</div>
-
 					<a href="campus.php" class="<?= navActive('campus.php', $currentPage) ?>">CAMPUS</a>
 					<a href="contacts.php" class="<?= navActive('contacts.php', $currentPage) ?>">CONTACTS</a>
 				</div>

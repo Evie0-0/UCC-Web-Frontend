@@ -291,7 +291,7 @@ button, input { font: inherit; }
     pointer-events: none;
 } 
 .cba-about::after {
-    content: "";
+    content: "CBA";
     position: absolute;
     left: 0;
     top: 90px;
@@ -418,22 +418,6 @@ button, input { font: inherit; }
     color: rgba(234, 184, 46, 0.418);
     font-weight: 700;
     z-index: 1;
-}
-
-/* small section number */
-.cba-about-block::after {
-    content: "01";
-    position: absolute;
-    right: 22px;
-    bottom: 18px;
-    font-family: "Oswald", sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: rgba(0, 59, 37, 0.344);
-}
-.cba-about-block:last-child::after {
-    content: "02";
 }
 
 .cba-about-block h3 {
@@ -570,45 +554,7 @@ button, input { font: inherit; }
 	background: #eab72e;
 	transition: width .35s ease;
 }
-/* FAINT NUMBER WATERMARK */
-.cba-program-card::after {
-	content: attr(data-number);
-	position: absolute;
-	right: 15px;
-	top: 10px;
-	font-family: "Oswald", sans-serif;
-	font-size: 90px;
-	line-height: 1;
-	color: rgba(0,59,37,.025);
-	pointer-events: none;
-}
-.cba-program-card:hover {
-	transform: translateY(-7px);
-	border-color: #cbd9d0;
-	box-shadow:
-		0 18px 40px rgba(0,59,36,.11),
-		0 3px 8px rgba(0,59,36,.04);
-}
-.cba-program-card:hover::before {
-	width: 100%;
-}
-.cba-program-number {
-	position: relative;
-	z-index: 2;
-	width: 31px;
-	height: 31px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
-	border: 1px solid #eab72e;
-	border-radius: 50%;
-	color: #a97900;
-	background: #fffdf5;
-	font-family: "Oswald", sans-serif;
-	font-size: 11px;
-	font-weight: 700;
-}
+
 /* CARD TITLE */
 .cba-program-card h3 {
 	position: relative;
@@ -848,23 +794,6 @@ button, input { font: inherit; }
     overflow: hidden;
 }
 
-.ccje-about::before {
-    content: "CCJE";
-    position: absolute;
-    right: 10px;
-    top: -20px;
-    font-family: "Oswald", sans-serif;
-    font-size: 200px;
-    font-weight: 700;
-    line-height: 1;
-    color: rgba(0, 59, 37, 0.1);
-    pointer-events: none;
-    z-index: 0;
-}
-.ccje-page .cba-about::before {
-    content: "CCJE";
-}
-
 .ccje-page .cba-hero h1 strong {
     color: #22da4d;
 }
@@ -897,7 +826,7 @@ button, input { font: inherit; }
 }
 
 .coe-page .ccje-about::before {
-    content: "CE";
+    content: "COE";
 }
 
 .coe-page .cba-hero h1 strong {
@@ -905,7 +834,7 @@ button, input { font: inherit; }
 }
 
 .law-page .ccje-about::before {
-    content: "CL";
+    content: "COL";
 }
 
 .law-page .cba-hero h1 strong {
@@ -1121,13 +1050,11 @@ button, input { font: inherit; }
 }
 
 /* BODY LOCK WHEN MODAL IS OPEN */
-
 body.program-modal-open{
 	overflow:hidden;
 }
 
 /* SCROLLBAR */
-
 .program-modal-body::-webkit-scrollbar{
 	width:6px;
 }
@@ -1204,4 +1131,189 @@ body.program-modal-open{
 }
 
 
+/* Keep college sections from causing horizontal overflow */
+.cba-page,
+.ccje-page,
+.coe-page,
+.law-page,
+.clas-page,
+.graduate-school-page,
+.college-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
 
+/* Shared content width */
+.cba-page .container,
+.ccje-page .container,
+.coe-page .container,
+.law-page .container,
+.clas-page .container,
+.graduate-school-page .container,
+.college-page .container,
+.cba-content-container {
+  width: min(1350px, calc(100% - 64px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HERO: avoid the title or dean panel being squeezed */
+.cba-hero-inner {
+  width: min(1550px, calc(100% - 64px));
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  gap: 0;
+}
+.cba-hero-content {
+  min-width: 0;
+  transform: none !important;
+}
+.cba-hero h1 {
+  overflow-wrap: anywhere;
+}
+.cba-dean {
+  min-width: 0;
+  padding: 24px 18px;
+}
+.cba-dean h2,
+.cba-dean p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+/* ABOUT: prevent grid columns and long text from overflowing. */
+.cba-about-grid {
+  grid-template-columns: minmax(220px, .85fr) repeat(2, minmax(0, 1fr));
+}
+.cba-about-logo,
+.cba-about-block {
+  min-width: 0;
+}
+.cba-about-block p {
+  overflow-wrap: anywhere;
+}
+.cba-about > .container,
+.cba-programs > .container,
+.cba-about > .cba-content-container,
+.cba-programs > .cba-content-container {
+  width: min(1350px, calc(100% - 64px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PROGRAM CARDS: keep actions inside the card and allow long titles. */
+.cba-program-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.cba-program-card {
+  min-width: 0;
+}
+.cba-program-card h3 {
+  overflow-wrap: anywhere;
+}
+.cba-program-card h3::after {
+  width: min(100%, 360px);
+}
+.cba-program-actions {
+  margin-top: auto;
+  padding-top: 12px;
+}
+.cba-program-card .cba-program-actions a {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.cba-page .cba-quick-links > .cba-quick-grid,
+.ccje-page .cba-quick-links > .cba-quick-grid,
+.coe-page .cba-quick-links > .cba-quick-grid,
+.law-page .cba-quick-links > .cba-quick-grid,
+.clas-page .cba-quick-links > .cba-quick-grid,
+.graduate-school-page .cba-quick-links > .cba-quick-grid,
+.college-page .cba-quick-links > .cba-quick-grid {
+  width: min(1350px, calc(100% - 64px));
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.program-modal {
+  padding: 20px;
+}
+.program-modal-dialog {
+  width: min(850px, 100%);
+}
+.program-modal-body {
+  overflow-wrap: anywhere;
+}
+
+
+
+
+
+/* FIX: CBA ABOUT SECTION SIDE SPACING */
+.cba-page .cba-about {
+    padding-left: clamp(24px, 5.5vw, 110px);
+    padding-right: clamp(24px, 5.5vw, 110px);
+    box-sizing: border-box;
+}
+.cba-page .cba-about .cba-section-title,
+.cba-page .cba-about .cba-about-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.cba-page .cba-about .cba-about-grid {
+    grid-template-columns: minmax(0, 0.85fr) repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+
+
+
+/* Keep the shared footer layout consistent on college pages */
+body footer#contact {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding-top: 0;
+	min-height: 180px;
+	box-sizing: border-box;
+}
+body footer#contact .footer-content {
+	width: 100%;
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+body footer#contact .footer-bottom {
+	width: 100%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 35px;
+	box-sizing: border-box;
+}
+
+
+
+.ccje-about::before {
+    content: "CCJE";
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(0, 59, 37, 0.1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* CBA-specific watermark */
+.cba-page .ccje-about::before {
+    content: "CBA";
+}
