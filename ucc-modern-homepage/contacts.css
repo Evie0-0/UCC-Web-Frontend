@@ -478,31 +478,34 @@ button, input { font: inherit; }
   height: 15px;
 }
 
-/* TABS */
+/* OFFICE TABS */
 .office-tabs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.25fr;
-  gap: 4px;
-  margin-top: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	margin: 12px auto 0;
 }
-
 .office-tab {
-  height: 21px;
-  border: 1px solid rgba(255,255,255,.30);
-  border-radius: 4px;
-  background: rgba(255,255,255,.04);
-  color: rgba(255,255,255,.85);
-  font-size: 12px;
-  font-weight: 800;
-  cursor: pointer;
-  transition: .2s ease;
+	flex: 1;
+	min-width: 0;
+	max-width: none;
+	height: 36px;
+	border: 1px solid rgba(255,255,255,.30);
+	border-radius: 4px;
+	background: rgba(255,255,255,.04);
+	color: rgba(255,255,255,.85);
+	font-size: 12px;
+	font-weight: 800;
+	cursor: pointer;
+	transition: .2s ease;
 }
-
 .office-tab:hover,
 .office-tab.active {
-  background: #eab72e;
-  border-color: #eab72e;
-  color: #fff;
+	background: #eab72e;
+	border-color: #eab72e;
+	color: #fff;
 }
 
 /* OFFICE LIST */

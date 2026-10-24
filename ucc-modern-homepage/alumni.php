@@ -31,11 +31,6 @@
 		<section class="alumni-container">
 			<div class="alumni-heading">
 				<div class="alumni-heading-content">
-					<div class="alumni-eyebrow">
-						<span></span>
-						UCC ALUMNI
-						<i></i>
-					</div>
 					<h1>ALUMNI</h1>
 					<div class="alumni-heading-line">
 						<span></span>

@@ -1,3 +1,21 @@
+html {
+	min-height: 100%;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+#programEventsPage {
+	flex: 1 0 auto;
+	width: 100%;
+}
+footer#contact {
+	margin-top: auto;
+	flex-shrink: 0;
+}
+
+
 /*NEWS PAGE*/
 .news-page{
 	position:relative;

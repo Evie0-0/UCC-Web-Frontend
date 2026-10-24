@@ -26,15 +26,19 @@
 	<!-- MAIN CONTENT -->
 	<main class="admission-news-page">
 		<div class="admission-news-container">
-			<div class="admission-news-heading">
-				<h1>ADMISSION NEWS</h1>
-				<div class="admission-heading-line"></div>
-				<div class="admission-heading-dots">
-					<span></span>
-					<span></span>
-					<span></span>
+
+			<div class="admission-news-heading reveal">
+				<div>
+					<h1>ADMISSION NEWS</h1>
+					<div class="admission-heading-line">
+						<span></span>
+						<i></i>
+						<span></span>
+					</div>
+					<p>Stay informed about admission announcements, application periods, enrollment procedures, and important updates for future UCCians.</p>
 				</div>
 			</div>
+
 			<!-- ADMISSION PROCESS -->
 			<div class="admission-post admission-modal-trigger" data-article="admission-process">
 				<div class="admission-post-image">

@@ -178,7 +178,7 @@ button, input { font: inherit; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateY(-30px) !important;
+    transform: translateY(-50px) !important;
 }
 .cba-breadcrumb {
     display: flex;
@@ -1316,4 +1316,69 @@ body footer#contact .footer-bottom {
 /* CBA-specific watermark */
 .cba-page .ccje-about::before {
     content: "CBA";
+}
+
+
+
+
+
+
+/* COLLEGE EVENTS BUTTON IN HERO */
+.cba-hero-events-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: fit-content;
+	min-width: 190px;
+	margin-top: 24px;
+    padding: 8px 18px;
+	border: 1px solid #eab72e;
+	border-radius: 4px;
+	background: #e9be46;
+	color: #17452f;
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: .6px;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.cba-hero-events-btn svg {
+	width: 17px;
+	height: 17px;
+	flex-shrink: 0;
+	stroke-width: 2.2;
+}
+.cba-hero-events-btn span {
+	white-space: nowrap;
+}
+.cba-hero-events-btn b {
+	margin-left: auto;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1;
+	transition: transform .25s ease;
+}
+.cba-hero-events-btn:hover {
+	background: #fff;
+	border-color: #fff;
+	color: #005f3c;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+	transform: translateY(-2px);
+}
+.cba-hero-events-btn:hover b {
+	transform: translateX(4px);
+}
+.cba-hero-events-btn:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 4px;
+}
+
+
+
+.cba-hero-content {
+	position: relative !important;
+	top: -30px !important;
 }

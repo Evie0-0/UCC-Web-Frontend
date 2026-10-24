@@ -1,3 +1,4 @@
+
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
 $currentCollege = isset($_GET['college']) ? (string) $_GET['college'] : '';
@@ -13,7 +14,12 @@ $aboutPages = [
 	'executive-officials.php'
 ];
 $aboutActive = in_array($currentPage, $aboutPages, true);
-$academicsActive = ($currentPage === 'colleges.php');
+$academicsPages = [
+	'colleges.php',
+	'program-events.php',
+	'colleges-events.php'
+];
+$academicsActive = in_array($currentPage, $academicsPages, true);
 ?>
 <!-- BRAND HEADER -->
 <header class="brand-header">

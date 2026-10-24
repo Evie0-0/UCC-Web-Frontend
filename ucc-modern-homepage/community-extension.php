@@ -83,6 +83,20 @@
 		<div class="ces-bg ces-bg-1"></div>
 		<div class="ces-bg ces-bg-2"></div>
 		<section class="ces-container">
+		
+			<!-- COMMUNITY EXTENSION SERVICES HEADING -->
+			<div class="ces-heading reveal">
+				<div>
+					<h1>COMMUNITY EXTENSION SERVICES</h1>
+					<div class="ces-heading-line">
+						<span></span>
+						<i></i>
+						<span></span>
+					</div>
+					<p>Discover UCC's community partnerships, extension programs, and initiatives dedicated to empowering communities and creating meaningful social impact.</p>
+				</div>
+			</div>
+
 			<!-- FEATURED COMMUNITY POST -->
 			<article class="ces-featured-card ces-modal-trigger" data-article="ugnayan">
 				<div class="ces-featured-image">

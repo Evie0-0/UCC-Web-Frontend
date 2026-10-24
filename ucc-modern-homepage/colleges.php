@@ -151,23 +151,16 @@ $colleges = [
         ]
     ]
 ];
-
 $collegeKey = $_GET['college'] ?? 'business-accountancy';
-
-if (!isset($colleges[$collegeKey])) {
+$notFound = !isset($colleges[$collegeKey]);
+if ($notFound) {
     http_response_code(404);
     $collegeKey = 'business-accountancy';
-    $notFound = true;
-} else {
-    $notFound = false;
 }
-
 $college = $colleges[$collegeKey];
-
 function collegeEscape($value) {
     return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -183,8 +176,8 @@ function collegeEscape($value) {
     <link rel="stylesheet" href="assets/utility-bar.css">
     <link rel="stylesheet" href="assets/navbar.css">
     <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" href="college-hero-events.css">
 </head>
-
 <body>
     <div class="page-dots" aria-hidden="true">
         <span class="dot-pattern dot-1"></span>
@@ -192,10 +185,8 @@ function collegeEscape($value) {
         <span class="dot-pattern dot-3"></span>
         <span class="dot-pattern dot-4"></span>
     </div>
-
     <?php include __DIR__ . '/includes/utility-bar.php'; ?>
     <?php include __DIR__ . '/includes/navbar.php'; ?>
-
     <main class="<?= collegeEscape($college['page_class']) ?>">
         <?php if ($notFound): ?>
             <div class="container" style="padding:40px 20px;text-align:center;">
@@ -203,7 +194,6 @@ function collegeEscape($value) {
                 <p>The selected college does not exist. Please choose a college from the Academics menu.</p>
             </div>
         <?php endif; ?>
-
         <section class="cba-hero">
             <div class="cba-building">
                 <img src="images/FOOTER.jpg" alt="University of Caloocan City campus building">
@@ -226,13 +216,17 @@ function collegeEscape($value) {
                         </div>
                     </div>
                     <h1><?= collegeEscape($college['title']) ?></h1>
+                    <a class="cba-hero-events-btn" href="colleges-events.php?college=<?= rawurlencode($collegeKey) ?>">
+                        <i data-lucide="calendar-days" aria-hidden="true"></i>
+                        <span>COLLEGE EVENTS</span>
+                        <b aria-hidden="true">→</b>
+                    </a>
                 </div>
             </div>
             <div class="cba-hero-wave"></div>
         </section>
-
         <section class="cba-about ccje-about" id="about-college">
-                <div class="container">
+            <div class="container">
                 <div class="cba-section-title">
                     <h2>ABOUT THE COLLEGE</h2>
                     <span></span>
@@ -252,7 +246,6 @@ function collegeEscape($value) {
                         <p><?= collegeEscape($college['mission'] ?: 'Mission information has not been provided yet.') ?></p>
                     </div>
                 </div>
-
                 <?php foreach (['goals' => 'GOALS', 'objectives' => 'OBJECTIVES', 'history' => 'HISTORY', 'philosophy' => 'PHILOSOPHY'] as $field => $heading): ?>
                     <?php if (!empty($college[$field])): ?>
                         <div class="cba-about-block college-extra-section">
@@ -263,7 +256,6 @@ function collegeEscape($value) {
                 <?php endforeach; ?>
             </div>
         </section>
-
         <section class="cba-programs" id="programs">
             <div class="container">
                 <div class="cba-program-heading">
@@ -275,22 +267,21 @@ function collegeEscape($value) {
                     <p><?= collegeEscape($college['description']) ?></p>
                 </div>
                 <div class="cba-program-grid">
-                    <?php foreach ($college['programs'] as $index => $program): ?>
-                    <article class="cba-program-card"
-                        data-program="<?= collegeEscape($program['slug']) ?>"
-                        data-vision="<?= collegeEscape($college['vision']) ?>"
-                        data-mission="<?= collegeEscape($college['mission']) ?>">
-                        <h3><?= collegeEscape($program['name']) ?></h3>
-                        <div class="cba-program-actions">
-                            <a href="#" class="program-read-more">Read more <span>→</span></a>
-                            <a href="program-events.php?program=<?= rawurlencode($program['slug']) ?>" class="program-events-link">Events <span>↗</span></a>
-                        </div>
-                    </article>
+                    <?php foreach ($college['programs'] as $program): ?>
+                        <article class="cba-program-card"
+                            data-program="<?= collegeEscape($program['slug']) ?>"
+                            data-vision="<?= collegeEscape($college['vision']) ?>"
+                            data-mission="<?= collegeEscape($college['mission']) ?>">
+                            <h3><?= collegeEscape($program['name']) ?></h3>
+                            <div class="cba-program-actions">
+                                <a href="#" class="program-read-more">Read more <span>→</span></a>
+                                <a href="program-events.php?program=<?= rawurlencode($program['slug']) ?>" class="program-events-link">Events <span>↗</span></a>
+                            </div>
+                        </article>
                     <?php endforeach; ?>
                 </div>
             </div>
         </section>
-
         <section class="cba-quick-links">
             <div class="container cba-quick-grid">
                 <a href="#programs">
@@ -301,11 +292,11 @@ function collegeEscape($value) {
                     </div>
                     <b>→</b>
                 </a>
-                <a href="#about-college">
-                    <div class="cba-quick-icon"><i data-lucide="book-open"></i></div>
+                <a href="colleges-events.php?college=<?= rawurlencode($collegeKey) ?>">
+                    <div class="cba-quick-icon"><i data-lucide="calendar-days"></i></div>
                     <div>
-                        <strong>READ MORE</strong>
-                        <span>Learn about <?= collegeEscape($college['title']) ?></span>
+                        <strong>COLLEGE EVENTS</strong>
+                        <span>Explore events for <?= collegeEscape($college['title']) ?></span>
                     </div>
                     <b>→</b>
                 </a>
@@ -328,7 +319,6 @@ function collegeEscape($value) {
             </div>
         </section>
     </main>
-
     <div class="program-modal" id="programModal" aria-hidden="true">
         <div class="program-modal-backdrop" data-modal-close></div>
         <div class="program-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="programModalTitle">
@@ -361,12 +351,15 @@ function collegeEscape($value) {
             </div>
         </div>
     </div>
-
     <?php include __DIR__ . '/includes/footer.php'; ?>
     <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
     <script src="script.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+    </script>
     <script src="academics.js"></script>
 </body>
 </html>

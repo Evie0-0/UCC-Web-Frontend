@@ -271,10 +271,14 @@
 		<!-- PAGE HEADER -->
 		<div class="student-life-heading reveal">
 			<div>
-				<span class="student-life-eyebrow">UCC COMMUNITY</span>
 				<h1>STUDENT LIFE</h1>
+				<div class="student-life-heading-line">
+					<span></span>
+					<i></i>
+					<span></span>
+				</div>
+				<p>Discover student organizations, campus athletics, student support services, and community initiatives at the University of Caloocan City.</p>
 			</div>
-			<div class="student-life-heading-line"></div>
 		</div>
 		<section class="student-life-top-grid">
 			<!-- LARGE FEATURED CARD -->

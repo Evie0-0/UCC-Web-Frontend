@@ -559,43 +559,48 @@ border-radius:50%;
   margin: 0 auto;
 }
 
+/* STUDENT LIFE HEADING — MATCH NEWS PAGE */
 .student-life-heading {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 17px;
 }
-
-.student-life-eyebrow {
-  display: inline-block;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  background: var(--green-700);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .5px;
-}
-
 .student-life-heading h1 {
-  margin: 0;
-  color: var(--green-950);
-  font-family: "Oswald", sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-  letter-spacing: -.5px;
+    margin: 0;
+    color: #17452f;
+    font-family: "Oswald", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .7px;
 }
-
 .student-life-heading-line {
-  flex: 1;
-  height: 1px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 59, 37, 0.608),
-      transparent
-    );
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 235px;
+    margin: 9px 0 10px;
+}
+.student-life-heading-line span {
+    flex: 1;
+    height: 1px;
+    background: rgba(169,140,74,.48);
+}
+.student-life-heading-line i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #c9a933;
+}
+.student-life-heading p {
+    max-width: 510px;
+    margin: 0;
+    color: #424a45;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.55;
 }
 
 /*SHARED CARD*/
@@ -1381,6 +1386,51 @@ body.student-modal-open{
 
 
 /*COMMUNITY & EXTENSION SERVICES PAGE*/
+
+/* COMMUNITY EXTENSION SERVICES HEADING — MATCH NEWS PAGE */
+.ces-heading {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 17px;
+}
+.ces-heading h1 {
+	margin: 0;
+	color: #17452f;
+	font-family: "Oswald", sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: .7px;
+}
+.ces-heading-line {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: 235px;
+	margin: 9px 0 10px;
+}
+.ces-heading-line span {
+	flex: 1;
+	height: 1px;
+	background: rgba(169,140,74,.48);
+}
+.ces-heading-line i {
+	width: 5px;
+	height: 5px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: #c9a933;
+}
+.ces-heading p {
+	max-width: 510px;
+	margin: 0;
+	color: #424a45;
+	font-family: "Manrope", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.55;
+}
 .ces-page{
 	position:relative;
 	padding:30px 0 38px;
@@ -1853,45 +1903,50 @@ body.student-modal-open{
 	margin:0 auto;
 }
 
-.admission-news-heading{
-	display:flex;
-	align-items:center;
-	gap:13px;
-	margin-bottom:24px;
-}
 
-.admission-news-heading h1{
-	margin:0;
-	color:#214535;
-	font-family:"Manrope",sans-serif;
-	font-size:19px;
-	font-weight:800;
-	letter-spacing:.5px;
-	white-space:nowrap;
+/* ADMISSION NEWS HEADING — MATCH NEWS PAGE */
+.admission-news-heading {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 17px;
 }
-
-.admission-heading-line{
-	width:65px;
-	height:1px;
-	background:#c9bd9b;
+.admission-news-heading h1 {
+	margin: 0;
+	color: #17452f;
+	font-family: "Oswald", sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: .7px;
 }
-
-.admission-heading-dots{
-	display:flex;
-	align-items:center;
-	gap:5px;
+.admission-heading-line {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: 235px;
+	margin: 9px 0 10px;
 }
-
-.admission-heading-dots span{
-	width:5px;
-	height:5px;
-	border-radius:50%;
-	background:#b89a4a;
+.admission-heading-line span {
+	flex: 1;
+	height: 1px;
+	background: rgba(169,140,74,.48);
 }
-
-.admission-heading-dots span:nth-child(2){
-	width:7px;
-	height:7px;
+.admission-heading-line i {
+	width: 5px;
+	height: 5px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: #c9a933;
+}
+.admission-news-heading p {
+	max-width: 510px;
+	margin: 0;
+	color: #424a45;
+	font-family: "Manrope", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.55;
 }
 
 .admission-post{
@@ -2749,22 +2804,60 @@ body.student-modal-open{
 
 
 
+
+
+
 .alumni-page{position:relative;min-height:620px;overflow:hidden;background:#f8f8f3;color:#173f2d;padding:55px 0 75px}
 .alumni-page:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(23,63,45,.055) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
 .alumni-container{position:relative;z-index:2;width:min(1060px,calc(100% - 70px));margin:0 auto}
-.alumni-heading{position:relative;display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:42px}
-.alumni-heading-content{max-width:720px}
-.alumni-eyebrow{display:flex;align-items:center;gap:10px;color:#b08e35;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.alumni-eyebrow span,.alumni-eyebrow i{display:block;width:28px;height:2px;background:#c69b2d}
-.alumni-eyebrow i{width:10px;height:10px;border-radius:50%;border:2px solid #c69b2d;background:#f8f8f3}
-.alumni-heading h1{margin:0;color:#174b36;font-family:"Oswald",sans-serif;font-size:68px;font-weight:700;line-height:.98;letter-spacing:1px}
-.alumni-heading-line{display:flex;align-items:center;width:265px;margin-top:13px}
-.alumni-heading-line span{height:1px;flex:1;background:#d9c795}
-.alumni-heading-line i{width:8px;height:8px;margin:0 7px;border-radius:50%;background:#c69b2d;box-shadow:0 0 0 4px rgba(198,155,45,.08)}
-.alumni-heading-content p{max-width:680px;margin:17px 0 0;color:#4c6258;font-family:"Manrope",sans-serif;font-size:15px;line-height:1.7}
-.alumni-heading-mark{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;width:150px;height:120px;border:1px solid rgba(198,155,45,.35);border-radius:50%;transform:rotate(-8deg);opacity:.85;margin-bottom:5px}
-.alumni-heading-mark span{font-family:"Oswald",sans-serif;font-size:34px;font-weight:700;color:#174b36;line-height:1}
-.alumni-heading-mark strong{font-family:"Manrope",sans-serif;font-size:9px;letter-spacing:2px;color:#b08e35;margin-top:5px}
+
+/* ALUMNI HEADING — MATCH NEWS PAGE */
+.alumni-heading {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 17px;
+}
+.alumni-heading-content {
+	width: 100%;
+}
+.alumni-heading h1 {
+	margin: 0;
+	color: #17452f;
+	font-family: "Oswald", sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: .7px;
+}
+.alumni-heading-line {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: 235px;
+	margin: 9px 0 10px;
+}
+.alumni-heading-line span {
+	flex: 1;
+	height: 1px;
+	background: rgba(169,140,74,.48);
+}
+.alumni-heading-line i {
+	width: 5px;
+	height: 5px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: #c9a933;
+}
+.alumni-heading-content p {
+	max-width: 510px;
+	margin: 0;
+	color: #424a45;
+	font-family: "Manrope", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.55;
+}
 .alumni-empty{position:relative;display:flex;align-items:center;justify-content:center;min-height:335px;overflow:hidden;background:#fff;border:1px solid #e4e1d7;border-radius:16px;box-shadow:0 18px 45px rgba(20,55,42,.08)}
 .alumni-empty:before{content:"";position:absolute;left:0;top:0;width:7px;height:100%;background:linear-gradient(180deg,#0b6244,#c69b2d,#0b6244)}
 .alumni-empty:after{content:"";position:absolute;right:-95px;top:-95px;width:280px;height:280px;border:1px solid rgba(198,155,45,.22);border-radius:50%}
@@ -2829,7 +2922,7 @@ body.student-modal-open{
 	margin:0;
 	color:#174b36;
 	font-family:"Oswald",sans-serif;
-	font-size:56px;
+	font-size:42px;
 	font-weight:700;
 	line-height:1;
 	letter-spacing:.5px;
@@ -3731,4 +3824,26 @@ body.modal-open{
 }
 .student-modal-trigger{
 	cursor:pointer;
+}
+
+
+
+
+
+
+html {
+	min-height: 100%;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+body > main {
+	flex: 1 0 auto;
+	width: 100%;
+}
+body > footer#contact {
+	margin-top: auto;
+	flex-shrink: 0;
 }
